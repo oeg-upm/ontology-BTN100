@@ -1,0 +1,2332 @@
+@prefix : <https://datos.ign.es/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://datos.ign.es/ontology/> .
+
+<https://datos.ign.es/ontology/> rdf:type owl:Ontology ;
+                                  owl:versionIRI :btn100.owl ;
+                                  owl:imports <http://www.opengis.net/ont/geosparql> ;
+                                  <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ;
+                                  <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ;
+                                  <http://purl.org/dc/terms/description> "Ontología para la representación de los datos de la Base Topográfica Nacional BTN100"^^xsd:string ;
+                                  <http://purl.org/dc/terms/license> <http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf> ;
+                                  <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@es ;
+                                  owl:versionInfo "0.1"@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://datos.ign.es/def/anchoDeVia
+<https://datos.ign.es/def/anchoDeVia> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://datos.ign.es/def/FerrocarrilConvencional> ;
+                                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment """Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/ancho-de-via y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/ancho-de-via/metrico
+https://datos.ign.es/kos/transportes/ancho-de-via/mixta
+https://datos.ign.es/kos/transportes/ancho-de-via/internacional
+https://datos.ign.es/kos/transportes/ancho-de-via/iberico
+https://datos.ign.es/kos/transportes/ancho-de-via/desconocido"""@es ;
+                                      rdfs:label "ancho de la vía"@es .
+
+
+###  https://datos.ign.es/def/calzada
+<https://datos.ign.es/def/calzada> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <https://datos.ign.es/def/Carretera> ;
+                                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment """Número de calzadas y sentido de circulación del tramo de vía.  Se define en el esquema de conceptos https://datos.ign.es/kos/transportes/calzada  y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/calzada/convencional
+https://datos.ign.es/kos/transportes/calzada/doble
+https://datos.ign.es/kos/transportes/calzada/sentido-unico"""@es ;
+                                   rdfs:label "calzada"@es .
+
+
+###  https://datos.ign.es/def/categoria
+<https://datos.ign.es/def/categoria> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <https://datos.ign.es/def/Rio> ;
+                                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment """Categorización de ríos. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/hidrografia/categoria-de-rio y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal
+https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario
+https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario
+https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes"""@es ;
+                                     rdfs:label "categoría"@es .
+
+
+###  https://datos.ign.es/def/categoriaDeIsla
+<https://datos.ign.es/def/categoriaDeIsla> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla> ;
+                                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment """Se representa mediante el esquema de conceptos https://datos.ign.es/kos/hidrografia/categoria-de-isla y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/hidrografia/categoria-de-isla/principal
+https://datos.ign.es/kos/hidrografia/categoria-de-isla/no-definida"""@es ;
+                                           rdfs:label "categoría de isla"@es .
+
+
+###  https://datos.ign.es/def/categoriaInteres
+<https://datos.ign.es/def/categoriaInteres> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment """Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/categoria-interes y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/accidente-orografico/categoria-interes/principal
+https://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario
+https://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario
+https://datos.ign.es/kos/accidente-orografico/categoria-interes/menor
+https://datos.ign.es/kos/accidente-orografico/categoria-interes/no-definido"""@es ;
+                                            rdfs:label "categoría de interés"@es .
+
+
+###  https://datos.ign.es/def/competencia
+<https://datos.ign.es/def/competencia> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain [ rdf:type owl:Class ;
+                                                     owl:unionOf ( <https://datos.ign.es/def/Autopista>
+                                                                   <https://datos.ign.es/def/Autovia>
+                                                                   <https://datos.ign.es/def/CarreteraAutonomica>
+                                                                 )
+                                                   ] ;
+                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment """Competencia de la vía. Se define en el esquema de conceptos https://datos.ign.es/kos/transportes/competencia  y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/competencia/estatal
+https://datos.ign.es/kos/transportes/competencia/autonomica
+https://datos.ign.es/kos/transportes/competencia/provincial
+https://datos.ign.es/kos/transportes/competencia/local"""@es ;
+                                       rdfs:label "competencia"@es .
+
+
+###  https://datos.ign.es/def/competenciaAeroportuaria
+<https://datos.ign.es/def/competenciaAeroportuaria> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <https://datos.ign.es/def/InfraestructuraAeroportuaria> ;
+                                                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                    rdfs:comment """Competencia de la explotación aeroportuaria. Se representa mediante un esquema de conceptos: https://datos.ign.es/kos/transportes/competencia-aeroportuaria y puede obtener alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/competencia-aeroportuaria/aena
+https://datos.ign.es/kos/transportes/competencia-aeroportuaria/privado
+https://datos.ign.es/kos/transportes/competencia-aeroportuaria/militar"""@es ;
+                                                    rdfs:label "competencia aeroportuaria"@es .
+
+
+###  https://datos.ign.es/def/competenciaPortuaria
+<https://datos.ign.es/def/competenciaPortuaria> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://datos.ign.es/def/Puerto> ;
+                                                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment """Competencia de la explotación portuaria. Se representa mediante el esquema de concetpos: https://datos.ign.es/kos/transportes/competencia-portuaria y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/competencia-portuaria/estatal
+https://datos.ign.es/kos/transportes/competencia-portuaria/no-estatal"""@es ;
+                                                rdfs:label "competencia portuaria"@es .
+
+
+###  https://datos.ign.es/def/componenteDeTelecomunicaciones
+<https://datos.ign.es/def/componenteDeTelecomunicaciones> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://datos.ign.es/def/EstacionDeTelecomunicaciones> ;
+                                                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                          rdfs:comment """Se representa mediante el esquema de conceptos https://datos.ign.es/kos/red-de-suministro/tipo-de-componente y puede tomar alguno de los siguientes valores: https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/repetidor
+https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/emisor"""@es ;
+                                                          rdfs:label "componente de telecomunicaciones"@es .
+
+
+###  https://datos.ign.es/def/electrificacion
+<https://datos.ign.es/def/electrificacion> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://datos.ign.es/def/FerrocarrilConvencional> ;
+                                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment """Tipo de electrificación de una vía. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/electrificacion y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/electrificacion/electrificado
+https://datos.ign.es/kos/transportes/electrificacion/no-electrificado"""@es ;
+                                           rdfs:label "electrificación"@es .
+
+
+###  https://datos.ign.es/def/esCapitalDe
+<https://datos.ign.es/def/esCapitalDe> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain [ rdf:type owl:Class ;
+                                                     owl:unionOf ( <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado>
+                                                                   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion>
+                                                                 )
+                                                   ] ;
+                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                       rdfs:comment """Especifica de qué administración oficial es capital. Se define en el esquema de conceptos https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/nacion
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/no-capital
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/comunidad-autonoma
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/provincia
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/municipio
+https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/comunidad-autonoma-no-de-provincia"""@es ;
+                                       rdfs:label "es capital de"@es .
+
+
+###  https://datos.ign.es/def/esComponenteDe
+<https://datos.ign.es/def/esComponenteDe> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://datos.ign.es/def/RioLineal> ;
+                                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment """Tipología de componente de eje de cauce o eje ficticio. Se emplea para diferenciar los elementos que representan el río lineal (01 EJE), de los tramos de conexión de ríos en el interior de ríos superficiales, embalses y humedales (02 CONEXIÓN). Se representa mediante el esquema de conceptos  https://datos.ign.es/kos/hidrografia/tipo-de-componente y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/hidrografia/tipo-de-componente/eje
+https://datos.ign.es/kos/hidrografia/tipo-de-componente/conexion"""@es ;
+                                          rdfs:label "es componente de"@es .
+
+
+###  https://datos.ign.es/def/estadoDeLaExplotacionMinera
+<https://datos.ign.es/def/estadoDeLaExplotacionMinera> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://datos.ign.es/def/ExplotacionMinera> ;
+                                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                       rdfs:comment """Se representa mediante el esquema de conceptos https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/en-uso
+https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/abandonado
+https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/en-construccion"""^^xsd:string ;
+                                                       rdfs:label "estado de la explotación minera"^^xsd:string .
+
+
+###  https://datos.ign.es/def/estadoDeUso
+<https://datos.ign.es/def/estadoDeUso> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain [ rdf:type owl:Class ;
+                                                     owl:unionOf ( <https://datos.ign.es/def/Carretera>
+                                                                   <https://datos.ign.es/def/Enlace>
+                                                                   <https://datos.ign.es/def/Ferrocarril>
+                                                                   <https://datos.ign.es/def/InstalacionFerroviaria>
+                                                                   <https://datos.ign.es/def/Puerto>
+                                                                 )
+                                                   ] ;
+                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment """Estado de uso de la vía. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/estado-de-uso y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/estado-de-uso/en-uso
+https://datos.ign.es/kos/transportes/estado-de-uso/en-construccion
+https://datos.ign.es/kos/transportes/estado-de-uso/abandonado"""@es ;
+                                       rdfs:label "estado de uso"@es .
+
+
+###  https://datos.ign.es/def/numeroDeVias
+<https://datos.ign.es/def/numeroDeVias> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://datos.ign.es/def/FerrocarrilConvencional> ;
+                                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                        rdfs:comment """Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/numero-de-vias y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/numero-de-vias/unica
+https://datos.ign.es/kos/transportes/numero-de-vias/doble
+https://datos.ign.es/kos/transportes/numero-de-vias/desconocida"""@es ;
+                                        rdfs:label "número de vías"@es .
+
+
+###  https://datos.ign.es/def/ordenDeImportancia
+<https://datos.ign.es/def/ordenDeImportancia> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://datos.ign.es/def/CarreteraAutonomica> ;
+                                              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                              <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                              rdfs:comment """Categoría según su importancia. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/categoria-interes y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/categoria-interes/primer-orden
+https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden
+https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden
+https://datos.ign.es/kos/transportes/categoria-interes/no-definido"""@es ;
+                                              rdfs:label "orden de importancia"@es .
+
+
+###  https://datos.ign.es/def/productoFuente
+<https://datos.ign.es/def/productoFuente> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( <https://datos.ign.es/def/AccidenteMaritimoPuntual>
+                                                                      <https://datos.ign.es/def/EntidadVirtual>
+                                                                    )
+                                                      ] ;
+                                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                          rdfs:comment "Producto de origen o fuente de información"@es ;
+                                          rdfs:label "producto fuente"@es .
+
+
+###  https://datos.ign.es/def/regimen
+<https://datos.ign.es/def/regimen> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://datos.ign.es/def/Laguna>
+                                                               <https://datos.ign.es/def/RioLineal>
+                                                             )
+                                               ] ;
+                                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment """Estacionalidad de las aguas en cauce. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/hidrografia/regimen y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/hidrografia/regimen/permanente
+https://datos.ign.es/kos/hidrografia/regimen/no-permanente"""@es ;
+                                   rdfs:label "regimen"@es .
+
+
+###  https://datos.ign.es/def/rutaTEN-T
+<https://datos.ign.es/def/rutaTEN-T> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <https://datos.ign.es/def/Carretera>
+                                                                 <https://datos.ign.es/def/Ferrocarril>
+                                                                 <https://datos.ign.es/def/InfraestructuraAeroportuaria>
+                                                                 <https://datos.ign.es/def/InstalacionFerroviaria>
+                                                               )
+                                                 ] ;
+                                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                     rdfs:comment """Perteneciente a la Red Transeuropea de Transporte (TEN-T). Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/ruta-ten-t y puede tomar alguno de los siguientes valores;
+https://datos.ign.es/kos/transportes/ruta-ten-t/ruta-transeuropea
+https://datos.ign.es/kos/transportes/ruta-ten-t/ruta-no-transeuropea"""@es ;
+                                     rdfs:label "ruta TEN-T"@es .
+
+
+###  https://datos.ign.es/def/situacionDeCauce
+<https://datos.ign.es/def/situacionDeCauce> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://datos.ign.es/def/CauceArtificial> ;
+                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment """Disposiciónd el canal. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/hidrografia/situacion-de-cauce y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/hidrografia/situacion-de-cauce/superficial
+https://datos.ign.es/kos/hidrografia/situacion-de-cauce/elevada
+https://datos.ign.es/kos/hidrografia/situacion-de-cauce/subterránea"""@es ;
+                                            rdfs:label "situación de cauce"@es .
+
+
+###  https://datos.ign.es/def/situacionDeVia
+<https://datos.ign.es/def/situacionDeVia> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( <https://datos.ign.es/def/Carretera>
+                                                                      <https://datos.ign.es/def/ConduccionDeCombustible>
+                                                                      <https://datos.ign.es/def/Enlace>
+                                                                      <https://datos.ign.es/def/Ferrocarril>
+                                                                    )
+                                                      ] ;
+                                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment """Disposición del tramo de vía sobre la superficie. Se define en el esquema de conceptos https://datos.ign.es/kos/transportes/situacion-via y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/situacion-via/superficial
+https://datos.ign.es/kos/transportes/situacion-via/suberranea
+https://datos.ign.es/kos/transportes/situacion-via/elevada"""@es ;
+                                          rdfs:label "situación de vía"@es .
+
+
+###  https://datos.ign.es/def/tieneAcceso
+<https://datos.ign.es/def/tieneAcceso> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://datos.ign.es/def/Autopista> ;
+                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment """Acceso libre o de peaje. Se representa mediante el esquema de conceptos:  https://datos.ign.es/kos/transportes/tipo-acceso y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/tipo-acceso/de-peaje
+https://datos.ign.es/kos/transportes/tipo-acceso/libre"""@es ;
+                                       rdfs:label "tiene acceso"@es .
+
+
+###  https://datos.ign.es/def/tieneCurso
+<https://datos.ign.es/def/tieneCurso> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://datos.ign.es/def/RioLineal> ;
+                                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment """Tipología de tramo de rio. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/hidrografia/curso-de-rio y pude tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/hidrografia/curso-de-rio/alto
+https://datos.ign.es/kos/hidrografia/curso-de-rio/medio
+https://datos.ign.es/kos/hidrografia/curso-de-rio/bajo"""@es ;
+                                      rdfs:label "tiene curso"@es .
+
+
+###  https://datos.ign.es/def/tipoDeItinerario
+<https://datos.ign.es/def/tipoDeItinerario> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://datos.ign.es/def/Carretera> ;
+                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                            rdfs:comment """Tramo perteneciente a la Red de Carreteras Europeas. Se representa mediante el esquema de conceptos: http://datos.ign.es/kos/transportes/tipo-itinerario y puede tomar alguno de los siguientes valores:
+http://datos.ign.es/kos/transportes/tipo-itinerario/no-interno-europeo
+http://datos.ign.es/kos/transportes/tipo-itinerario/itinerario-europeo"""@es ;
+                                            rdfs:label "tipo de itinerio"@es .
+
+
+###  https://datos.ign.es/def/tipoDeTrafico
+<https://datos.ign.es/def/tipoDeTrafico> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://datos.ign.es/def/FerrocarrilConvencional>
+                                                                     <https://datos.ign.es/def/InstalacionFerroviaria>
+                                                                   )
+                                                     ] ;
+                                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                         rdfs:comment """Tipo de tráfico, se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/tipo-de-trafico y puede tomar alguno de los siguientes valores:
+https://datos.ign.es/kos/transportes/tipo-de-trafico/mixto
+https://datos.ign.es/kos/transportes/tipo-de-trafico/viajeros
+https://datos.ign.es/kos/transportes/tipo-de-trafico/mercancias
+https://datos.ign.es/kos/transportes/tipo-de-trafico/desconocido"""@es ;
+                                         rdfs:label "tipo de tráfico"@es .
+
+
+###  https://datos.ign.es/def/tipoDeTramo
+<https://datos.ign.es/def/tipoDeTramo> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://datos.ign.es/def/Carretera> ;
+                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment """Tramo de vía que discurre por el interior de poblaciones o zonas de uso. Se representa mediante un esquema de conceptos https://datos.ign.es/kos/transportes/tipo-tramo y puede tomar uno de los siguientes valores:
+https://datos.ign.es/kos/transportes/tipo-tramo/interna
+https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
+                                       rdfs:label "tipo de tramo"@es .
+
+
+###  https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel
+<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <https://datos.ign.es/def/CurvaDeNivel> ;
+                                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                            rdfs:comment """Categoría asociada a cada tipología de curva de nivel. Se define en el esquema de conceptos https://datos.ign.es/kos/altimetria/categoria-curva-nivel y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra"""@es ;
+                                                            rdfs:label "categoría de Curva de Nivel"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://aims.fao.org/aos/geopolitical.owl#hasCode
+<http://aims.fao.org/aos/geopolitical.owl#hasCode> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:comment "Codificación oficial asociada."@es ;
+                                                   rdfs:isDefinedBy "http://aims.fao.org/aos/geopolitical.owl"^^xsd:string ;
+                                                   rdfs:label "código"@es .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
+                                   rdfs:comment "Fecha de inserción o modificación del objeto en el catálogo"@es ;
+                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                   rdfs:label "fecha de alta"@es .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                      rdfs:comment "Identificador único del objeto"@es ;
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                      rdfs:label "identificador"@es .
+
+
+###  http://purl.org/dc/terms/replaces
+<http://purl.org/dc/terms/replaces> rdf:type owl:DatatypeProperty ;
+                                    rdfs:comment "ID del elemento modificado"@es ;
+                                    rdfs:isDefinedBy <http://purl.org/dc/terms> ,
+                                                     "reemplaza"@es .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:comment "Nombre geográfico del objeto"@es ;
+                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                 rdfs:label "nombre"@es .
+
+
+###  http://www.geonames.org/ontology#population
+<http://www.geonames.org/ontology#population> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "Número total de habitantes del núcleo según el nomenclátor del INE para el año que aparezca en los metadatos."@es ;
+                                              rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
+                                              rdfs:label "población"@es .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "Altitud Elipsoidal"@es ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
+                                              rdfs:label "altitud"@es .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "Latitud geográfica en grados."@es ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
+                                              rdfs:label "latitud"@es .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "Longitud geográfica en grados."@es ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2003/01/geo/wgs84_pos#> ;
+                                               rdfs:label "longitud"@es .
+
+
+###  https://datos.ign.es/def/altitud
+<https://datos.ign.es/def/altitud> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://datos.ign.es/def/InfraestructuraAeroportuaria> ;
+                                   rdfs:range xsd:int ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Altitud expresada en metros"@es ;
+                                   rdfs:label "altitud"@es .
+
+
+###  https://datos.ign.es/def/altitudOrtometrica
+<https://datos.ign.es/def/altitudOrtometrica> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <https://datos.ign.es/def/EstacionPermanenteGPS>
+                                                                          <https://datos.ign.es/def/VerticeGeodesico>
+                                                                        )
+                                                          ] ;
+                                              rdfs:range xsd:float ;
+                                              <http://purl.org/dc/elements/1.1/source> <http://www.ign.es/web/ign/portal/ane-datos-geograficos/-/datos-geograficos/setTabGlosarioGeografico> ,
+                                                                                       "Glosario geográfico del Instituto Geográfico Nacional."@es ;
+                                              rdfs:comment "Altitud que resulta de tomar el geoide como superficie de referencia. Nota: La altitud ortométrica es distinta para puntos de una misma superficie de nivel, debido a la falta de paralelismo entre las superficies de nivel o superficies equipotenciales en el campo de la gravedad."@es ;
+                                              rdfs:label "altitud ortométrica"@es .
+
+
+###  https://datos.ign.es/def/codigoBIC
+<https://datos.ign.es/def/codigoBIC> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Se incluye el código de Bienes de Interés Cultural (BIC) que define el bien. Caso de no ser un Lugar de interés BIC, se rellenará con el texto: NO PROCEDE."@es ;
+                                     rdfs:label "código BIC"@es .
+
+
+###  https://datos.ign.es/def/codigoDeEstacion
+<https://datos.ign.es/def/codigoDeEstacion> rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                            rdfs:comment "Código de la estación(según ADIF)"@es ;
+                                            rdfs:label "código de estación"@es .
+
+
+###  https://datos.ign.es/def/codigoDeRio
+<https://datos.ign.es/def/codigoDeRio> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment "Codificación única para cada río de otros organismos."@es ;
+                                       rdfs:label "código de río"@es .
+
+
+###  https://datos.ign.es/def/codigoDeVia
+<https://datos.ign.es/def/codigoDeVia> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                       rdfs:comment "Código de la vía (según ADIF)."@es ;
+                                       rdfs:label "codigo de vía"@es .
+
+
+###  https://datos.ign.es/def/codigoEstacionGPS
+<https://datos.ign.es/def/codigoEstacionGPS> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                             rdfs:comment "Código de estación GPS"@es ;
+                                             rdfs:label "código estación GPS"@es .
+
+
+###  https://datos.ign.es/def/codigoIATA
+<https://datos.ign.es/def/codigoIATA> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:label "código IATA"@es .
+
+
+###  https://datos.ign.es/def/codigoICAO
+<https://datos.ign.es/def/codigoICAO> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:label "código ICAO"@es .
+
+
+###  https://datos.ign.es/def/codigoINE
+<https://datos.ign.es/def/codigoINE> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Codificación asignada por el Nomenclátor INE."@es ;
+                                     rdfs:label "código INE"@es .
+
+
+###  https://datos.ign.es/def/cota
+<https://datos.ign.es/def/cota> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain [ rdf:type owl:Class ;
+                                              owl:unionOf ( <https://datos.ign.es/def/CurvaDeNivel>
+                                                            <https://datos.ign.es/def/PuntoAcotado>
+                                                          )
+                                            ] ;
+                                rdfs:range xsd:int ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                rdfs:comment "Altitud expresada en metros"@es ,
+                                             "Cifra que representa la altitud de un punto con respecto a la superficie de nivel de referencia. (Glosario cartográfico del Instituto Nacional Geográfico)"@es ;
+                                rdfs:label "cota"@es .
+
+
+###  https://datos.ign.es/def/huso
+<https://datos.ign.es/def/huso> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain [ rdf:type owl:Class ;
+                                              owl:unionOf ( <https://datos.ign.es/def/EstacionPermanenteGPS>
+                                                            <https://datos.ign.es/def/VerticeGeodesico>
+                                                          )
+                                            ] ;
+                                rdfs:range xsd:int ;
+                                <http://purl.org/dc/elements/1.1/source> <http://www.ign.es/web/ign/portal/ane-datos-geograficos/-/datos-geograficos/setTabGlosarioCartografico> ,
+                                                                         "Glosario cartográfico del Instituto Geográfico Nacional."@es ;
+                                rdfs:comment "En la proyección UTM, un huso es el área situada entre dos meridianos separados por una longitud de 6º sexagesimales lo que da lugar a un total de 60 husos para toda la Tierra. Nota: España está comprendida en tres husos distintos: 28 para las Islas Canarias, 29, 30 y 31 para la Península y Baleares."@es ;
+                                rdfs:label "huso"@es .
+
+
+###  https://datos.ign.es/def/numero
+<https://datos.ign.es/def/numero> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <https://datos.ign.es/def/VerticeGeodesico> ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "Número de vértice geodésico"@es ;
+                                  rdfs:label "numero"@es .
+
+
+###  https://datos.ign.es/def/unloCode
+<https://datos.ign.es/def/unloCode> rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                    rdfs:comment "Código de localización de Naciones Unidas (United Nations / Location CODE – UN/LOCODE)"@es ;
+                                    rdfs:label "unlo code"@es .
+
+
+###  https://datos.ign.es/def/xETRS89
+<https://datos.ign.es/def/xETRS89> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://datos.ign.es/def/EstacionPermanenteGPS>
+                                                               <https://datos.ign.es/def/VerticeGeodesico>
+                                                             )
+                                               ] ;
+                                   rdfs:range xsd:float ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Coordenada X en metros (ETRS89)"@es ;
+                                   rdfs:label "xETRS89"@es .
+
+
+###  https://datos.ign.es/def/yETRS89
+<https://datos.ign.es/def/yETRS89> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://datos.ign.es/def/EstacionPermanenteGPS>
+                                                               <https://datos.ign.es/def/VerticeGeodesico>
+                                                             )
+                                               ] ;
+                                   rdfs:range xsd:float ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Coordenada Y en metros (ETRS89)"@es ;
+                                   rdfs:label "yETRS89"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                                                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                        rdfs:label "Ciudad Autónoma"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                                                           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                           rdfs:label "Comunidad Autónoma"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                      owl:allValuesFrom xsd:string
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://datos.ign.es/def/codigoINE> ;
+                                                                                                      owl:allValuesFrom xsd:string
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onDataRange xsd:string
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://datos.ign.es/def/codigoINE> ;
+                                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onDataRange xsd:string
+                                                                                                    ] ;
+                                                                                    rdfs:comment "Las edificaciones o viviendas de una entidad singular de población que no pueden ser incluidas en el concepto de núcleo de población se consideran pertenecientes al diseminado, entendiendo así por diseminado aquellas casas aisladas que no están recogidas como núcleo de población por el INE."@es ;
+                                                                                    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                    rdfs:label "Diseminado"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                                              rdfs:comment "Masa de tierra firme, más o menos extensa, rodeada de agua por todas partes."@es ;
+                                                                              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                              rdfs:label "Isla"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                           owl:allValuesFrom xsd:string
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.geonames.org/ontology#population> ;
+                                                                                                           owl:allValuesFrom xsd:integer
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://datos.ign.es/def/codigoINE> ;
+                                                                                                           owl:allValuesFrom xsd:string
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onDataRange xsd:string
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.geonames.org/ontology#population> ;
+                                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onDataRange xsd:integer
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://datos.ign.es/def/codigoINE> ;
+                                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onDataRange xsd:string
+                                                                                                         ] ;
+                                                                                         rdfs:comment """Se consideran núcleos de población (superficiales y puntuales) de BTN100 aquellas entidades que el INE considera núcleos de población en sus datos oficiales.
+Según INE: Se considera Núcleo de población a un conjunto de al menos diez edificaciones, que están formando calles, plazas y otras vías urbanas. Por excepción el número de edificaciones podrá ser inferior a 10, siempre que la población de derecho supere los 50 habitantes"""@es ;
+                                                                                         rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                         rdfs:label "Núcleo de Población"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Pais> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                                              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                              rdfs:label "País"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Provincia"@es .
+
+
+###  https://datos.ign.es/def/AccidenteMaritimoPuntual
+<https://datos.ign.es/def/AccidenteMaritimoPuntual> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                      owl:allValuesFrom xsd:string
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                      owl:onDataRange xsd:string
+                                                                    ] ;
+                                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                    rdfs:comment "Cabos, calas, peñones, playas y puntas."^^xsd:string ;
+                                                    rdfs:label "Accidente Marítimo Puntual"@es .
+
+
+###  https://datos.ign.es/def/Aerodronomo
+<https://datos.ign.es/def/Aerodronomo> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://datos.ign.es/def/InfraestructuraAeroportuaria> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                       rdfs:comment "Terreno llano provisto de pistas y demás instalaciones necesarias para el despegue y aterrizaje de aviones, generalmente de carácter militar y más reducido que el aeropuerto."@es ;
+                                       rdfs:label "Aeródronomo"@es .
+
+
+###  https://datos.ign.es/def/Aeropuerto
+<https://datos.ign.es/def/Aeropuerto> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/InfraestructuraAeroportuaria> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                      rdfs:comment "Área destinada al aterrizaje y despegue de aviones dotada de instalaciones para el control del tráfico aéreo y de servicios a los pasajeros."@es ;
+                                      rdfs:label "Aeropuerto"@es .
+
+
+###  https://datos.ign.es/def/Alberca
+<https://datos.ign.es/def/Alberca> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Depósito artificial de agua que se utiliza para riego."@es ;
+                                   rdfs:label "Alberca"@es .
+
+
+###  https://datos.ign.es/def/Albergue
+<https://datos.ign.es/def/Albergue> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                    rdfs:comment "Lugar que renta alojamiento, particularmente alentando las actividades al aire libre y el intercambio cultural entre jóvenes de distintos países."@es ;
+                                    rdfs:label "Albergue"@es .
+
+
+###  https://datos.ign.es/def/Albufera
+<https://datos.ign.es/def/Albufera> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/Humedal> ;
+                                    rdfs:comment "Laguna litoral, en costa baja, de agua salina o ligeramente salobre, separada del mar por una lengua o cordón de arenas (RAE)."@es ;
+                                    rdfs:label "Albufera"@es .
+
+
+###  https://datos.ign.es/def/AlojamientoYOcio
+<https://datos.ign.es/def/AlojamientoYOcio> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                              owl:allValuesFrom xsd:string
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                              owl:onDataRange xsd:string
+                                                            ] ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Edificación destinada a alojamiento o a actividades de ocio."@es ;
+                                            rdfs:label "Alojamiento y Ocio"@es .
+
+
+###  https://datos.ign.es/def/Apartadero
+<https://datos.ign.es/def/Apartadero> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/InstalacionFerroviaria> ;
+                                      <http://purl.org/dc/elements/1.1/source> <http://www.adif.es/es_ES/conoceradif/oferta_de_empleo_publico/doc/08_fc_ConceptosFerroviarios.pdf> ,
+                                                                               "Administrador de Infraestructuras Ferroviarias (ADIF)."@es ;
+                                      rdfs:comment "Son estaciones de poco tráfico de viajeros y cuyo objetivo fundamental es la regulación del tráfico ferroviario, posibilitando la realización de cruces de trenes, adelantamientos, etc."@es ;
+                                      rdfs:label "Apartadero"@es .
+
+
+###  https://datos.ign.es/def/Apeadero
+<https://datos.ign.es/def/Apeadero> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/InstalacionFerroviaria> ;
+                                    <http://purl.org/dc/elements/1.1/source> <http://www.adif.es/es_ES/conoceradif/oferta_de_empleo_publico/doc/08_fc_ConceptosFerroviarios.pdf> ,
+                                                                             "Administrador de Infraestructuras Ferroviarias (ADIF)."@es ,
+                                                                             "En los ferrocarriles, sitio de la vía preparado para el servicio público, pero sin apartadero ni los demás accesorios de una estación."@es ;
+                                    rdfs:label "Apeadero"@es .
+
+
+###  https://datos.ign.es/def/AreaDeServicio
+<https://datos.ign.es/def/AreaDeServicio> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "En una autopista o autovía, lugar habilitado para el estacionamiento de los vehículos, en el que suele haber una gasolinera, un restaurante y otros servicios."@es ;
+                                          rdfs:label "Area de Servicio"@es .
+
+
+###  https://datos.ign.es/def/Autopista
+<https://datos.ign.es/def/Autopista> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/Carretera> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Vía de comunicación, dedicada al tráfico rodado, clasificada como tal por el Ministerio de Fomento, y caracterizada por no tener acceso a las mismas las propiedades colindantes; no cruzar a nivel ninguna otra vía de comunicación y constar de distintas calzadas para cada sentido, separadas por una mediana."@es ;
+                                     rdfs:label "Autopista"@es .
+
+
+###  https://datos.ign.es/def/Autovia
+<https://datos.ign.es/def/Autovia> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/Carretera> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Carretera con calzadas separadas para los dos sentidos de la circulación, cuyas entradas y salidas no se someten a las exigencias de seguridad de las autopistas."@es ;
+                                   rdfs:label "Autovia"@es .
+
+
+###  https://datos.ign.es/def/Balneario
+<https://datos.ign.es/def/Balneario> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Lugar dedicado al reposo y la curación a través de la utilización de las aguas, sobre todo termales o minerales, con un edificio para el hospedaje."@es ;
+                                     rdfs:label "Balneario"@es .
+
+
+###  https://datos.ign.es/def/Balsa
+<https://datos.ign.es/def/Balsa> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/Alberca> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Hueco del terreno que se llena de agua, natural o artificialmente. (RAE)"@es ;
+                                 rdfs:label "Balsa"@es .
+
+
+###  https://datos.ign.es/def/Cabo
+<https://datos.ign.es/def/Cabo> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://datos.ign.es/def/AccidenteMaritimoPuntual> ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                rdfs:comment "Lengua de tierra que penetra en el mar. (RAE)"@es ;
+                                rdfs:label "Cabo"@es .
+
+
+###  https://datos.ign.es/def/Cala
+<https://datos.ign.es/def/Cala> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://datos.ign.es/def/AccidenteMaritimoPuntual> ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                rdfs:comment "Ensenada pequeña. (RAE)"@es ;
+                                rdfs:label "Cala"@es .
+
+
+###  https://datos.ign.es/def/Calle
+<https://datos.ign.es/def/Calle> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Vía que se encuentra localizada dentro de un núcleo de población o Diseminado superficial, y que ayuda a identificar la estructura de  manzanas de dicho núcleo/diseminado."@es ;
+                                 rdfs:label "Calle"@es .
+
+
+###  https://datos.ign.es/def/Camping
+<https://datos.ign.es/def/Camping> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Lugar al aire libre, especialmente dispuesto para albergar viajeros, turistas, personas en vacaciones, etc."@es ;
+                                   rdfs:label "Camping"@es .
+
+
+###  https://datos.ign.es/def/CanalMayor
+<https://datos.ign.es/def/CanalMayor> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/CauceArtificial> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Canal de mayor importancia."@es ;
+                                      rdfs:label "Canal Mayor"@es .
+
+
+###  https://datos.ign.es/def/CanalMenor
+<https://datos.ign.es/def/CanalMenor> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/CauceArtificial> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Canal de menor importancia (Acequias y drenajes)."@es ;
+                                      rdfs:label "Canal Menor"@es .
+
+
+###  https://datos.ign.es/def/CanalTrasvase
+<https://datos.ign.es/def/CanalTrasvase> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/CauceArtificial> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                         rdfs:comment "Trasvase o aporte fluvial entre diferentes objetos hidrográficos."@es ;
+                                         rdfs:label "Canal Trasvase"@es .
+
+
+###  https://datos.ign.es/def/Cantera
+<https://datos.ign.es/def/Cantera> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ExplotacionMinera> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Sitio de donde se saca piedra, greda u otra sustancia análoga para obras varias. (RAE)"@es ;
+                                   rdfs:label "Cantera"@es .
+
+
+###  https://datos.ign.es/def/Canyo
+<https://datos.ign.es/def/Canyo> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/Humedal> ;
+                                 rdfs:comment "Curso de agua de caudal irregular y lento, sin ribera arenosa, por el que desaguan los ríos y lagunas de las regiones bajas. (RAE)"@es ;
+                                 rdfs:label "Caño"@es .
+
+
+###  https://datos.ign.es/def/Cargadero
+<https://datos.ign.es/def/Cargadero> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/InstalacionFerroviaria> ;
+                                     <http://purl.org/dc/elements/1.1/source> <http://www.adif.es/es_ES/conoceradif/oferta_de_empleo_publico/doc/08_fc_ConceptosFerroviarios.pdf> ,
+                                                                              "Administrador de Infraestructuras Ferroviarias (ADIF)"@es ;
+                                     rdfs:comment "Instalación ferroviaria que permite el acceso de mercancías desde los trenes a los barcos. Se distingue de una estación en que no es parte de la gestión de la circulación, ni tiene que disponer de desvíos y señales."@es ;
+                                     rdfs:label "Cargadero"@es .
+
+
+###  https://datos.ign.es/def/Carretera
+<https://datos.ign.es/def/Carretera> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                       owl:allValuesFrom xsd:nonPositiveInteger
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onDataRange xsd:string
+                                                     ] ;
+                                     rdfs:comment "Camino público, ancho y espacioso, pavimentado y dispuesto para el tránsito de vehículos. (RAE)"@es ;
+                                     rdfs:label "Carretera"@es .
+
+
+###  https://datos.ign.es/def/CarreteraAutonomica
+<https://datos.ign.es/def/CarreteraAutonomica> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/Carretera> ;
+                                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                               rdfs:comment "Tramo de carretera convencional de competencia autonómica o de cualquier otra administración inferior a ésta."@es ;
+                                               rdfs:label "Carretera autonómica"@es .
+
+
+###  https://datos.ign.es/def/CarreteraNacional
+<https://datos.ign.es/def/CarreteraNacional> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/Carretera> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Vía de comunicación dedicada al tráfico rodado, cuya competencia corresponde a la Administración Central del Estado, clasificada como carretera de primer orden por el Ministerio de Fomento (Red de Interés General del Estado)."@es ;
+                                             rdfs:label "Carretera nacional"@es .
+
+
+###  https://datos.ign.es/def/Castillo
+<https://datos.ign.es/def/Castillo> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                    rdfs:comment "Lugar fuerte, cercado de murallas, baluartes, fosos y otras fortificaciones."@es ;
+                                    rdfs:label "Castillo"@es .
+
+
+###  https://datos.ign.es/def/CauceArtificial
+<https://datos.ign.es/def/CauceArtificial> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                             owl:allValuesFrom xsd:string
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onDataRange xsd:string
+                                                           ] ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment "Canalización artificial diseñada para transvasar agua."@es ;
+                                           rdfs:label "Cauce Artificial"@es .
+
+
+###  https://datos.ign.es/def/Cementerio
+<https://datos.ign.es/def/Cementerio> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ,
+                                                      <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Lugar, generalmente cercado, destinado a enterrar los restos mortales o cadáveres de los difuntos."@es ;
+                                      rdfs:label "Comentario"@es .
+
+
+###  https://datos.ign.es/def/CentralCicloCombinado
+<https://datos.ign.es/def/CentralCicloCombinado> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                                 rdfs:label "Central de Ciclo Combinado"@es .
+
+
+###  https://datos.ign.es/def/CentralElectrica
+<https://datos.ign.es/def/CentralElectrica> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Conjunto de instalaciones utilizadas directa e indirectamente para la producción de energía eléctrica."@es ;
+                                            rdfs:label "Central Eléctrica"@es .
+
+
+###  https://datos.ign.es/def/CentralEolica
+<https://datos.ign.es/def/CentralEolica> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                         rdfs:label "Central Eólica"@es .
+
+
+###  https://datos.ign.es/def/CentralHidraulica
+<https://datos.ign.es/def/CentralHidraulica> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                             rdfs:label "Central Hidráulica"@es .
+
+
+###  https://datos.ign.es/def/CentralNuclear
+<https://datos.ign.es/def/CentralNuclear> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                          rdfs:label "Central Nuclear"@es .
+
+
+###  https://datos.ign.es/def/CentralSolar
+<https://datos.ign.es/def/CentralSolar> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                        rdfs:label "Central Solar"@es .
+
+
+###  https://datos.ign.es/def/CentralTermica
+<https://datos.ign.es/def/CentralTermica> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/CentralElectrica> ;
+                                          rdfs:label "Central Térmica"@es .
+
+
+###  https://datos.ign.es/def/Cerro
+<https://datos.ign.es/def/Cerro> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/PuntoAcotado> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                 rdfs:comment "Elevación de tierra aislada y de menor altura que el monte o la montaña."@es ;
+                                 rdfs:label "Cerro"@es .
+
+
+###  https://datos.ign.es/def/Collado
+<https://datos.ign.es/def/Collado> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/PuntoAcotado> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                   rdfs:comment "Paso o depresión suave por donde se puede atravesar con facilidad de un lado a otro una montaña o sierra."@es ;
+                                   rdfs:label "Collado"@es .
+
+
+###  https://datos.ign.es/def/ComunidadJurisdiccional
+<https://datos.ign.es/def/ComunidadJurisdiccional> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/UnidadAdministrativa> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                   rdfs:comment "Límite de comunidad jurisdiccional"@es ;
+                                                   rdfs:label "Comunidad Jurisdiccional"@es .
+
+
+###  https://datos.ign.es/def/ConduccionDeCombustible
+<https://datos.ign.es/def/ConduccionDeCombustible> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                   rdfs:comment "Tubería e instalaciones conexas utilizadas para el transporte de combustibles."@es ;
+                                                   rdfs:label "Conducción de Combustible"@es .
+
+
+###  https://datos.ign.es/def/ConjuntoHistoricoArtistico
+<https://datos.ign.es/def/ConjuntoHistoricoArtistico> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                      rdfs:comment "Es la agrupación de inmuebles que forman una unidad de asentamiento, continua o dispersa, condicionada por una estructura física representativa de la evolución de una comunidad humana por ser testimonio de su cultura o constituir un valor de uso y disfrute para la colectividad."@es ;
+                                                      rdfs:label "Conjunto Histórico Artístico"@es .
+
+
+###  https://datos.ign.es/def/CotaMunicipal
+<https://datos.ign.es/def/CotaMunicipal> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/PuntoAcotado> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                         rdfs:comment "Cota Municipal"@es ;
+                                         rdfs:label "Cota Municipal"@es .
+
+
+###  https://datos.ign.es/def/Cueva
+<https://datos.ign.es/def/Cueva> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Cavidad natural del terreno causada por algún tipo de erosión de corrientes de agua, hielo o lava, o una combinación de varios de estos factores."@es ;
+                                 rdfs:label "Cueva"@es .
+
+
+###  https://datos.ign.es/def/CurvaDeNivel
+<https://datos.ign.es/def/CurvaDeNivel> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                        rdfs:comment "Se representan como curvas de nivel aquellas líneas que tienen la misma altitud sobre la superficie de referencia, siendo esta altitud un múltiplo de 40 o un múltiplo de 100 (para líneas interpoladas)."@es ;
+                                        rdfs:label "Curva de Nivel"@es .
+
+
+###  https://datos.ign.es/def/CurvaDeNivelAltimetrica
+<https://datos.ign.es/def/CurvaDeNivelAltimetrica> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/CurvaDeNivel> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                   rdfs:comment "Curva de nivel en superficie."@es ;
+                                                   rdfs:label "Curva de Nivel Altimétrica"@es .
+
+
+###  https://datos.ign.es/def/CurvaDeNivelBatimetrica
+<https://datos.ign.es/def/CurvaDeNivelBatimetrica> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/CurvaDeNivel> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                   rdfs:comment "Curva de nivel submarina."@es ;
+                                                   rdfs:label "Curva de Nivel Batimétrica"@es .
+
+
+###  https://datos.ign.es/def/DepositoDeAgua
+<https://datos.ign.es/def/DepositoDeAgua> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Construcción creada con fines de abastecimiento de agua."@es ;
+                                          rdfs:label "Depósito de Agua"@es .
+
+
+###  https://datos.ign.es/def/DepositoDeCombustible
+<https://datos.ign.es/def/DepositoDeCombustible> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                 rdfs:comment "Contenedor seguro destinado al almacenamiento de líquidos o gases inflamables para su posterior distribución en algunos casos por medio de oleoductos o gaseoductos."@es ;
+                                                 rdfs:label "Depósito de Combustible"@es .
+
+
+###  https://datos.ign.es/def/DiseminadoPuntual
+<https://datos.ign.es/def/DiseminadoPuntual> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                             rdfs:comment """Existen dos tipos de elementos que se engloban en el concepto de Diseminado puntual:
+• Edificación aislada: caseríos, cortijos, etc. en los que o bien existe una única edificación, o siendo un pequeño conjunto de edificaciones (dos, tres o cuatro…) están dispuestas de tal forma que entre ellas no existe una distancia superior a 100m sobre la imagen.
+• Edificación dispersa: es el caso de los diseminados comúnmente conocidos. Esto es, aquel conjunto considerable de edificaciones (cinco o más) que sin conformar un núcleo de población presentan características propias de estas (habitabilidad, comunicaciones, etc.). En este caso el objeto se representará por su centroide."""@es ;
+                                             rdfs:label "Diseminado Puntual"@es .
+
+
+###  https://datos.ign.es/def/DiseminadoSuperficial
+<https://datos.ign.es/def/DiseminadoSuperficial> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> ;
+                                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                 rdfs:comment "Agrupación de edificaciones que se extienden por una superficie considerable con estructura similar a un núcleo pero que no aparecen en el INE clasificado como tal. Es el caso de urbanizaciones, zonas residenciales u otras estructuras de población similar."@es ;
+                                                 rdfs:label "Diseminado Superficial"@es .
+
+
+###  https://datos.ign.es/def/EdificioReligioso
+<https://datos.ign.es/def/EdificioReligioso> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Templo destinado al culto religioso."@es ;
+                                             rdfs:label "Edificio Religioso"@es .
+
+
+###  https://datos.ign.es/def/EdificioSingular
+<https://datos.ign.es/def/EdificioSingular> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Comprende los edificios que deberán ser conservados íntegramente por su carácter singular y monumental, y por razones histórico-artísticas, preservando."@es ;
+                                            rdfs:label "Edificio Singular"@es .
+
+
+###  https://datos.ign.es/def/Embalse
+<https://datos.ign.es/def/Embalse> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                     owl:allValuesFrom xsd:string
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onDataRange xsd:string
+                                                   ] ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Depósito de agua construido artificialmente para almacenar las aguas de un río/arroyo, con fines de riego, abastecimiento de poblaciones, producción de energía eléctrica, etc."@es ;
+                                   rdfs:label "Embalse"@es .
+
+
+###  https://datos.ign.es/def/Enlace
+<https://datos.ign.es/def/Enlace> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:allValuesFrom xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ;
+                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                  rdfs:comment "Tramo que une dos vías de nombre distinto y permite el acceso de una a otra."@es ;
+                                  rdfs:label "Enlace"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtual
+<https://datos.ign.es/def/EntidadVirtual> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                            owl:allValuesFrom xsd:string
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange xsd:string
+                                                          ] ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ,
+                                                                                   "Especificaciones del Producto de Datos BTN100 Versión 1.0"@es ;
+                                          rdfs:comment "Son aquellos elementos que no representan la geometría de los objetos del mundo real a escala sino que son simplemente una línea directriz necesaria para colocar sus rótulos o etiquetas. La captura de estos elementos se realiza visualizando en ráster las mencionadas series. Se digitaliza un elemento lineal a lo largo de la base del texto."@es ;
+                                          rdfs:label "Entidad Virtual"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo
+<https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtual> ;
+                                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                           rdfs:comment "Línea donde irá colocado el texto del accidente marítimo que representa, entendiendo como accidente marítimo las bahías, costas, deltas, ensenadas, estrechos, golfos y radas."@es ;
+                                                           rdfs:label "Entidad Virtual Accidente Marítimo"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualAccidenteOrografico
+<https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtual> ;
+                                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                             rdfs:comment "Línea sobre la que iría colocado el texto del accidente orográfico que representa."@es ;
+                                                             rdfs:label "Entidad Virtual Accidente Orográfico"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualBahia
+<https://datos.ign.es/def/EntidadVirtualBahia> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                               rdfs:comment "Entrada de mar en la costa, de extensión considerable, que puede servir de abrigo a las embarcaciones. (RAE)"@es ;
+                                               rdfs:label "Entidad Virtual Bahía"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualCordillera
+<https://datos.ign.es/def/EntidadVirtualCordillera> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                    rdfs:comment "Serie de montañas enlazadas entre sí. (RAE)"@es ;
+                                                    rdfs:label "Entidad Virtual Cordillera"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualCosta
+<https://datos.ign.es/def/EntidadVirtualCosta> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                               rdfs:comment "Orilla del mar, de un río, de un lago, etc., y tierra que está cerca de ella. (RAE)"@es ;
+                                               rdfs:label "Entidad Virtual Costa"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualDelta
+<https://datos.ign.es/def/EntidadVirtualDelta> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                               rdfs:comment "Terreno comprendido entre los brazos de un río en su desembocadura. (RAE)"@es ;
+                                               rdfs:label "Entidad Virtual Delta"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualEnsenada
+<https://datos.ign.es/def/EntidadVirtualEnsenada> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                  rdfs:comment "Parte de mar que entra en la tierra. (RAE)"@es ;
+                                                  rdfs:label "Entidad Virtual Ensenada"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualEstrecho
+<https://datos.ign.es/def/EntidadVirtualEstrecho> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                  rdfs:comment "Paso angosto comprendido entre dos tierras y por el cual se comunica un mar con otro (RAE)"@es ;
+                                                  rdfs:label "Entidad Virtual Estrecho"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualGolfo
+<https://datos.ign.es/def/EntidadVirtualGolfo> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                               rdfs:comment "Gran porción de mar que se interna en la tierra entre dos cabos. (RAE)"@es ;
+                                               rdfs:label "Entidad Virtual Golfo"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualMar
+<https://datos.ign.es/def/EntidadVirtualMar> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualOceanoMar> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                             rdfs:comment "Masa de agua salada que cubre la mayor parte de la superficie de la Tierra, en este caso se refiere a cada una de las partes en que se subdivide (RAE)"@es ;
+                                             rdfs:label "Entidad Virtual Mar"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualMontana
+<https://datos.ign.es/def/EntidadVirtualMontana> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                 rdfs:comment "Gran elevación natural del terreno. (RAE)"@es ;
+                                                 rdfs:label "Entidad Virtual Montaña"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualOceano
+<https://datos.ign.es/def/EntidadVirtualOceano> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualOceanoMar> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                rdfs:comment "Grande y dilatado mar que cubre la mayor parte de la superficie terrestre. (RAE)"@es ;
+                                                rdfs:label "Entidad Virtual Océano"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualOceanoMar
+<https://datos.ign.es/def/EntidadVirtualOceanoMar> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtual> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                   rdfs:comment "Línea donde irá colocado el texto del océano o mar que representa."@es ;
+                                                   rdfs:label "Entidad Virtual Océano y Mar"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualParaje
+<https://datos.ign.es/def/EntidadVirtualParaje> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                rdfs:comment "Lugar, sitio (RAE) con interés."@es ;
+                                                rdfs:label "Entidad Virtual Paraje"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualRada
+<https://datos.ign.es/def/EntidadVirtualRada> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteMaritimo> ;
+                                              <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                              rdfs:comment "Bahía, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)"@es ;
+                                              rdfs:label "Entidad Virtual Rada"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualRegion
+<https://datos.ign.es/def/EntidadVirtualRegion> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                rdfs:comment "Delimitación que contiene conjunto de municipios oficial (comarca) o histórica (región)"@es ;
+                                                rdfs:label "Entidad Virtual Región/Comarca"@es .
+
+
+###  https://datos.ign.es/def/EntidadVirtualSierra
+<https://datos.ign.es/def/EntidadVirtualSierra> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                rdfs:comment "Conjunto de montañas o Parte de una cordillera. (RAE)"@es ;
+                                                rdfs:label "Entidad Virtual Sierra"@es .
+
+
+###  https://datos.ign.es/def/Esclusa
+<https://datos.ign.es/def/Esclusa> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Compartimento, con puertas de entrada y salida, que se construye en un canal de navegación para que los barcos puedan pasar de un tramo a otro de diferente nivel, para lo cual se llena de agua o se vacía el espacio comprendido entre dichas puertas."@es ;
+                                   rdfs:label "Esclusa"@es .
+
+
+###  https://datos.ign.es/def/EstacionDeFerrocarril
+<https://datos.ign.es/def/EstacionDeFerrocarril> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://datos.ign.es/def/InstalacionFerroviaria> ;
+                                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                 rdfs:comment "Lugar conectado a una vía de FFCC, donde alguno de los trenes que circula por dicha vía tiene establecida una parada, ya sea para descarga de mercancías o de viajeros."@es ;
+                                                 rdfs:label "Estación de Ferrocarril"@es .
+
+
+###  https://datos.ign.es/def/EstacionDeRadio
+<https://datos.ign.es/def/EstacionDeRadio> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/EstacionDeTelecomunicaciones> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:label "Estación de Radio"@es .
+
+
+###  https://datos.ign.es/def/EstacionDeSuministro
+<https://datos.ign.es/def/EstacionDeSuministro> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/InstalacionFerroviaria> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Administrador de Infraestructuras Ferroviarias (ADIF)."@es ;
+                                                rdfs:comment "Son estaciones que aparte de regular el tráfico, tienen como misión principal la prestación de servicios de mercancías. Disponen de todas las instalaciones necesarias para la recepción, clasificación y formación, y expedición de los trenes de mercancías convencionales, que circulan entre ellas y/o a otros destinos nacionales e internacionales."@es ;
+                                                rdfs:label "Estación de Suministro"@es .
+
+
+###  https://datos.ign.es/def/EstacionDeTelecomunicaciones
+<https://datos.ign.es/def/EstacionDeTelecomunicaciones> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                        rdfs:comment "Centro que consta de todas las instalaciones necesarias para transmitir y recibir señales que aseguren un servicio de radiotelecomunicación determinado."@es ;
+                                                        rdfs:label "Estación de Telecomunicaciones"@es .
+
+
+###  https://datos.ign.es/def/EstacionDeTelevision
+<https://datos.ign.es/def/EstacionDeTelevision> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/EstacionDeTelecomunicaciones> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:label "Estación de Televisión"@es .
+
+
+###  https://datos.ign.es/def/EstacionDepuradora
+<https://datos.ign.es/def/EstacionDepuradora> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                              <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                              rdfs:comment "Construcción creada con fines de depurar o limpiar las aguas."@es ;
+                                              rdfs:label "Estación Depuradora"@es .
+
+
+###  https://datos.ign.es/def/EstacionInvernal
+<https://datos.ign.es/def/EstacionInvernal> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Área preparada para el disfrute de la nieve. Dispone de pistas de esquí balizadas preparadas por máquinas especiales así como pistas de fondo, hoteles para el descanso de los usuarios, remontes para el transporte de los esquiadores a zonas altas y diferentes servicios que pueden ir desde zona para usar trineos hasta pistas de patinaje."@es ;
+                                            rdfs:label "Estación Invernal"@es .
+
+
+###  https://datos.ign.es/def/EstacionPermanenteGPS
+<https://datos.ign.es/def/EstacionPermanenteGPS> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                   owl:allValuesFrom xsd:string
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange xsd:string
+                                                                 ] ;
+                                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                 rdfs:comment "Vértices de la Red de Estaciones Permanentes de GPS, de la que se pueden obtener valores de observación para un día concreto y una hora determinada."@es ;
+                                                 rdfs:label "Estación Permanente GPS"@es .
+
+
+###  https://datos.ign.es/def/EstacionTelefonica
+<https://datos.ign.es/def/EstacionTelefonica> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://datos.ign.es/def/EstacionDeTelecomunicaciones> ;
+                                              <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                              rdfs:label "Estación Telefónica"@es .
+
+
+###  https://datos.ign.es/def/Estanque
+<https://datos.ign.es/def/Estanque> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/Alberca> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                    rdfs:comment "Balsa construida para recoger el agua, con fines utilitarios, como proveer al riego, criar peces, etc., o meramente ornamentales. (RAE)"@es ;
+                                    rdfs:label "Estanque"@es .
+
+
+###  https://datos.ign.es/def/ExplotacionMinera
+<https://datos.ign.es/def/ExplotacionMinera> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                               owl:allValuesFrom xsd:string
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:string
+                                                             ] ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Terreno dedicado a la explotación de minerales o piedra."@es ;
+                                             rdfs:label "Explotación minera"@es .
+
+
+###  https://datos.ign.es/def/Faro
+<https://datos.ign.es/def/Faro> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                  owl:allValuesFrom xsd:string
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onDataRange xsd:string
+                                                ] ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                rdfs:comment "Torre alta en las costas, con luz en su parte superior, para que durante la noche sirva de señal a los navegantes."@es ;
+                                rdfs:label "Faro"@es .
+
+
+###  https://datos.ign.es/def/Ferrocarril
+<https://datos.ign.es/def/Ferrocarril> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                         owl:allValuesFrom xsd:string
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://datos.ign.es/def/codigoDeVia> ;
+                                                         owl:allValuesFrom xsd:string
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onDataRange xsd:string
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://datos.ign.es/def/codigoDeVia> ;
+                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onDataRange xsd:string
+                                                       ] ;
+                                       <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                       rdfs:comment "Camino con dos carriles de hierro paralelos, sobre los cuales ruedan los trenes."@es ;
+                                       rdfs:label "Ferrocarril"@es .
+
+
+###  https://datos.ign.es/def/FerrocarrilAltaVelocidad
+<https://datos.ign.es/def/FerrocarrilAltaVelocidad> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://datos.ign.es/def/Ferrocarril> ;
+                                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                    rdfs:comment "Tramo de vía por la que circula el Tren de alta velocidad de España (AVE)."@es ;
+                                                    rdfs:label "Ferrocarril de Alta Velocidad"@es .
+
+
+###  https://datos.ign.es/def/FerrocarrilConvencional
+<https://datos.ign.es/def/FerrocarrilConvencional> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/Ferrocarril> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                   rdfs:comment "Vía por la que circulan los trenes de RENFE que no pertenecen a la red AVE."@es ;
+                                                   rdfs:label "Ferrocarril Convencional"@es .
+
+
+###  https://datos.ign.es/def/Gasoducto
+<https://datos.ign.es/def/Gasoducto> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/ConduccionDeCombustible> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia de la Lengua."@es ;
+                                     rdfs:comment "Tubería de grueso calibre y gran longitud para conducir a distancia gas combustible, procedente por lo general de emanaciones naturales."@es ;
+                                     rdfs:label "Gasoducto"@es .
+
+
+###  https://datos.ign.es/def/Gasolinera
+<https://datos.ign.es/def/Gasolinera> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Punto de venta de combustible para vehículos de motor."@es ;
+                                      rdfs:label "Gasolinera"@es .
+
+
+###  https://datos.ign.es/def/Helipuerto
+<https://datos.ign.es/def/Helipuerto> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/InfraestructuraAeroportuaria> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                      rdfs:comment "Pista destinada al aterrizaje y despegue de helicópteros."@es ;
+                                      rdfs:label "Helipuerto"@es .
+
+
+###  https://datos.ign.es/def/Hospital
+<https://datos.ign.es/def/Hospital> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                    rdfs:comment "Establecimiento sanitario donde se atiende a los enfermos para proporcionar el diagnóstico y tratamiento que necesitan."@es ;
+                                    rdfs:label "Hospital"@es .
+
+
+###  https://datos.ign.es/def/Humedal
+<https://datos.ign.es/def/Humedal> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                     owl:allValuesFrom xsd:string
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onDataRange xsd:string
+                                                   ] ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Zona de tierra cuya superficie se inunda de forma intermitente o permanente."@es ;
+                                   rdfs:label "Humedal"@es .
+
+
+###  https://datos.ign.es/def/InfraestructuraAeroportuaria
+<https://datos.ign.es/def/InfraestructuraAeroportuaria> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                          owl:allValuesFrom xsd:string
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:string
+                                                                        ] ;
+                                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                        rdfs:comment "Área o infraestructura destinadas al aterrizaje y despegue de aviones y otros aparatos de navegación aérea."@es ;
+                                                        rdfs:label "Infraestructura Aeroportuaria"@es .
+
+
+###  https://datos.ign.es/def/InstalacionDeportiva
+<https://datos.ign.es/def/InstalacionDeportiva> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment "Recinto o construcción provista de los medios necesarios para el aprendizaje, la práctica y la competición de uno o más deportes."@es ;
+                                                rdfs:label "Instalación deportiva"@es .
+
+
+###  https://datos.ign.es/def/InstalacionFerroviaria
+<https://datos.ign.es/def/InstalacionFerroviaria> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                    owl:allValuesFrom xsd:string
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://datos.ign.es/def/codigoDeEstacion> ;
+                                                                    owl:allValuesFrom xsd:string
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onDataRange xsd:string
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://datos.ign.es/def/codigoDeEstacion> ;
+                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onDataRange xsd:string
+                                                                  ] ;
+                                                  <http://purl.org/dc/elements/1.1/source> <http://www.adif.es/es_ES/conoceradif/oferta_de_empleo_publico/doc/08_fc_ConceptosFerroviarios.pdf> ,
+                                                                                           "Administrador de Infraestructuras Ferroviarias (ADIF)."@es ;
+                                                  rdfs:comment "Instalaciones necesarias para el funcionamiento del ferrocarril en todas sus facetas y que según el nivel de prestaciones va a recibir una u otra denominación"@es ;
+                                                  rdfs:label "Instalación ferroviaria"@es .
+
+
+###  https://datos.ign.es/def/Invernadero
+<https://datos.ign.es/def/Invernadero> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment "Lugar preparado artificialmente para cultivar las plantas fuera de su ambiente y clima habituales."@es ;
+                                       rdfs:label "Invernadero"@es .
+
+
+###  https://datos.ign.es/def/IslaFluvial
+<https://datos.ign.es/def/IslaFluvial> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:label "Isla Fluvial"@es ,
+                                                  "Porción de tierra rodeada de agua de río."@es .
+
+
+###  https://datos.ign.es/def/IslaMaritima
+<https://datos.ign.es/def/IslaMaritima> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla> ;
+                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                        rdfs:label "Isla Marítima"@es ,
+                                                   "Porción de tierra rodeada de agua del mar."@es .
+
+
+###  https://datos.ign.es/def/Itinerario
+<https://datos.ign.es/def/Itinerario> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                        owl:allValuesFrom xsd:string
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onDataRange xsd:string
+                                                      ] ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Tramo de vía perteneciente al Camino de Santiago o catalogada como Vía verde."@es ;
+                                      rdfs:label "Itinerario"@es .
+
+
+###  https://datos.ign.es/def/ItinerarioDeCaminoDeSantiago
+<https://datos.ign.es/def/ItinerarioDeCaminoDeSantiago> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://datos.ign.es/def/Itinerario> ;
+                                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                        rdfs:comment "Itinerario perteneciente al Camino de Santiago."@es ;
+                                                        rdfs:label "Itinerario de Camino de Santiago"@es .
+
+
+###  https://datos.ign.es/def/ItinerarioDeViaVerde
+<https://datos.ign.es/def/ItinerarioDeViaVerde> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/Itinerario> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment "Itinerario catalogado como Vía Verde"@es ;
+                                                rdfs:label "Itinerario de Vía Verde"@es .
+
+
+###  https://datos.ign.es/def/JardinHistorico
+<https://datos.ign.es/def/JardinHistorico> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment "Es el espacio delimitado, producto de la ordenación por el hombre de elementos naturales, a veces complementado con estructuras de fábrica, y estimado de interés en función de su origen o pasado histórico, o de sus valores estéticos, sensoriales o botánicos."@es ;
+                                           rdfs:label "Jardín Histórico"@es .
+
+
+###  https://datos.ign.es/def/Laguna
+<https://datos.ign.es/def/Laguna> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:allValuesFrom xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ;
+                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                  rdfs:comment "Depósito natural de agua, generalmente dulce."@es ;
+                                  rdfs:label "Laguna"@es .
+
+
+###  https://datos.ign.es/def/LineaElectrica
+<https://datos.ign.es/def/LineaElectrica> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Conjunto de hilos (o cables) y otras instalaciones con fines conducir energía eléctrica. Una Línea eléctrica está constituida tanto por el elemento conductor (usualmente cables de acero, cobre o aluminio) como por sus elementos de soporte (las torres de alta tensión)."@es ;
+                                          rdfs:label "Línea Eléctrica"@es .
+
+
+###  https://datos.ign.es/def/LineaElectricaDeAltaTension
+<https://datos.ign.es/def/LineaElectricaDeAltaTension> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://datos.ign.es/def/LineaElectrica> ;
+                                                       rdfs:comment "Línea eléctrica con tensión superior a los 1000 voltios."@es ;
+                                                       rdfs:label "Línea Eléctrica de Alta Tensión"@es .
+
+
+###  https://datos.ign.es/def/LineaElectricaDeBajaTension
+<https://datos.ign.es/def/LineaElectricaDeBajaTension> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://datos.ign.es/def/LineaElectrica> ;
+                                                       rdfs:comment "Línea eléctrica con tensión inferior a los 1000 voltios."@es ;
+                                                       rdfs:label "Línea Eléctrica de Baja Tensión"@es .
+
+
+###  https://datos.ign.es/def/LugarDeInteres
+<https://datos.ign.es/def/LugarDeInteres> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                            owl:allValuesFrom xsd:string
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://datos.ign.es/def/codigoBIC> ;
+                                                            owl:allValuesFrom xsd:string
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange xsd:string
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://datos.ign.es/def/codigoBIC> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange xsd:string
+                                                          ] ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."^^xsd:string ;
+                                          rdfs:comment "Edificación o Lugar de interés por el uso que se le da o su relación con la cultura. Aquí se incluyen los Bienes de Interés Cultural (BIC)"^^xsd:string ;
+                                          rdfs:label "Lugar de interés"^^xsd:string .
+
+
+###  https://datos.ign.es/def/LugarImportanciaComunitaria
+<https://datos.ign.es/def/LugarImportanciaComunitaria> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://datos.ign.es/def/ZonaProtegida> ;
+                                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                       rdfs:comment "Lugar de importancia comunitaria garantiza la conservación de la biodiversidad (fauna y flora). LIC."@es ;
+                                                       rdfs:label "Lugar de Importancia Comunitaria"@es .
+
+
+###  https://datos.ign.es/def/Marisma
+<https://datos.ign.es/def/Marisma> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/Humedal> ;
+                                   rdfs:comment "Terreno bajo y pantanoso que inundan las aguas del mar. (RAE)"@es ;
+                                   rdfs:label "Marisma"@es .
+
+
+###  https://datos.ign.es/def/Mina
+<https://datos.ign.es/def/Mina> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://datos.ign.es/def/ExplotacionMinera> ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                rdfs:comment "Excavación que se hace para extraer un mineral. (RAE)"@es ;
+                                rdfs:label "Mina"@es .
+
+
+###  https://datos.ign.es/def/Muralla
+<https://datos.ign.es/def/Muralla> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                   rdfs:comment "Construcción realizada con fines defensivos."@es ;
+                                   rdfs:label "Muralla"@es .
+
+
+###  https://datos.ign.es/def/NucleoPoblacionPuntual
+<https://datos.ign.es/def/NucleoPoblacionPuntual> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> ;
+                                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                  rdfs:comment "Pertenecerán a esta clase de entidad puntual sólo los núcleos de aquellas comunidades autónomas en las que la densidad de elementos impida su representación superficial a escala. Estas comunidades son Asturias, Galicia e Islas Canarias."@es ;
+                                                  rdfs:label "Núcleo de Población Puntual"@es .
+
+
+###  https://datos.ign.es/def/NucleoPoblacionSuperficial
+<https://datos.ign.es/def/NucleoPoblacionSuperficial> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> ;
+                                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                      rdfs:comment "Pertenecerán a esta clase de entidad superficial todos los núcleos de población de España salvo excepciones los de aquellas comunidades autónomas en las que la densidad de elementos impida su representación superficial a escala. Estas comunidades son Asturias, Galicia e Islas Canarias."@es ;
+                                                      rdfs:label "Núcleo de Población Superficial"@es .
+
+
+###  https://datos.ign.es/def/ObjetoGeografico
+<https://datos.ign.es/def/ObjetoGeografico> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/created> ;
+                                                              owl:allValuesFrom xsd:date
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/identifier> ;
+                                                              owl:allValuesFrom rdfs:Literal
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/replaces> ;
+                                                              owl:allValuesFrom rdfs:Literal
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/created> ;
+                                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                              owl:onDataRange xsd:date
+                                                            ] ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                            rdfs:comment "Tipo de objeto geográfico del que heredan atributos y dominio de valores de atributos el resto de tipos de objeto geográfico de BTN100"@es ;
+                                            rdfs:label "Objeto Geográfico"@es .
+
+
+###  https://datos.ign.es/def/Oleoducto
+<https://datos.ign.es/def/Oleoducto> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/ConduccionDeCombustible> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia de la Lengua."@es ;
+                                     rdfs:comment "Tubería provista de bombas y otros aparatos para conducir el petróleo a larga distancia."@es ;
+                                     rdfs:label "Oleoducto"@es .
+
+
+###  https://datos.ign.es/def/ParadorNacional
+<https://datos.ign.es/def/ParadorNacional> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/AlojamientoYOcio> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment "Conjunto de hoteles de alta categoría distribuidos por toda España, localizados en edificios emblemáticos o emplazamientos destacables que han sido seleccionados por su interés histórico, artístico o cultural."@es ;
+                                           rdfs:label "Parador Nacional"@es .
+
+
+###  https://datos.ign.es/def/ParqueNacional
+<https://datos.ign.es/def/ParqueNacional> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ZonaProtegida> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                          rdfs:comment "Delimitación de protección legal por el estado."@es ;
+                                          rdfs:label "Parque Nacional"@es .
+
+
+###  https://datos.ign.es/def/ParqueNatural
+<https://datos.ign.es/def/ParqueNatural> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/ZonaProtegida> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                         rdfs:comment "Delimitación de protección legal por otros organismos."@es ;
+                                         rdfs:label "Parque Natural"@es .
+
+
+###  https://datos.ign.es/def/PasoANivel
+<https://datos.ign.es/def/PasoANivel> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                      rdfs:comment "Cruce entre carretera y ferrocarril, que se produce al mismo nivel."@es ;
+                                      rdfs:label "Paso a Nivel"@es .
+
+
+###  https://datos.ign.es/def/PatrimonioDeLaHumanidad
+<https://datos.ign.es/def/PatrimonioDeLaHumanidad> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                   rdfs:comment "Título conferido por la Unesco a sitios específicos del planeta (sean bosque, montaña, lago, cueva, desierto, edificación, complejo arquitectónico o ciudad) que han sido nominados y confirmados para su inclusión en la lista mantenida por el Programa Patrimonio de la Humanidad."@es ;
+                                                   rdfs:label "Patrimonio de la Humanidad"@es .
+
+
+###  https://datos.ign.es/def/Penyon
+<https://datos.ign.es/def/Penyon> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/AccidenteMaritimoPuntual> ;
+                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                  rdfs:comment "Monte peñascoso rodeado de mar. (RAE)"@es ;
+                                  rdfs:label "Peñón"@es .
+
+
+###  https://datos.ign.es/def/Pico
+<https://datos.ign.es/def/Pico> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://datos.ign.es/def/PuntoAcotado> ;
+                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                rdfs:comment "Montaña de cumbre puntiaguda"@es ;
+                                rdfs:label "Pico"@es .
+
+
+###  https://datos.ign.es/def/Pista
+<https://datos.ign.es/def/Pista> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Vía de comunicación sin asfaltar, habilitada para el tráfico rodado."@es ;
+                                 rdfs:label "Pista"@es .
+
+
+###  https://datos.ign.es/def/PistaDeAterrizaje
+<https://datos.ign.es/def/PistaDeAterrizaje> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Espacio dentro de las instalaciones de un aeropuerto, donde circulan los aviones y otros aparatos de navegación aérea, y desde donde se realiza el despegue/aterrizaje."@es ;
+                                             rdfs:label "Pista de Aterrizaje"@es .
+
+
+###  https://datos.ign.es/def/Playa
+<https://datos.ign.es/def/Playa> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/AccidenteMaritimoPuntual> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Ribera del mar o de un río grande, formada de arenales en superficie casi plana. (RAE)"@es ;
+                                 rdfs:label "Playa"@es .
+
+
+###  https://datos.ign.es/def/Presa
+<https://datos.ign.es/def/Presa> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Construcción que se realiza en los embalses o ríos para almacenar el agua."@es ;
+                                 rdfs:label "Presa"@es .
+
+
+###  https://datos.ign.es/def/Puente
+<https://datos.ign.es/def/Puente> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                  rdfs:comment "Construcción realizada para paso a distinto nivel entre vías de comunicación o hidrografía."@es ;
+                                  rdfs:label "Puente"@es .
+
+
+###  https://datos.ign.es/def/Puerto
+<https://datos.ign.es/def/Puerto> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:allValuesFrom xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://datos.ign.es/def/unloCode> ;
+                                                    owl:allValuesFrom xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://datos.ign.es/def/unloCode> ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
+                                                  ] ;
+                                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                  rdfs:comment "Conjunto de instalaciones y aguas marítimas situadas en la ribera del mar o de las rías, que permiten la realización de operaciones de tráfico portuario."@es ;
+                                  rdfs:label "Puerto"@es .
+
+
+###  https://datos.ign.es/def/PuertoMontana
+<https://datos.ign.es/def/PuertoMontana> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/PuntoAcotado> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                         rdfs:comment "Paso entre montañas."@es ;
+                                         rdfs:label "Puerto de Montaña"@es .
+
+
+###  https://datos.ign.es/def/Punta
+<https://datos.ign.es/def/Punta> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://datos.ign.es/def/AccidenteMaritimoPuntual> ;
+                                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                 rdfs:comment "Lengua de tierra, generalmente baja y de poca extensión, que penetra en el mar. (RAE)"@es ;
+                                 rdfs:label "Punta"@es .
+
+
+###  https://datos.ign.es/def/PuntoAcotado
+<https://datos.ign.es/def/PuntoAcotado> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                          owl:allValuesFrom xsd:string
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                          owl:onDataRange xsd:string
+                                                        ] ;
+                                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                        rdfs:comment "Se define como puntos acotados a aquellos puntos con cota que poseen una ubicación representativa del relieve y complementan la información facilitada por las curvas de nivel."@es ;
+                                        rdfs:label "Punto Acotado"@es .
+
+
+###  https://datos.ign.es/def/Rambla
+<https://datos.ign.es/def/Rambla> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/Humedal> ;
+                                  rdfs:comment "Suelo por donde las aguas pluviales corren cuando son muy copiosas. (RAE)"@es ;
+                                  rdfs:label "Rambla"@es .
+
+
+###  https://datos.ign.es/def/Ria
+<https://datos.ign.es/def/Ria> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                 owl:allValuesFrom xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] ;
+                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                               rdfs:comment "Entrante del mar en la costa, que se forma por sumersión de la parte litoral de una cuenca fluvial de laderas más o menos abruptas."@es ;
+                               rdfs:label "Ría"@es .
+
+
+###  https://datos.ign.es/def/Rio
+<https://datos.ign.es/def/Rio> rdf:type owl:Class ;
+                               rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                 owl:allValuesFrom xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://datos.ign.es/def/codigoDeRio> ;
+                                                 owl:allValuesFrom xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://datos.ign.es/def/codigoDeRio> ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] ;
+                               <http://purl.org/dc/elements/1.1/source> <http://www.ign.es/web/ign/portal/ane-datos-geograficos/-/datos-geograficos/setTabGlosarioGeografico> ,
+                                                                        "Glosario geográfico del Instituto Geográfico Nacional."@es ;
+                               rdfs:comment "Corriente natural de agua que sigue un valle ancho, correspondiente a una cuenca amplia y con caudal considerable, aun en estiaje."@es ;
+                               rdfs:label "Río"@es .
+
+
+###  https://datos.ign.es/def/RioLineal
+<https://datos.ign.es/def/RioLineal> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/Rio> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Corriente de agua, permanente o no, más o menos caudalosa que desemboca en otra, en una laguna, o en el mar."@es ;
+                                     rdfs:label "Río Lineal"@es .
+
+
+###  https://datos.ign.es/def/RioSuperficial
+<https://datos.ign.es/def/RioSuperficial> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/Rio> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Corriente de agua permanente, más o menos caudalosa que desemboca en otra, en laguna, o en el mar y que tiene un ancho mayor de 20m durante más de 500m."@es ;
+                                          rdfs:label "Río Superficial"@es .
+
+
+###  https://datos.ign.es/def/Salina
+<https://datos.ign.es/def/Salina> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://datos.ign.es/def/Humedal> ;
+                                  rdfs:comment "Establecimiento donde se beneficia la sal de las aguas del mar o de ciertos manantiales, cuando se ha evaporado el agua. (RAE)"@es ;
+                                  rdfs:label "Salina"@es .
+
+
+###  https://datos.ign.es/def/SitioHistorico
+<https://datos.ign.es/def/SitioHistorico> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Es el lugar o paraje natural, vinculado a acontecimientos o recuerdos del pasado, a tradiciones populares, creaciones culturales o de la naturaleza, y a obras del hombre, que poseen valor histórico, etnológico, paleontológico o antropológico."@es ;
+                                          rdfs:label "Sitio Histórico"@es .
+
+
+###  https://datos.ign.es/def/SubestacionElectrica
+<https://datos.ign.es/def/SubestacionElectrica> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment "Conjunto de instalaciones utilizadas para la reducción de la tensión o el voltaje de las líneas eléctricas."@es ;
+                                                rdfs:label "Subestación Eléctrica"@es .
+
+
+###  https://datos.ign.es/def/Teleferico
+<https://datos.ign.es/def/Teleferico> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://datos.ign.es/def/TransporteSuspendido> ;
+                                      <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                      rdfs:comment "Sistema de transporte en que los vehículos van suspendidos de un cable de tracción. Se emplea principalmente para salvar grandes diferencias de altitud."@es ;
+                                      rdfs:label "Teleférico"@es .
+
+
+###  https://datos.ign.es/def/Telesilla
+<https://datos.ign.es/def/Telesilla> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/TransporteSuspendido> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                     rdfs:comment "Asiento suspendido de un cable de tracción, para el transporte de personas a la cumbre de una montaña o a un lugar elevado."@es ;
+                                     rdfs:label "Telesilla"@es .
+
+
+###  https://datos.ign.es/def/Telesqui
+<https://datos.ign.es/def/Telesqui> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://datos.ign.es/def/TransporteSuspendido> ;
+                                    <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Española."@es ;
+                                    rdfs:comment "Aparato que permite a los esquiadores subir hasta las pistas sobre sus esquís mediante un sistema de arrastre."@es ;
+                                    rdfs:label "Telesquí"@es .
+
+
+###  https://datos.ign.es/def/TransporteSuspendido
+<https://datos.ign.es/def/TransporteSuspendido> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment "Sistema de transporte en el que los vehículos van suspendidos de un cable de tracción. Se emplea principalmente para salvar grandes diferencias de altitud."@es ;
+                                                rdfs:label "Transporte suspendido"@es .
+
+
+###  https://datos.ign.es/def/UnidadAdministrativa
+<https://datos.ign.es/def/UnidadAdministrativa> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://aims.fao.org/aos/geopolitical.owl#hasCode> ;
+                                                                  owl:allValuesFrom xsd:string
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                  owl:allValuesFrom xsd:string
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onDataRange xsd:string
+                                                                ] ;
+                                                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                rdfs:comment "“La Unión Europea entiende como unidades administrativas aquellas áreas donde los Estados miembros tienen o ejercen sus derechos jurisdiccionales a efectos de administración local, regional y nacional. Están separadas mediante límites administrativos y frecuentemente están organizadas jerárquicamente, reflejando los distintos grados de responsabilidad implicados” [INSPIRE ANEXO 1.Tema 4]. Definen las áreas de cada municipio o condominio, provincia, comunidad autónoma y nación española."@es ;
+                                                rdfs:label "Unidad Administrativa"@es .
+
+
+###  https://datos.ign.es/def/Universidad
+<https://datos.ign.es/def/Universidad> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment "Establecimiento o conjunto de unidades educativas de enseñanza superior e investigación."@es ;
+                                       rdfs:label "Universidad"@es .
+
+
+###  https://datos.ign.es/def/VerticeGeodesico
+<https://datos.ign.es/def/VerticeGeodesico> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                              owl:allValuesFrom xsd:string
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                              owl:onDataRange xsd:string
+                                                            ] ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Punto materializado del terreno al que se le han calculado las coordenadas geodésicas con exactitud. (Glosario cartográfico del Instituto Nacional Geográfico)."@es ,
+                                                         "Vértice geodésico perteneciente a la Red de Primer Orden (NPRO) o a la Red de Orden Inferior (ROI) de España."@es ;
+                                            rdfs:label "Vértice Geodésico"@es .
+
+
+###  https://datos.ign.es/def/VerticeGeodesicoDeOrdenInferior
+<https://datos.ign.es/def/VerticeGeodesicoDeOrdenInferior> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://datos.ign.es/def/VerticeGeodesico> ;
+                                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                           rdfs:comment "Vértice perteneciente a la Red de Orden Inferior"@es ;
+                                                           rdfs:label "Vértice Geodésico de Orden Inferior"@es .
+
+
+###  https://datos.ign.es/def/VerticeGeodesicoRegcan95
+<https://datos.ign.es/def/VerticeGeodesicoRegcan95> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://datos.ign.es/def/VerticeGeodesico> ;
+                                                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                    rdfs:comment "Vértice perteneciente a REGCAN95."@es ;
+                                                    rdfs:label "Vértice Geodésico de REGCAN 95"@es .
+
+
+###  https://datos.ign.es/def/VerticeGeodesicoRegente
+<https://datos.ign.es/def/VerticeGeodesicoRegente> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/VerticeGeodesico> ;
+                                                   <http://purl.org/dc/elements/1.1/source> <http://www.ign.es/web/resources/docs/IGNCnig/GDS-Teoria-Geodesia.pdf> ,
+                                                                                            "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                   rdfs:comment "Vértice perteneciente a la Red de REGENTE (Red Geodésica Nacional por Técnicas Espaciales)."@es ;
+                                                   rdfs:label "Vértice Geodésico Regente"@es .
+
+
+###  https://datos.ign.es/def/VistaPanoramica
+<https://datos.ign.es/def/VistaPanoramica> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment "Es la que muestra un panorama usualmente paisajístico o arquitectónico, y que se distingue por el amplio horizonte visual que cubre."@es ;
+                                           rdfs:label "Vista Panorámica"@es .
+
+
+###  https://datos.ign.es/def/ZonaAeroportuaria
+<https://datos.ign.es/def/ZonaAeroportuaria> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Estación o terminal situada en un terreno llano que cuenta con pistas, instalaciones y servicios destinados al tráfico de aviones."@es ;
+                                             rdfs:label "Zona Aeroportuaria"@es .
+
+
+###  https://datos.ign.es/def/ZonaArqueologica
+<https://datos.ign.es/def/ZonaArqueologica> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://datos.ign.es/def/LugarDeInteres> ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Es el lugar o paraje natural donde existen bienes muebles o inmuebles susceptibles de ser estudiados con metodología arqueológica, hayan sido o no extraídos y tanto si se encuentran en la superficie, en el subsuelo o bajo las aguas españolas."@es ;
+                                            rdfs:label "Zona Arqueológica"@es .
+
+
+###  https://datos.ign.es/def/ZonaDeUsoCaracteristico
+<https://datos.ign.es/def/ZonaDeUsoCaracteristico> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                     owl:allValuesFrom xsd:string
+                                                                   ] ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                     owl:onDataRange xsd:string
+                                                                   ] ;
+                                                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                                   rdfs:comment "Superficie delimitada, empleada para desarrollar una actividad específica."@es ;
+                                                   rdfs:label "Zona de Uso Característico"@es .
+
+
+###  https://datos.ign.es/def/ZonaDeportiva
+<https://datos.ign.es/def/ZonaDeportiva> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                         rdfs:comment "Áreas donde se realizan las actividades deportivas, los diferentes espacios complementarios y los de servicios auxiliares."@es ;
+                                         rdfs:label "Zona Deportiva"@es .
+
+
+###  https://datos.ign.es/def/ZonaEspecialProteccionAves
+<https://datos.ign.es/def/ZonaEspecialProteccionAves> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://datos.ign.es/def/ZonaProtegida> ;
+                                                      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                                      rdfs:comment "ZEPA (Zona especial de protección de aves)."@es ;
+                                                      rdfs:label "Zona Especial Protección de Aves"@es .
+
+
+###  https://datos.ign.es/def/ZonaFerroviaria
+<https://datos.ign.es/def/ZonaFerroviaria> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                           rdfs:comment "Instalaciones pertenecientes o destinadas para la explotación de la infraestructura del ferrocarril."@es ;
+                                           rdfs:label "Zona Ferroviaria"@es .
+
+
+###  https://datos.ign.es/def/ZonaIndustrial
+<https://datos.ign.es/def/ZonaIndustrial> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Espacio territorial en el cual se agrupan una serie de actividades industriales, que pueden o no estar relacionadas entre sí."@es ;
+                                          rdfs:label "Zona Industrial"@es .
+
+
+###  https://datos.ign.es/def/ZonaMilitar
+<https://datos.ign.es/def/ZonaMilitar> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                       rdfs:comment "Zona reservada para fines de la defensa nacional o de las bases ofensivas que en cada territorio se instalen."@es ;
+                                       rdfs:label "Zona Militar"@es .
+
+
+###  https://datos.ign.es/def/ZonaMonumental
+<https://datos.ign.es/def/ZonaMonumental> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Espacio perteneciente o relativo a un monumento."@es ;
+                                          rdfs:label "Zona Monumental"@es .
+
+
+###  https://datos.ign.es/def/ZonaPortuaria
+<https://datos.ign.es/def/ZonaPortuaria> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                         rdfs:comment "Espacio destinado y orientado especialmente al flujo de mercancías, personas, información o a dar abrigo y seguridad a aquellas embarcaciones o naves encargadas de llevar a cabo dichas tareas."@es ;
+                                         rdfs:label "Zona Portuaria"@es .
+
+
+###  https://datos.ign.es/def/ZonaProtegida
+<https://datos.ign.es/def/ZonaProtegida> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://datos.ign.es/def/ObjetoGeografico> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                           owl:allValuesFrom xsd:string
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ;
+                                         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
+                                         rdfs:comment "“Áreas establecidas o gestionadas mediante una legislación -sea nacional, comunitaria o internacional- que persiga unos objetivos de conservación específicos” [INPIRE Anexo 1. Tema 9.). Se incluyen áreas que tienen algún tipo de protección medioambiental como determinadas áreas que el MAGRAMA considera Espacios Naturales Protegidos (ENP) o las zonas catalogadas como lugar de Importancia Comunitaria (LIC) o Zonas de Especial Protección para las Aves (ZEPA) por la Red Natura 2000."@es ;
+                                         rdfs:label "Zona Protegida"@es .
+
+
+###  https://datos.ign.es/def/ZonaRecreativa
+<https://datos.ign.es/def/ZonaRecreativa> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                          rdfs:comment "Espacio donde se encuentran lugares de ocio o entretenimiento de los ciudadanos."@es ;
+                                          rdfs:label "Zona Recreativa"@es .
+
+
+###  https://datos.ign.es/def/ZonaUniversitaria
+<https://datos.ign.es/def/ZonaUniversitaria> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                             rdfs:comment "Conjunto de edificios situados en terreno acotado al efecto, destinados a la enseñanza superior, y más especialmente la que es propia de las universidades."@es ;
+                                             rdfs:label "Zona Universitaria"@es .
+
+
+###  https://datos.ign.es/def/ZonaVerde
+<https://datos.ign.es/def/ZonaVerde> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://datos.ign.es/def/ZonaDeUsoCaracteristico> ;
+                                     <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                     rdfs:comment "Zona del terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes o esculturas."@es ;
+                                     rdfs:label "Zona Verde"@es .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
