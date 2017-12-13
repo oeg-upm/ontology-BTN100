@@ -1,22 +1,26 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://datos.ign.es/ontology/"
-     xml:base="https://datos.ign.es/ontology/"
+<rdf:RDF xmlns="https://datos.ign.es/def/"
+     xml:base="https://datos.ign.es/def/"
+     xmlns:van="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:btn100="https://datos.ign.es/ontology/"
+     xmlns:btn100="https://datos.ign.es/def/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://datos.ign.es/ontology/">
-        <owl:versionIRI rdf:resource="https://datos.ign.es/ontology/btn100.owl"/>
+    <owl:Ontology rdf:about="https://datos.ign.es/def">
+        <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:versionInfo xml:lang="es">0.1</owl:versionInfo>
-        <terms:description>Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:description>
         <terms:license rdf:resource="http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf"/>
+        <van:preferredNamespaceUri xml:lang="es">https://datos.ign.es/def</van:preferredNamespaceUri>
+        <van:preferredNamespacePrefix xml:lang="es">btn100</van:preferredNamespacePrefix>
+        <terms:description xml:lang="es">Ontología que se utiliza para la representación del conjunto de datos geográficos de los datos de la Base Topográfica Nacional a escala 1:100.000 (BTN100).</terms:description>
         <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100.</terms:title>
         <terms:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
         <terms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
     </owl:Ontology>
@@ -43,6 +47,18 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -105,6 +121,23 @@ https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes</rdfs
     
 
 
+    <!-- https://datos.ign.es/def/categoriaCurvaDeNivel -->
+
+    <owl:ObjectProperty rdf:about="https://datos.ign.es/def/categoriaCurvaDeNivel">
+        <rdfs:domain rdf:resource="https://datos.ign.es/def/CurvaDeNivel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <rdfs:comment xml:lang="es">Categoría asociada a cada tipología de curva de nivel. Se define en el esquema de conceptos https://datos.ign.es/kos/altimetria/categoria-curva-nivel y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica 
+https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra</rdfs:comment>
+        <rdfs:label xml:lang="es">categoría de Curva de Nivel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://datos.ign.es/def/categoriaDeIsla -->
 
     <owl:ObjectProperty rdf:about="https://datos.ign.es/def/categoriaDeIsla">
@@ -125,7 +158,7 @@ https://datos.ign.es/kos/hidrografia/categoria-de-isla/no-definida</rdfs:comment
         <rdfs:domain rdf:resource="https://datos.ign.es/def/EntidadVirtualAccidenteOrografico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
-        <rdfs:comment xml:lang="es">Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/categoria-interes y puede tomar alguno de los siguientes valores:
+        <rdfs:comment xml:lang="es">Categoría de interés de la vía. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/categoria-interes y puede tomar alguno de los siguientes valores:
 https://datos.ign.es/kos/accidente-orografico/categoria-interes/principal
 https://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario
 https://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario
@@ -315,7 +348,7 @@ https://datos.ign.es/kos/transportes/numero-de-vias/desconocida</rdfs:comment>
         <rdfs:domain rdf:resource="https://datos.ign.es/def/CarreteraAutonomica"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
-        <rdfs:comment xml:lang="es">Categoría según su importancia. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/categoria-interes y puede tomar alguno de los siguientes valores:
+        <rdfs:comment xml:lang="es">Categoría de la vía según su importancia. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/categoria-interes y puede tomar alguno de los siguientes valores:
 https://datos.ign.es/kos/transportes/categoria-interes/primer-orden
 https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden
 https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden
@@ -338,7 +371,10 @@ https://datos.ign.es/kos/transportes/categoria-interes/no-definido</rdfs:comment
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
-        <rdfs:comment xml:lang="es">Producto de origen o fuente de información</rdfs:comment>
+        <rdfs:comment xml:lang="es">Producto de origen o fuente de información. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/producto-fuente/ y puede tomar los siguientes valores:
+https://datos.ign.es/kos/accidente-orografico/producto-fuente/mp
+https://datos.ign.es/kos/accidente-orografico/producto-fuente/mp-serie-c
+https://datos.ign.es/kos/accidente-orografico/producto-fuente/serie-c</rdfs:comment>
         <rdfs:label xml:lang="es">producto fuente</rdfs:label>
     </owl:ObjectProperty>
     
@@ -505,22 +541,6 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna</rdfs:comment>
     
 
 
-    <!-- https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel -->
-
-    <owl:ObjectProperty rdf:about="https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel">
-        <rdfs:domain rdf:resource="https://datos.ign.es/def/CurvaDeNivel"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="es">Categoría asociada a cada tipología de curva de nivel. Se define en el esquema de conceptos https://datos.ign.es/kos/altimetria/categoria-curva-nivel y puede tomar alguno de los siguientes valores: 
-https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica 
-https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra
-https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada 
-https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica 
-https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra</rdfs:comment>
-        <rdfs:label xml:lang="es">categoría de Curva de Nivel</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -577,11 +597,7 @@ https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra</rdf
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:comment xml:lang="es">Nombre geográfico del objeto</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="es">nombre</rdfs:label>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1732,6 +1748,17 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
     
 
 
+    <!-- https://datos.ign.es/def/EntidadVirtualComarcaRegion -->
+
+    <owl:Class rdf:about="https://datos.ign.es/def/EntidadVirtualComarcaRegion">
+        <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/EntidadVirtualAccidenteOrografico"/>
+        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
+        <rdfs:comment xml:lang="es">Delimitación que contiene conjunto de municipios oficial (comarca) o histórica (región)</rdfs:comment>
+        <rdfs:label xml:lang="es">Entidad Virtual Región/Comarca</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://datos.ign.es/def/EntidadVirtualCordillera -->
 
     <owl:Class rdf:about="https://datos.ign.es/def/EntidadVirtualCordillera">
@@ -1860,17 +1887,6 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Bahía, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)</rdfs:comment>
         <rdfs:label xml:lang="es">Entidad Virtual Rada</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://datos.ign.es/def/EntidadVirtualRegion -->
-
-    <owl:Class rdf:about="https://datos.ign.es/def/EntidadVirtualRegion">
-        <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/EntidadVirtualAccidenteOrografico"/>
-        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
-        <rdfs:comment xml:lang="es">Delimitación que contiene conjunto de municipios oficial (comarca) o histórica (región)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Región/Comarca</rdfs:label>
     </owl:Class>
     
 
@@ -3232,6 +3248,22 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:comment xml:lang="es">Zona del terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes o esculturas.</rdfs:comment>
         <rdfs:label xml:lang="es">Zona Verde</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="es">Nombre geográfico del objeto</rdfs:comment>
+        <rdfs:label xml:lang="es">nombre</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
