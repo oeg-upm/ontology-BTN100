@@ -264,6 +264,9 @@
     "CentralSolar" : {
       "@id" : "https://datos.ign.es/def/CentralSolar"
     },
+    "EntidadVirtualComarcaRegion" : {
+      "@id" : "https://datos.ign.es/def/EntidadVirtualComarcaRegion"
+    },
     "FerrocarrilAltaVelocidad" : {
       "@id" : "https://datos.ign.es/def/FerrocarrilAltaVelocidad"
     },
@@ -456,6 +459,9 @@
     "ConjuntoHistoricoArtistico" : {
       "@id" : "https://datos.ign.es/def/ConjuntoHistoricoArtistico"
     },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
     "EntidadVirtualEstrecho" : {
       "@id" : "https://datos.ign.es/def/EntidadVirtualEstrecho"
     },
@@ -490,9 +496,6 @@
     },
     "LineaElectrica" : {
       "@id" : "https://datos.ign.es/def/LineaElectrica"
-    },
-    "EntidadVirtualRegion" : {
-      "@id" : "https://datos.ign.es/def/EntidadVirtualRegion"
     },
     "population" : {
       "@id" : "http://www.geonames.org/ontology#population"
@@ -733,6 +736,9 @@
     "CanalMayor" : {
       "@id" : "https://datos.ign.es/def/CanalMayor"
     },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
     "CurvaDeNivelAltimetrica" : {
       "@id" : "https://datos.ign.es/def/CurvaDeNivelAltimetrica"
     },
@@ -740,7 +746,7 @@
       "@id" : "https://datos.ign.es/def/ZonaArqueologica"
     },
     "categoriaCurvaDeNivel" : {
-      "@id" : "https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel",
+      "@id" : "https://datos.ign.es/def/categoriaCurvaDeNivel",
       "@type" : "@id"
     },
     "EntidadVirtualRada" : {
