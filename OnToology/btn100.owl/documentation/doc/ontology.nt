@@ -1,12 +1,15 @@
-<https://datos.ign.es/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://datos.ign.es/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://datos.ign.es/ontology/btn100.owl> .
-<https://datos.ign.es/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
-<https://datos.ign.es/ontology/> <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
-<https://datos.ign.es/ontology/> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
-<https://datos.ign.es/ontology/> <http://purl.org/dc/terms/description> "Ontolog\u00EDa para la representaci\u00F3n de los datos de la Base Topogr\u00E1fica Nacional BTN100" .
-<https://datos.ign.es/ontology/> <http://purl.org/dc/terms/license> <http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf> .
-<https://datos.ign.es/ontology/> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid"@es .
-<https://datos.ign.es/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@es .
+<https://datos.ign.es/def> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://datos.ign.es/def> <http://www.w3.org/2002/07/owl#versionIRI> <https://datos.ign.es/def/btn100> .
+<https://datos.ign.es/def> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/description> "Ontolog\u00EDa que se utiliza para la representaci\u00F3n del conjunto de datos geogr\u00E1ficos de los datos de la Base Topogr\u00E1fica Nacional a escala 1:100.000 (BTN100)."@es .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/license> <http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf> .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid"@es .
+<https://datos.ign.es/def> <http://purl.org/dc/terms/title> "Ontolog\u00EDa para la representaci\u00F3n de los datos de la Base Topogr\u00E1fica Nacional BTN100."@es .
+<https://datos.ign.es/def> <http://purl.org/vocab/vann/preferredNamespacePrefix> "btn100"@es .
+<https://datos.ign.es/def> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://datos.ign.es/def"@es .
+<https://datos.ign.es/def> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@es .
 # 
 # 
 # #################################################################
@@ -21,6 +24,12 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -55,6 +64,14 @@
 <https://datos.ign.es/def/categoria> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorizaci\u00F3n de r\u00EDos. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/hidrografia/categoria-de-rio y puede tomar alguno de los siguientes valores: \nhttps://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal\nhttps://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario\nhttps://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario\nhttps://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes"@es .
 <https://datos.ign.es/def/categoria> <http://www.w3.org/2000/01/rdf-schema#label> "categor\u00EDa"@es .
 # 
+# https://datos.ign.es/def/categoriaCurvaDeNivel
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://datos.ign.es/def/CurvaDeNivel> .
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDa asociada a cada tipolog\u00EDa de curva de nivel. Se define en el esquema de conceptos https://datos.ign.es/kos/altimetria/categoria-curva-nivel y puede tomar alguno de los siguientes valores: \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra\nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra"@es .
+<https://datos.ign.es/def/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#label> "categor\u00EDa de Curva de Nivel"@es .
+# 
 # https://datos.ign.es/def/categoriaDeIsla
 <https://datos.ign.es/def/categoriaDeIsla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://datos.ign.es/def/categoriaDeIsla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla> .
@@ -68,7 +85,7 @@
 <https://datos.ign.es/def/categoriaInteres> <http://www.w3.org/2000/01/rdf-schema#domain> <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/categoriaInteres> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://datos.ign.es/def/categoriaInteres> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
-<https://datos.ign.es/def/categoriaInteres> <http://www.w3.org/2000/01/rdf-schema#comment> "Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/categoria-interes y puede tomar alguno de los siguientes valores:\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/principal\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/menor\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/no-definido"@es .
+<https://datos.ign.es/def/categoriaInteres> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDa de inter\u00E9s de la v\u00EDa. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/categoria-interes y puede tomar alguno de los siguientes valores:\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/principal\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/menor\nhttps://datos.ign.es/kos/accidente-orografico/categoria-interes/no-definido"@es .
 <https://datos.ign.es/def/categoriaInteres> <http://www.w3.org/2000/01/rdf-schema#label> "categor\u00EDa de inter\u00E9s"@es .
 # 
 # https://datos.ign.es/def/competencia
@@ -191,7 +208,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://datos.ign.es/def/ordenDeImportancia> <http://www.w3.org/2000/01/rdf-schema#domain> <https://datos.ign.es/def/CarreteraAutonomica> .
 <https://datos.ign.es/def/ordenDeImportancia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://datos.ign.es/def/ordenDeImportancia> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
-<https://datos.ign.es/def/ordenDeImportancia> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDa seg\u00FAn su importancia. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/categoria-interes y puede tomar alguno de los siguientes valores:\nhttps://datos.ign.es/kos/transportes/categoria-interes/primer-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/segundo-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/tercer-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/no-definido"@es .
+<https://datos.ign.es/def/ordenDeImportancia> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDa de la v\u00EDa seg\u00FAn su importancia. Se representa mediante el esquema de conceptos: https://datos.ign.es/kos/transportes/categoria-interes y puede tomar alguno de los siguientes valores:\nhttps://datos.ign.es/kos/transportes/categoria-interes/primer-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/segundo-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/tercer-orden\nhttps://datos.ign.es/kos/transportes/categoria-interes/no-definido"@es .
 <https://datos.ign.es/def/ordenDeImportancia> <http://www.w3.org/2000/01/rdf-schema#label> "orden de importancia"@es .
 # 
 # https://datos.ign.es/def/productoFuente
@@ -207,7 +224,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://datos.ign.
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://datos.ign.es/def/productoFuente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://datos.ign.es/def/productoFuente> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
-<https://datos.ign.es/def/productoFuente> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto de origen o fuente de informaci\u00F3n"@es .
+<https://datos.ign.es/def/productoFuente> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto de origen o fuente de informaci\u00F3n. Se representa mediante el esquema de conceptos https://datos.ign.es/kos/accidente-orografico/producto-fuente/ y puede tomar los siguientes valores:\nhttps://datos.ign.es/kos/accidente-orografico/producto-fuente/mp\nhttps://datos.ign.es/kos/accidente-orografico/producto-fuente/mp-serie-c\nhttps://datos.ign.es/kos/accidente-orografico/producto-fuente/serie-c"@es .
 <https://datos.ign.es/def/productoFuente> <http://www.w3.org/2000/01/rdf-schema#label> "producto fuente"@es .
 # 
 # https://datos.ign.es/def/regimen
@@ -324,13 +341,6 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://datos.ign.es/def/tipoDeTramo> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo de v\u00EDa que discurre por el interior de poblaciones o zonas de uso. Se representa mediante un esquema de conceptos https://datos.ign.es/kos/transportes/tipo-tramo y puede tomar uno de los siguientes valores:\nhttps://datos.ign.es/kos/transportes/tipo-tramo/interna\nhttps://datos.ign.es/kos/transportes/tipo-tramo/no-interna"@es .
 <https://datos.ign.es/def/tipoDeTramo> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de tramo"@es .
 # 
-# https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel
-<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://datos.ign.es/def/CurvaDeNivel> .
-<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDa asociada a cada tipolog\u00EDa de curva de nivel. Se define en el esquema de conceptos https://datos.ign.es/kos/altimetria/categoria-curva-nivel y puede tomar alguno de los siguientes valores: \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra\nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica \nhttps://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra"@es .
-<https://datos.ign.es/kos/altimetria/categoriaCurvaDeNivel> <http://www.w3.org/2000/01/rdf-schema#label> "categor\u00EDa de Curva de Nivel"@es .
-# 
 # 
 # 
 # #################################################################
@@ -369,9 +379,6 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre geogr\u00E1fico del objeto"@es .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
 # 
 # http://www.geonames.org/ontology#population
 <http://www.geonames.org/ontology#population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1124,6 +1131,13 @@ _:genid71 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/EntidadVirtualBahia> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrada de mar en la costa, de extensi\u00F3n considerable, que puede servir de abrigo a las embarcaciones. (RAE)"@es .
 <https://datos.ign.es/def/EntidadVirtualBahia> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Bah\u00EDa"@es .
 # 
+# https://datos.ign.es/def/EntidadVirtualComarcaRegion
+<https://datos.ign.es/def/EntidadVirtualComarcaRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://datos.ign.es/def/EntidadVirtualComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> .
+<https://datos.ign.es/def/EntidadVirtualComarcaRegion> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
+<https://datos.ign.es/def/EntidadVirtualComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Delimitaci\u00F3n que contiene conjunto de municipios oficial (comarca) o hist\u00F3rica (regi\u00F3n)"@es .
+<https://datos.ign.es/def/EntidadVirtualComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Regi\u00F3n/Comarca"@es .
+# 
 # https://datos.ign.es/def/EntidadVirtualCordillera
 <https://datos.ign.es/def/EntidadVirtualCordillera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/EntidadVirtualCordillera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> .
@@ -1207,13 +1221,6 @@ _:genid71 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/EntidadVirtualRada> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/EntidadVirtualRada> <http://www.w3.org/2000/01/rdf-schema#comment> "Bah\u00EDa, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)"@es .
 <https://datos.ign.es/def/EntidadVirtualRada> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Rada"@es .
-# 
-# https://datos.ign.es/def/EntidadVirtualRegion
-<https://datos.ign.es/def/EntidadVirtualRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://datos.ign.es/def/EntidadVirtualRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/EntidadVirtualAccidenteOrografico> .
-<https://datos.ign.es/def/EntidadVirtualRegion> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
-<https://datos.ign.es/def/EntidadVirtualRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Delimitaci\u00F3n que contiene conjunto de municipios oficial (comarca) o hist\u00F3rica (regi\u00F3n)"@es .
-<https://datos.ign.es/def/EntidadVirtualRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Regi\u00F3n/Comarca"@es .
 # 
 # https://datos.ign.es/def/EntidadVirtualSierra
 <https://datos.ign.es/def/EntidadVirtualSierra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2096,5 +2103,18 @@ _:genid122 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/X
 <https://datos.ign.es/def/ZonaVerde> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona del terreno donde se cultivan especies vegetales, con posible a\u00F1adidura de otros elementos como fuentes o esculturas."@es .
 <https://datos.ign.es/def/ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#label> "Zona Verde"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre geogr\u00E1fico del objeto"@es .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
 # 
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "skos:OrderedCollection" "skos:Collection" ; /*classes style*/
+	"skos:OrderedCollection" -> "skos:Collection" [ label = "rdfs:subClassOf" ];
+
+}
