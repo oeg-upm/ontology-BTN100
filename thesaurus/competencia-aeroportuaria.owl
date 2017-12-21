@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://datos.ign.es/kos/transportes/competencia-aeroportuaria/">
+    <owl:Ontology rdf:about="https://datos.ign.es/kos/transportes/competencia-aeroportuaria">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:description xml:lang="es">Tipología de competencia asociada a la explotación aeroportuaria</terms:description>
         <terms:title xml:lang="es">Tipo de competencia aeroportuaria</terms:title>

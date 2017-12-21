@@ -8,12 +8,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://datos.ign.es/kos/transportes/tipo-itinerario/">
+    <owl:Ontology rdf:about="http://datos.ign.es/kos/transportes/tipo-itinerario">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:title xml:lang="es">Tipo de itinerio europeo</terms:title>
         <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
-        <terms:date xml:lang="es">2017-12-13</terms:date>
         <terms:description xml:lang="es">Tipología del tramo de la vía que lo define como perteneciente o no a la Red de Carreteras Europeas.</terms:description>
+        <terms:date xml:lang="es">2017-12-13</terms:date>
     </owl:Ontology>
     
 

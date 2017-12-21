@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://datos.ign.es/kos/transportes/competencia-portuaria/">
+    <owl:Ontology rdf:about="https://datos.ign.es/kos/transportes/competencia-portuaria">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
         <terms:title xml:lang="es">Tipos de competencia de la explotación portuaria</terms:title>

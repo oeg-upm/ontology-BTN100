@@ -15,13 +15,14 @@
         <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100_v0.2"/>
         <owl:imports rdf:resource="https://datos.ign.es/def/geo_core"/>
         <terms:description xml:lang="es">Ontología para la representación del conjunto de datos geográficos de los datos de la Base Topográfica Nacional a escala 1:100.000 (BTN100).</terms:description>
-        <terms:license rdf:resource="http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf"/>
         <van:preferredNamespacePrefix xml:lang="es">btn100</van:preferredNamespacePrefix>
         <terms:publisher xml:lang="es">Instituto Geográfico Nacional</terms:publisher>
         <van:preferredNamespaceUri xml:lang="es">https://datos.ign.es/def/btn100#</van:preferredNamespaceUri>
         <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <owl:versionInfo xml:lang="es">0.2</owl:versionInfo>
         <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:date xml:lang="es">2017-12-21</dc:date>
         <terms:contributor xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:contributor>
         <terms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
     </owl:Ontology>

@@ -8,39 +8,3 @@ detectadas en los datos de BTN100.
 <br><br>
 <p>A continuación se presentan los diagramas de los esquemas de conceptos que fueron generados para representar los datos: </p>
 <center><embed src="resources/SKOS-BTN100.pdf" width=100% height="500"></center>
-<br><br>
-<h3>3.1 Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
-<p>Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de la ontología se proporcionarán a continuación algunos ejemplos.</p>
-<p>Partiremos con la representación de la Ciudad Autónoma de Ceuta. En primer lugar, como se puede observar en el código de ejemplo, se crea una instancia de la clase <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma">esadm:CiudadAutonoma</a> que, como se explicó en el diagrama de la ontología, es una clase que se reutiliza de la ontología de territorio. El nombre de la Ciudad Autónoma, su código de identificación y la fecha en que se creó en el catálogo  se representan a través de las propiedades de datos <code>dc:title</code>, <code>dc:identifier</code> y <code>dc:created </code> respectivamente. La codificación oficial asociada a la ciudad se representa mediante la propiedad <code>geopolitical:hasCode</code> y su geometría se representa mediante la propiedad <code>geosparql:hasGeometry</code>. </p> 
-<pre class="example highlight preprint">
-	https://datos.ign.es/recurso/ciudad-autonoma/8031 a esadm:CiudadAutonoma ;
-	dc:title 		"Ciudad Autónoma de Ceuta" ;
-	dc:identifier		"8031" ;
-	dc:created		"2013-03-07"^^xsd:date ;
-	geopolitical:hasCode	"18" ;
-	geosparql:hasGeometry	https://datos.ign.es/recurso/ciudad-autonoma/8031/geometry .</pre>
-<p> Para la representación de la geometría de la ciudad se crea una instancia de sf:MultiPolygon que es una de las clases definidas dentro de la ontología GeoSPARQL. Adicionalmente se emplea la propiedad geosparql:asWKT para representar el tipo de codificación de la geometría; finalmente el tipo de dato del valor de la geometría se representa mediante la propiedad geosparql:wktLiteral.
-
-<pre class="example highlight preprint">
-	https://datos.ign.es/recurso/ciudad-autonoma/8031/geometry a sf:MultiPolygon ;
-        geosparql:asWKT  "MULTIPOLYGON (((-5.418825249998759 35.91208060445847, ..., 35.8904970644321)))"^^geosparql:wktLiteral .</pre>
-</p>
-
-<p>La representación de las geometrías de todos los objetos geográficos del catálogo se realizará de forma parecida al ejemplo anterior. Se emplearán las clases, propiedades y propiedades de datos de la ontología GeoSPARQL para representar las líneas, polígonos, etc. requeridos.</p>
-
-<p>Otro ejemplo que usaremos es el de la representación de una Autovía, en este caso la M-30 de Madrid. Al igual que en el ejemplo anterior empezamos con la creación de una instancia de la Autovía, para ello se emplea la clase <a href="#/Autovia">btn100:Autovia</a>. Al igual que el caso anterior el nombre de la Autovía, su código de identificación y la fecha en que se creó en el catálogo  se representan a través de las propiedades de datos <code>dc:title</code>, <code>dc:identifier</code> y <code>dc:created </code> respectivamente. Para representar el tipo de calzada de la Autovía se utiliza la propiedad <code>btn100:calzada</code> que en el caso de la M-30 tiene el valor <i>doble</i>, es decir esta Autovía posee dos calzadas separadas y paralelas con sentidos distintos; sin embargo, pueden existir Autovías cuyo tipo de calzada sea <i>sentido único</i>. Para la representación del valor de la propiedad <code>btn100:calzada</code> se hace uso de uno de los esquemas de conceptos que se crearon para esta ontología y que se detallaron anteriorme en el diagrama correspondiente. Para las demás propiedades que se utilizan para la representación de los datos de la Autovía M-30 se procede de forma similar que para el caso del tipo de calzada, como se puede observar en el código para cada propiedad se utiliza el esquema de conceptos asociado. </p>
-<pre>
-	https://datos.ign.es/recurso/autovia/244 a btn100:Autovia ;
-	dc:created               "2013-07-01"^^xsd:date ;
-	dc:identifier            "244" ;
-	dc:title                 "M-30" ;
-	geosparql:hasGeometry    https://datos.ign.es/recurso/autovia/244/geometry ;
-	btn100:calzada           https://datos.ign.es/kos/transportes/calzada/doble ;
-	btn100:competencia       https://datos.ign.es/kos/transportes/competencia/local ;
-	btn100:estadoDeUso       https://datos.ign.es/kos/transportes/estado-de-uso/en-uso ;
-	btn100:rutaTENT-T        https://datos.ign.es/kos/transportes/ruta-ten-t/ruta-no-transeuropea ;
-	btn100:situacionDeVia    https://datos.ign.es/kos/transportes/situacion-via/elevado ;
-	btn100:tipoDeItinerario  https://datos.ign.es/kos/transportes/tipo-itinerario/no-itinerario-europeo ;
-	btn100:tipoDeTramo       https://datos.ign.es/kos/transportes/tipo-tramo/interna .
-</pre>
-

@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="http://datos.ign.es/kos/transportes/tipo-itinerario/" uri="tipo-itinerario.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/accidente-orografico/categoria-interes" uri="categoria-interes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/accidente-orografico/producto-fuente/" uri="producto-fuente.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/altimetria/categoria-curva-nivel" uri="categoria-curva-nivel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/categoria-de-isla/" uri="categoria-isla.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/categoria-de-rio/" uri="categoria-rio.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/curso-de-rio/" uri="curso-rio.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/regimen/" uri="regimen.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/situacion-de-cauce/" uri="situacion-cauce.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/hidrografia/tipo-de-componente/" uri="tipo-de-componente.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/" uri="estado-de-uso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/poblaciones-construcciones/tipo-de-capital/" uri="tipo-de-capital.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/" uri="tipo-componente-telecomunicaciones.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/ancho-de-via/" uri="ancho-via.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/calzada/" uri="calzada.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/categoria-interes/" uri="caterogia-interes-transporte.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/competencia-aeroportuaria/" uri="competencia-aeroportuaria.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/competencia-portuaria/" uri="competencia-portuaria.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/competencia-via/" uri="competencia-via.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/electrificacion/" uri="electrificacion.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/estado-de-uso/" uri="estado-de-uso-via.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/numero-de-vias/" uri="numero-vias.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/ruta-ten-t/" uri="ruta-ten-t.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/situacion-via/" uri="situacion-via.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/tipo-acceso/" uri="tipo-acceso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/tipo-de-trafico/" uri="tipo-trafico.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1513870266018" name="https://datos.ign.es/kos/transportes/tipo-tramo/" uri="tipo-tramo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="http://datos.ign.es/kos/transportes/tipo-itinerario/" uri="tipo-itinerario.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/accidente-orografico/categoria-interes" uri="categoria-interes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/accidente-orografico/producto-fuente/" uri="producto-fuente.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/altimetria/categoria-curva-nivel" uri="categoria-curva-nivel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/categoria-de-isla/" uri="categoria-isla.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/categoria-de-rio/" uri="categoria-rio.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/curso-de-rio/" uri="curso-rio.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/regimen/" uri="regimen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/situacion-de-cauce/" uri="situacion-cauce.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/hidrografia/tipo-de-componente/" uri="tipo-de-componente.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/" uri="estado-de-uso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/" uri="tipo-componente-telecomunicaciones.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/ancho-de-via/" uri="ancho-via.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/calzada/" uri="calzada.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/categoria-interes/" uri="caterogia-interes-transporte.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/competencia-aeroportuaria/" uri="competencia-aeroportuaria.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/competencia-portuaria/" uri="competencia-portuaria.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/competencia-via/" uri="competencia-via.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/electrificacion/" uri="electrificacion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/estado-de-uso/" uri="estado-de-uso-via.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/numero-de-vias/" uri="numero-vias.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/ruta-ten-t/" uri="ruta-ten-t.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/situacion-via/" uri="situacion-via.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/tipo-acceso/" uri="tipo-acceso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/tipo-de-trafico/" uri="tipo-trafico.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513875608930" name="https://datos.ign.es/kos/transportes/tipo-tramo/" uri="tipo-tramo.owl"/>
     </group>
 </catalog>

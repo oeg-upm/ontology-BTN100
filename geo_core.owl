@@ -19,9 +19,10 @@
         <terms:title xml:lang="es">Ontología para la representación de Objetos Geográficos</terms:title>
         <terms:publisher xml:lang="es">Instituto Geográfico Nacional</terms:publisher>
         <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:date xml:lang="es">2017-12-21</dc:date>
         <terms:contributor xml:lang="es">Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
         <terms:creator xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:creator>
-        <dc:date xml:lang="es">2017-12-20</dc:date>
         <vann:preferredNamespaceUri rdf:resource="https://datos.ign.es/def/geo_core#"/>
         <terms:description xml:lang="es">Ontología para la representación de Objetos Geográficos</terms:description>
     </owl:Ontology>
@@ -42,6 +43,12 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
