@@ -1,9 +1,11 @@
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (OEG - Universidad Polit\u00E9cnica de Madrid)"@es .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://purl.org/dc/terms/date> "2017-12-13"@es .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://purl.org/dc/terms/description> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Curva de Nivel seg\u00FAn el cat\u00E1logo de la BTN100"@es .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/> <http://purl.org/dc/terms/title> "Categor\u00EDas de Curva de Nivel"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (OEG - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://purl.org/dc/terms/date> "2017-12-13"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://purl.org/dc/terms/description> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Curva de Nivel seg\u00FAn el cat\u00E1logo de la BTN100"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://purl.org/dc/terms/title> "Categor\u00EDas de Curva de Nivel"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#definition> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Curva de Nivel seg\u00FAn el cat\u00E1logo de la BTN100"@es .
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categor\u00EDa de Curva de Nivel"@es .
 # 
 # 
 # #################################################################
@@ -33,8 +35,6 @@
 <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica> .
 <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada> .
 <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra> .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#definition> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Curva de Nivel seg\u00FAn el cat\u00E1logo de la BTN100"@es .
-<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categor\u00EDa de Curva de Nivel"@es .
 # 
 # https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica
 <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
