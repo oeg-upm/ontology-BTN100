@@ -157,6 +157,24 @@
     <!-- https://datos.ign.es/def/geo_core#ObjetoGeografico -->
 
     <owl:Class rdf:about="https://datos.ign.es/def/geo_core#ObjetoGeografico">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/created"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/replaces"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Los objetos geográficos son fenómenos del mundo real asociados con una localización relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core"/>
         <rdfs:label xml:lang="es">Objeto Geográfico</rdfs:label>
