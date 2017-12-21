@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://datos.ign.es/kos/accidente-orografico/categoria-interes/">
+    <owl:Ontology rdf:about="https://datos.ign.es/kos/accidente-orografico/categoria-interes">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
         <terms:date xml:lang="es">2017-12-13</terms:date>
