@@ -9,11 +9,12 @@
 <https://datos.ign.es/def/btn100> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://datos.ign.es/def/btn100_v0.2> ;
                                    owl:imports <https://datos.ign.es/def/geo_core> ;
+                                   <http://purl.org/dc/elements/1.1/date> "2017-12-21"@es ;
                                    <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
                                                                           "Pedro Vivas White (Instituto Geográfico Nacional)"@es ;
                                    <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ;
                                    <http://purl.org/dc/terms/description> "Ontología para la representación del conjunto de datos geográficos de los datos de la Base Topográfica Nacional a escala 1:100.000 (BTN100)."@es ;
-                                   <http://purl.org/dc/terms/license> <http://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf> ;
+                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                    <http://purl.org/dc/terms/publisher> "Instituto Geográfico Nacional"@es ;
                                    <http://purl.org/dc/terms/title> "Ontología para la representación de los datos de la Base Topográfica Nacional BTN100"@es ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "btn100"@es ;
@@ -38,6 +39,14 @@
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -556,6 +565,114 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
 #    Classes
 #################################################################
 
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error10
+<http://org.semanticweb.owlapi/error#Error10> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error11
+<http://org.semanticweb.owlapi/error#Error11> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error12
+<http://org.semanticweb.owlapi/error#Error12> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error13
+<http://org.semanticweb.owlapi/error#Error13> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error14
+<http://org.semanticweb.owlapi/error#Error14> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error15
+<http://org.semanticweb.owlapi/error#Error15> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error16
+<http://org.semanticweb.owlapi/error#Error16> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error17
+<http://org.semanticweb.owlapi/error#Error17> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error18
+<http://org.semanticweb.owlapi/error#Error18> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error19
+<http://org.semanticweb.owlapi/error#Error19> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error20
+<http://org.semanticweb.owlapi/error#Error20> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error21
+<http://org.semanticweb.owlapi/error#Error21> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error22
+<http://org.semanticweb.owlapi/error#Error22> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error23
+<http://org.semanticweb.owlapi/error#Error23> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error24
+<http://org.semanticweb.owlapi/error#Error24> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error25
+<http://org.semanticweb.owlapi/error#Error25> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error26
+<http://org.semanticweb.owlapi/error#Error26> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error27
+<http://org.semanticweb.owlapi/error#Error27> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error8
+<http://org.semanticweb.owlapi/error#Error8> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error9
+<http://org.semanticweb.owlapi/error#Error9> rdf:type owl:Class .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#CiudadAutonoma> rdf:type owl:Class ;
                                                                                         rdfs:subClassOf :UnidadAdministrativa ;
@@ -579,7 +696,12 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> rdf:type owl:Class ;
-                                                                                    rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                                                                    rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error13> ,
+                                                                                                    <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                      owl:allValuesFrom xsd:string
+                                                                                                    ] ,
                                                                                                     [ rdf:type owl:Restriction ;
                                                                                                       owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
                                                                                                       owl:allValuesFrom xsd:string
@@ -603,7 +725,12 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> rdf:type owl:Class ;
-                                                                                         rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                                                                         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error10> ,
+                                                                                                         <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                                                                           owl:allValuesFrom xsd:string
+                                                                                                         ] ,
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
                                                                                                            owl:allValuesFrom xsd:string
@@ -656,7 +783,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual
 :AccidenteMaritimoPuntual rdf:type owl:Class ;
-                          rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error22> ,
+                                          <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/dc/terms/title> ;
+                                            owl:allValuesFrom xsd:string
+                                          ] ;
                           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                           rdfs:comment "Cabos, calas, peñones, playas y puntas."^^xsd:string ;
                           rdfs:label "Accidente Marítimo Puntual"@es .
@@ -703,7 +835,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#AlojamientoYOcio
 :AlojamientoYOcio rdf:type owl:Class ;
-                  rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error7> ,
+                                  <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/dc/terms/title> ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ;
                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                   rdfs:comment "Edificación destinada a alojamiento o a actividades de ocio."@es ;
                   rdfs:label "Alojamiento y Ocio"@es .
@@ -849,7 +986,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Carretera
 :Carretera rdf:type owl:Class ;
-           rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error18> ,
+                           <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/dc/terms/title> ;
+                             owl:allValuesFrom xsd:string
+                           ] ;
            rdfs:comment "Camino público, ancho y espacioso, pavimentado y dispuesto para el tránsito de vehículos. (RAE)"@es ;
            rdfs:label "Carretera"@es .
 
@@ -880,7 +1022,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#CauceArtificial
 :CauceArtificial rdf:type owl:Class ;
-                 rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                 <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/dc/terms/title> ;
+                                   owl:allValuesFrom xsd:string
+                                 ] ;
                  <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                  rdfs:comment "Canalización artificial diseñada para transvasar agua."@es ;
                  rdfs:label "Cauce Artificial"@es .
@@ -1095,7 +1242,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Embalse
 :Embalse rdf:type owl:Class ;
-         rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error19> ,
+                         <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                           owl:allValuesFrom xsd:string
+                         ] ;
          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
          rdfs:comment "Depósito de agua construido artificialmente para almacenar las aguas de un río/arroyo, con fines de riego, abastecimiento de poblaciones, producción de energía eléctrica, etc."@es ;
          rdfs:label "Embalse"@es .
@@ -1103,7 +1255,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Enlace
 :Enlace rdf:type owl:Class ;
-        rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error25> ,
+                        <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                          owl:allValuesFrom xsd:string
+                        ] ;
         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
         rdfs:comment "Tramo que une dos vías de nombre distinto y permite el acceso de una a otra."@es ;
         rdfs:label "Enlace"@es .
@@ -1119,7 +1276,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#EntidadVirtual
 :EntidadVirtual rdf:type owl:Class ;
-                rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
+                                <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                  owl:allValuesFrom xsd:string
+                                ] ;
                 <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ,
                                                          "Especificaciones del Producto de Datos BTN100 Versión 1.0"@es ;
                 rdfs:comment "Son aquellos elementos que no representan la geometría de los objetos del mundo real a escala sino que son simplemente una línea directriz necesaria para colocar sus rótulos o etiquetas. La captura de estos elementos se realiza visualizando en ráster las mencionadas series. Se digitaliza un elemento lineal a lo largo de la base del texto."@es ;
@@ -1206,7 +1368,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#EstacionPermanenteGPS
 :EstacionPermanenteGPS rdf:type owl:Class ;
-                       rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error24> ,
+                                       <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/dc/terms/title> ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ;
                        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                        rdfs:comment "Vértices de la Red de Estaciones Permanentes de GPS, de la que se pueden obtener valores de observación para un día concreto y una hora determinada."@es ;
                        rdfs:label "Estación Permanente GPS"@es .
@@ -1237,7 +1404,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#ExplotacionMinera
 :ExplotacionMinera rdf:type owl:Class ;
-                   rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                   rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error21> ,
+                                   <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/dc/terms/title> ;
+                                     owl:allValuesFrom xsd:string
+                                   ] ;
                    <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                    rdfs:comment "Terreno dedicado a la explotación de minerales o piedra."@es ;
                    rdfs:label "Explotación minera"@es .
@@ -1245,7 +1417,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Faro
 :Faro rdf:type owl:Class ;
-      rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error16> ,
+                      <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://purl.org/dc/terms/title> ;
+                        owl:allValuesFrom xsd:string
+                      ] ;
       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
       rdfs:comment "Torre alta en las costas, con luz en su parte superior, para que durante la noche sirva de señal a los navegantes."@es ;
       rdfs:label "Faro"@es .
@@ -1253,7 +1430,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Ferrocarril
 :Ferrocarril rdf:type owl:Class ;
-             rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error5> ,
+                             <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.org/dc/terms/title> ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :codigoDeVia ;
                                owl:allValuesFrom xsd:string
@@ -1326,7 +1508,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Humedal
 :Humedal rdf:type owl:Class ;
-         rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error12> ,
+                         <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                           owl:allValuesFrom xsd:string
+                         ] ;
          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
          rdfs:comment "Zona de tierra cuya superficie se inunda de forma intermitente o permanente."@es ;
          rdfs:label "Humedal"@es .
@@ -1334,7 +1521,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria
 :InfraestructuraAeroportuaria rdf:type owl:Class ;
-                              rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error11> ,
+                                              <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                owl:allValuesFrom xsd:string
+                                              ] ;
                               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                               rdfs:comment "Área o infraestructura destinadas al aterrizaje y despegue de aviones y otros aparatos de navegación aérea."@es ;
                               rdfs:label "Infraestructura Aeroportuaria"@es .
@@ -1350,7 +1542,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#InstalacionFerroviaria
 :InstalacionFerroviaria rdf:type owl:Class ;
-                        rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error9> ,
+                                        <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                                          owl:allValuesFrom xsd:string
+                                        ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :codigoDeEstacion ;
                                           owl:allValuesFrom xsd:string
@@ -1400,7 +1597,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Itinerario
 :Itinerario rdf:type owl:Class ;
-            rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+            rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error14> ,
+                            <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://purl.org/dc/terms/title> ;
+                              owl:allValuesFrom xsd:string
+                            ] ;
             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
             rdfs:comment "Tramo de vía perteneciente al Camino de Santiago o catalogada como Vía verde."@es ;
             rdfs:label "Itinerario"@es .
@@ -1432,7 +1634,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Laguna
 :Laguna rdf:type owl:Class ;
-        rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error23> ,
+                        <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                          owl:allValuesFrom xsd:string
+                        ] ;
         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
         rdfs:comment "Depósito natural de agua, generalmente dulce."@es ;
         rdfs:label "Laguna"@es .
@@ -1462,7 +1669,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#LugarDeInteres
 :LugarDeInteres rdf:type owl:Class ;
-                rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error20> ,
+                                <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/dc/terms/title> ;
+                                  owl:allValuesFrom xsd:string
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :codigoBIC ;
                                   owl:allValuesFrom xsd:string
@@ -1662,7 +1874,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Puerto
 :Puerto rdf:type owl:Class ;
-        rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error6> ,
+                        <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/dc/terms/title> ;
+                          owl:allValuesFrom xsd:string
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :unloCode ;
                           owl:allValuesFrom xsd:string
@@ -1695,7 +1912,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#PuntoAcotado
 :PuntoAcotado rdf:type owl:Class ;
-              rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+              rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                              <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/dc/terms/title> ;
+                                owl:allValuesFrom xsd:string
+                              ] ;
               <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
               rdfs:comment "Se define como puntos acotados a aquellos puntos con cota que poseen una ubicación representativa del relieve y complementan la información facilitada por las curvas de nivel."@es ;
               rdfs:label "Punto Acotado"@es .
@@ -1718,7 +1940,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Ria
 :Ria rdf:type owl:Class ;
-     rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error26> ,
+                     <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty <http://purl.org/dc/terms/title> ;
+                       owl:allValuesFrom xsd:string
+                     ] ;
      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
      rdfs:comment "Entrante del mar en la costa, que se forma por sumersión de la parte litoral de una cuenca fluvial de laderas más o menos abruptas."@es ;
      rdfs:label "Ría"@es .
@@ -1726,7 +1953,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#Rio
 :Rio rdf:type owl:Class ;
-     rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error15> ,
+                     <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty <http://purl.org/dc/terms/title> ;
+                       owl:allValuesFrom xsd:string
+                     ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :codigoDeRio ;
                        owl:allValuesFrom xsd:string
@@ -1823,7 +2055,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#UnidadAdministrativa
 :UnidadAdministrativa rdf:type owl:Class ;
-                      rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                      rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                                      <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/dc/terms/title> ;
+                                        owl:allValuesFrom xsd:string
+                                      ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
                                         owl:allValuesFrom xsd:string
@@ -1843,9 +2080,10 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#VerticeGeodesico
 :VerticeGeodesico rdf:type owl:Class ;
-                  rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error27> ,
+                                  <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty :numeroDeVertice ;
+                                    owl:onProperty <http://purl.org/dc/terms/title> ;
                                     owl:allValuesFrom xsd:string
                                   ] ;
                   <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
@@ -1905,7 +2143,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico
 :ZonaDeUsoCaracteristico rdf:type owl:Class ;
-                         rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+                         rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error17> ,
+                                         <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/dc/terms/title> ;
+                                           owl:allValuesFrom xsd:string
+                                         ] ;
                          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
                          rdfs:comment "Superficie delimitada, empleada para desarrollar una actividad específica."@es ;
                          rdfs:label "Zona de Uso Característico"@es .
@@ -1969,7 +2212,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 ###  https://datos.ign.es/def/btn100#ZonaProtegida
 :ZonaProtegida rdf:type owl:Class ;
-               rdfs:subClassOf <https://datos.ign.es/def/geo_core#ObjetoGeografico> ;
+               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error8> ,
+                               <https://datos.ign.es/def/geo_core#ObjetoGeografico> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/dc/terms/title> ;
+                                 owl:allValuesFrom xsd:string
+                               ] ;
                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
                rdfs:comment "“Áreas establecidas o gestionadas mediante una legislación -sea nacional, comunitaria o internacional- que persiga unos objetivos de conservación específicos” [INPIRE Anexo 1. Tema 9.). Se incluyen áreas que tienen algún tipo de protección medioambiental como determinadas áreas que el MAGRAMA considera Espacios Naturales Protegidos (ENP) o las zonas catalogadas como lugar de Importancia Comunitaria (LIC) o Zonas de Especial Protección para las Aves (ZEPA) por la Red Natura 2000."@es ;
                rdfs:label "Zona Protegida"@es .
@@ -2002,5 +2250,86 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 ###  https://datos.ign.es/def/geo_core#ObjetoGeografico
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> rdf:type owl:Class .
 
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
