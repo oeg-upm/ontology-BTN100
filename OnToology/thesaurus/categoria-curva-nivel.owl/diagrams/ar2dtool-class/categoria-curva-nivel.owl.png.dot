@@ -1,19 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "-7dd37234:16051c3e7e1:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "-719fd537:16079c1e8f5:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "-7dd37234:16051c3e7e1:-7ffb" [ label = "owl:unionOf" ];
-	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
-	"NULL" -> "-7dd37234:16051c3e7e1:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"skos:scopeNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
-	"skos:topConceptOf" -> "skos:inScheme" [ label = "rdfs:subPropertyOf" ];
+	"skos:ConceptScheme" -> "skos:Concept" [ label = "owl:disjointWith" ];
 	"skos:relatedMatch" -> "skos:related" [ label = "rdfs:subPropertyOf" ];
 	"skos:relatedMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
-	"skos:ConceptScheme" -> "skos:Concept" [ label = "owl:disjointWith" ];
+	"skos:topConceptOf" -> "skos:inScheme" [ label = "rdfs:subPropertyOf" ];
 	"skos:related" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
 	"skos:broadMatch" -> "skos:broader" [ label = "rdfs:subPropertyOf" ];
@@ -26,12 +22,12 @@ node [shape = rectangle, color="orange"]; "-7dd37234:16051c3e7e1:-7ffc" "skos:Or
 	"skos:historyNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:exactMatch" -> "skos:closeMatch" [ label = "rdfs:subPropertyOf" ];
 	"skos:prefLabel" -> "rdfs:label" [ label = "rdfs:subPropertyOf" ];
-	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/" -> "http://www.w3.org/2004/02/skos/core" [ label = "owl:imports" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "http://www.w3.org/2004/02/skos/core" [ label = "owl:imports" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra" [ label = "skos:hasTopConcept" ];
-	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada" [ label = "skos:hasTopConcept" ];
-	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica" [ label = "skos:hasTopConcept" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada" [ label = "skos:hasTopConcept" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica" [ label = "skos:hasTopConcept" ];
 	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
 	"skos:altLabel" -> "rdfs:label" [ label = "rdfs:subPropertyOf" ];
 	"skos:broaderTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
@@ -45,11 +41,15 @@ node [shape = rectangle, color="orange"]; "-7dd37234:16051c3e7e1:-7ffc" "skos:Or
 	"skos:narrowMatch" -> "skos:narrower" [ label = "rdfs:subPropertyOf" ];
 	"skos:narrowMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"skos:narrower" -> "skos:narrowerTransitive" [ label = "rdfs:subPropertyOf" ];
-	"skos:scopeNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
+	"NULL" -> "-719fd537:16079c1e8f5:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"NULL" -> "-719fd537:16079c1e8f5:-7ffb" [ label = "owl:unionOf" ];
 	"skos:OrderedCollection" -> "rdf:List" [ label = "skos:memberList" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"skos:Concept" -> "skos:Concept" [ label = "skos:semanticRelation" ];
-	"skos:Collection" -> "-7dd37234:16051c3e7e1:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "-719fd537:16079c1e8f5:-7ffc" [ label = "skos:member" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 

@@ -1,0 +1,109 @@
+<https://datos.ign.es/def/geo_core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://datos.ign.es/def/geo_core> <http://www.w3.org/2002/07/owl#versionIRI> <https://datos.ign.es/def/geo_core> .
+<https://datos.ign.es/def/geo_core> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/elements/1.1/date> "2017-12-20"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/contributor> "Oscar Corcho Garc\u00EDa (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/creator> "Pedro Vivas White (Instituto Geogr\u00E1fico Nacional)"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/description> "Ontolog\u00EDa para la representaci\u00F3n de Objetos Geogr\u00E1ficos"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/publisher> "Instituto Geogr\u00E1fico Nacional"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/title> "Ontolog\u00EDa para la representaci\u00F3n de Objetos Geogr\u00E1ficos"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "geo_core"@es .
+<https://datos.ign.es/def/geo_core> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://datos.ign.es/def/geo_core#> .
+<https://datos.ign.es/def/geo_core> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de inserci\u00F3n o modificaci\u00F3n del objeto geogr\u00E1fico en el cat\u00E1logo"@es .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de alta"@es .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador \u00FAnico del objeto"@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
+# 
+# http://purl.org/dc/terms/replaces
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/2000/01/rdf-schema#comment> "Id del elemento modificado"@es .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/2000/01/rdf-schema#label> "reemplaza"@es .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://datos.ign.es/def/geo_core#xETRS89
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada X en metros (ETRS89)"@es .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "xETRS89"@es .
+# 
+# https://datos.ign.es/def/geo_core#yETRS89
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada Y en metros (ETRS89)"@es .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "yETRS89"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2002/07/owl#equivalentClass> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
+# 
+# https://datos.ign.es/def/geo_core#ObjetoGeografico
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#comment> "Los objetos geogr\u00E1ficos son fen\u00F3menos del mundo real asociados con una localizaci\u00F3n relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)"@es .
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto Geogr\u00E1fico"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre geogr\u00E1fico del objeto"@es .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

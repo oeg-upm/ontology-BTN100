@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://datos.ign.es/kos/hidrografia/categoria-de-rio/"
-     xml:base="https://datos.ign.es/kos/hidrografia/categoria-de-rio/"
+<rdf:RDF xmlns="https://datos.ign.es/kos/hidrografia/categoria-de-rio#"
+     xml:base="https://datos.ign.es/kos/hidrografia/categoria-de-rio"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,12 +8,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/">
+    <owl:Ontology rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
         <terms:date xml:lang="es">2017-12-13</terms:date>
         <terms:description xml:lang="es">Categorización de ríos según el catálogo de la BTN100</terms:description>
         <terms:title xml:lang="es">Categorización de ríos</terms:title>
+        <skos:definition xml:lang="es">Categorización de ríos</skos:definition>
+        <skos:prefLabel xml:lang="es">categoría de río</skos:prefLabel>
     </owl:Ontology>
     
 
@@ -55,11 +57,9 @@
     <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes"/>
-        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-primario"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal"/>
         <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario"/>
         <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario"/>
-        <skos:definition xml:lang="es">Categorización de ríos</skos:definition>
-        <skos:prefLabel xml:lang="es">categoría de río</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -76,10 +76,10 @@
     
 
 
-    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-primario -->
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal -->
 
 
-    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-primario">
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio"/>
         <skos:definition xml:lang="es">Río de interés primario</skos:definition>
