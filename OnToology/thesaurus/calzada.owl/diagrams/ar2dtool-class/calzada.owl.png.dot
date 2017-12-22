@@ -1,12 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "5b9564cb:16051c397a2:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
-	"NULL" -> "5b9564cb:16051c397a2:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "5b9564cb:16051c397a2:-7ffb" [ label = "owl:unionOf" ];
+node [shape = rectangle, color="orange"]; "-264bfd7d:16079c19590:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+	"NULL" -> "-264bfd7d:16079c19590:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
+	"NULL" -> "-264bfd7d:16079c19590:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"skos:scopeNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"base:sentido-unico" -> "https://datos.ign.es/kos/transportes/calzada" [ label = "skos:inScheme" ];
@@ -21,9 +21,10 @@ node [shape = rectangle, color="orange"]; "5b9564cb:16051c397a2:-7ffc" "skos:Ord
 	"skos:definition" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:editorialNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:example" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
-	"https://datos.ign.es/kos/transportes/calzada" -> "base:sentido-unico" [ label = "skos:hasTopConcept" ];
-	"https://datos.ign.es/kos/transportes/calzada" -> "base:doble" [ label = "skos:hasTopConcept" ];
 	"https://datos.ign.es/kos/transportes/calzada" -> "base:convencional" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/calzada" -> "base:sentido-unico" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/calzada" -> "http://www.w3.org/2004/02/skos/core" [ label = "owl:imports" ];
+	"https://datos.ign.es/kos/transportes/calzada" -> "base:doble" [ label = "skos:hasTopConcept" ];
 	"base:doble" -> "https://datos.ign.es/kos/transportes/calzada" [ label = "skos:inScheme" ];
 	"skos:historyNote" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:exactMatch" -> "skos:closeMatch" [ label = "rdfs:subPropertyOf" ];
@@ -33,7 +34,6 @@ node [shape = rectangle, color="orange"]; "5b9564cb:16051c397a2:-7ffc" "skos:Ord
 	"base:convencional" -> "https://datos.ign.es/kos/transportes/calzada" [ label = "skos:inScheme" ];
 	"skos:broader" -> "skos:broaderTransitive" [ label = "rdfs:subPropertyOf" ];
 	"skos:mappingRelation" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
-	"base:" -> "http://www.w3.org/2004/02/skos/core" [ label = "owl:imports" ];
 	"skos:hiddenLabel" -> "rdfs:label" [ label = "rdfs:subPropertyOf" ];
 	"http://www.w3.org/2004/02/skos/core" -> "http://www.w3.org/TR/skos-reference/" [ label = "rdfs:seeAlso" ];
 	"skos:Collection" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
@@ -45,7 +45,7 @@ node [shape = rectangle, color="orange"]; "5b9564cb:16051c397a2:-7ffc" "skos:Ord
 	"skos:OrderedCollection" -> "rdf:List" [ label = "skos:memberList" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"skos:Concept" -> "skos:Concept" [ label = "skos:semanticRelation" ];
-	"skos:Collection" -> "5b9564cb:16051c397a2:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "-264bfd7d:16079c19590:-7ffc" [ label = "skos:member" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 

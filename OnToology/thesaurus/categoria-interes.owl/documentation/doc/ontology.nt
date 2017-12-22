@@ -1,9 +1,11 @@
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (OEG - Universidad Polit\u00E9cnica de Madrid)"@es .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://purl.org/dc/terms/date> "2017-12-13"@es .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://purl.org/dc/terms/description> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Entidad Virtual Accidente Orogr\u00E1fico seg\u00FAn el cat\u00E1logo de la BTN100"@es .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes/> <http://purl.org/dc/terms/title> "Categor\u00EDas de Entidad Virtual Accidente Orogr\u00E1fico"@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (OEG - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://purl.org/dc/terms/date> "2017-12-13"@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://purl.org/dc/terms/description> "Categorizaci\u00F3n asociada a cada tipolog\u00EDa de Entidad Virtual Accidente Orogr\u00E1fico seg\u00FAn el cat\u00E1logo de la BTN100"@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://purl.org/dc/terms/title> "Categor\u00EDas de Entidad Virtual Accidente Orogr\u00E1fico"@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#definition> "Categor\u00EDa de inter\u00E9s asociada a cada tipolog\u00EDa de Entidad Virtual Accidente Orogr\u00E1fico."@es .
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#prefLabel> "categor\u00EDa de inter\u00E9s de entidad virtual accidente orogr\u00E1fico"@es .
 # 
 # 
 # #################################################################
@@ -33,8 +35,6 @@
 <https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/accidente-orografico/categoria-interes/principal> .
 <https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario> .
 <https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario> .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#definition> "Categor\u00EDa de inter\u00E9s asociada a cada tipolog\u00EDa de Entidad Virtual Accidente Orogr\u00E1fico."@es .
-<https://datos.ign.es/kos/accidente-orografico/categoria-interes> <http://www.w3.org/2004/02/skos/core#prefLabel> "categor\u00EDa de inter\u00E9s de entidad virtual accidente orogr\u00E1fico"@es .
 # 
 # https://datos.ign.es/kos/accidente-orografico/categoria-interes/menor
 <https://datos.ign.es/kos/accidente-orografico/categoria-interes/menor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

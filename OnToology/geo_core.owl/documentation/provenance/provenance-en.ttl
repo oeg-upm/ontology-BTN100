@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://datos.ign.es/def/geo_core> a prov:Entity;
+	 dc:title "Ontología para la representación de Objetos Geográficos";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Pedro Vivas White (Instituto Geográfico Nacional)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
