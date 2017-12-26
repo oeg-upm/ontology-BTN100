@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Feature" "geo:Geometry" "geo:SpatialObject" "-1c020bae:16079bcb1a0:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Feature" "geo:Geometry" "geo:SpatialObject" "6cfefb8d:160953164b6:-7ff9" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	"skos:definition" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:relatedMatch" -> "skos:related" [ label = "rdfs:subPropertyOf" ];
 	"skos:relatedMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
@@ -41,15 +41,21 @@ node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Featu
 	"skos:broadMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"http://www.opengis.net/ont/sf" -> "http://www.opengis.net/ont/geosparql" [ label = "owl:imports" ];
 	"http://www.w3.org/2004/02/skos/core" -> "http://www.w3.org/TR/skos-reference/" [ label = "rdfs:seeAlso" ];
+	"https://datos.ign.es/def/geo_core" -> "https://creativecommons.org/licenses/by/4.0/" [ label = "dcterms:license" ];
 	"https://datos.ign.es/def/geo_core" -> "http://www.opengis.net/ont/geosparql" [ label = "owl:imports" ];
 	"https://datos.ign.es/def/geo_core" -> "https://datos.ign.es/def/geo_core" [ label = "owl:versionIRI" ];
 	"https://datos.ign.es/def/geo_core" -> "geo_core:" [ label = "vann:preferredNamespaceUri" ];
 	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
-	"NULL" -> "-1c020bae:16079bcb1a0:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:date" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "-1c020bae:16079bcb1a0:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "6cfefb8d:160953164b6:-7ff8" [ label = "owl:unionOf" ];
+	"NULL" -> "dcterms:created" [ label = "owl:onProperty" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "rdfs:Literal" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "dcterms:identifier" [ label = "owl:onProperty" ];
+	"NULL" -> "6cfefb8d:160953164b6:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "dcterms:replaces" [ label = "owl:onProperty" ];
+	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
 	"geo:defaultGeometry" -> "geo:hasGeometry" [ label = "rdfs:subPropertyOf" ];
 	"skos:prefLabel" -> "rdfs:label" [ label = "rdfs:subPropertyOf" ];
 	"dc:relation" -> "http://dublincore.org/usage/terms/history/#relation-006" [ label = "dcterms:hasVersion" ];
@@ -98,7 +104,7 @@ node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Featu
 	"geo:Geometry" -> "geo:wktLiteral" [ label = "geo:asWKT" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"geo:Geometry" -> "xsd:integer" [ label = "geo:coordinateDimension" ];
-	"skos:Collection" -> "-1c020bae:16079bcb1a0:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "6cfefb8d:160953164b6:-7ff9" [ label = "skos:member" ];
 	"geo:SpatialObject" -> "geo:SpatialObject" [ label = "geo:sfIntersects" ];
 	"owl:Thing" -> "xsd:float" [ label = "geo_core:yETRS89" ];
 	"geo:SpatialObject" -> "geo:SpatialObject" [ label = "geo:rcc8ec" ];

@@ -13,11 +13,12 @@
     <owl:Ontology rdf:about="https://datos.ign.es/def/geo_core">
         <owl:versionIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
-        <dc:date xml:lang="es">2017-12-20</dc:date>
+        <dc:contributor xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</dc:contributor>
+        <dc:date xml:lang="es">2017-12-21</dc:date>
         <terms:contributor xml:lang="es">Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
         <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
-        <terms:creator xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:creator>
         <terms:description xml:lang="es">Ontología para la representación de Objetos Geográficos</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher xml:lang="es">Instituto Geográfico Nacional</terms:publisher>
         <terms:title xml:lang="es">Ontología para la representación de Objetos Geográficos</terms:title>
         <vann:preferredNamespacePrefix xml:lang="es">geo_core</vann:preferredNamespacePrefix>
@@ -43,6 +44,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -163,6 +171,24 @@
 
 
     <owl:Class rdf:about="https://datos.ign.es/def/geo_core#ObjetoGeografico">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/created"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/replaces"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Los objetos geográficos son fenómenos del mundo real asociados con una localización relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core"/>
         <rdfs:label xml:lang="es">Objeto Geográfico</rdfs:label>
