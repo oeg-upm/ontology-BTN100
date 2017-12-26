@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://datos.ign.es/def/"
-     xml:base="https://datos.ign.es/def/"
+<rdf:RDF xmlns="https://datos.ign.es/def/btn100#"
+     xml:base="https://datos.ign.es/def/btn100"
      xmlns:van="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:btn100="https://datos.ign.es/def/"
+     xmlns:btn100="https://datos.ign.es/def/btn100#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geo_core="https://datos.ign.es/def/geo_core#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://datos.ign.es/def/btn100">
         <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100_v0.2"/>
@@ -1293,7 +1294,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
         <rdfs:comment xml:lang="es">Lugar, generalmente cercado, destinado a enterrar los restos mortales o cadáveres de los difuntos.</rdfs:comment>
-        <rdfs:label xml:lang="es">Comentario</rdfs:label>
+        <rdfs:label xml:lang="es">Cementerio</rdfs:label>
     </owl:Class>
     
 
