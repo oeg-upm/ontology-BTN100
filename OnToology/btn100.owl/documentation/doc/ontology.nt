@@ -614,9 +614,18 @@ _:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es
 _:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
-_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#population> .
+_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
+_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#population> .
+_:genid43 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#comment> "Las edificaciones o viviendas de una entidad singular de poblaci\u00F3n que no pueden ser incluidas en el concepto de n\u00FAcleo de poblaci\u00F3n se consideran pertenecientes al diseminado, entendiendo as\u00ED por diseminado aquellas casas aisladas que no est\u00E1n recogidas como n\u00FAcleo de poblaci\u00F3n por el INE."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado> <http://www.w3.org/2000/01/rdf-schema#label> "Diseminado"@es .
@@ -631,28 +640,28 @@ _:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error10> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
-_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#population> .
-_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
-_:genid45 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#population> .
-_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#population> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Se consideran n\u00FAcleos de poblaci\u00F3n (superficiales y puntuales) de BTN100 aquellas entidades que el INE considera n\u00FAcleos de poblaci\u00F3n en sus datos oficiales.\nSeg\u00FAn INE: Se considera N\u00FAcleo de poblaci\u00F3n a un conjunto de al menos diez edificaciones, que est\u00E1n formando calles, plazas y otras v\u00EDas urbanas. Por excepci\u00F3n el n\u00FAmero de edificaciones podr\u00E1 ser inferior a 10, siempre que la poblaci\u00F3n de derecho supere los 50 habitantes"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion> <http://www.w3.org/2000/01/rdf-schema#label> "N\u00FAcleo de Poblaci\u00F3n"@es .
@@ -682,10 +691,10 @@ _:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error22> .
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#comment> "Cabos, calas, pe\u00F1ones, playas y puntas." .
 <https://datos.ign.es/def/btn100#AccidenteMaritimoPuntual> <http://www.w3.org/2000/01/rdf-schema#label> "Accidente Mar\u00EDtimo Puntual"@es .
@@ -728,10 +737,10 @@ _:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error7> .
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#comment> "Edificaci\u00F3n destinada a alojamiento o a actividades de ocio."@es .
 <https://datos.ign.es/def/btn100#AlojamientoYOcio> <http://www.w3.org/2000/01/rdf-schema#label> "Alojamiento y Ocio"@es .
@@ -778,7 +787,7 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Bahia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Bahia> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Bahia> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrada de mar en la costa, de extensi\u00F3n considerable, que puede servir de abrigo a las embarcaciones. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Bahia> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Bah\u00EDa"@es .
+<https://datos.ign.es/def/btn100#Bahia> <http://www.w3.org/2000/01/rdf-schema#label> "Bah\u00EDa"@es .
 # 
 # https://datos.ign.es/def/btn100#Balneario
 <https://datos.ign.es/def/btn100#Balneario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -861,10 +870,10 @@ _:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error18> .
 <https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#comment> "Camino p\u00FAblico, ancho y espacioso, pavimentado y dispuesto para el tr\u00E1nsito de veh\u00EDculos. (RAE)"@es .
 <https://datos.ign.es/def/btn100#Carretera> <http://www.w3.org/2000/01/rdf-schema#label> "Carretera"@es .
 # 
@@ -893,10 +902,10 @@ _:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#comment> "Canalizaci\u00F3n artificial dise\u00F1ada para transvasar agua."@es .
 <https://datos.ign.es/def/btn100#CauceArtificial> <http://www.w3.org/2000/01/rdf-schema#label> "Cauce Artificial"@es .
@@ -965,7 +974,7 @@ _:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#ComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/btn100#ComarcaRegion> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#ComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Delimitaci\u00F3n que contiene conjunto de municipios oficial (comarca) o hist\u00F3rica (regi\u00F3n)"@es .
-<https://datos.ign.es/def/btn100#ComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Regi\u00F3n/Comarca"@es .
+<https://datos.ign.es/def/btn100#ComarcaRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Comarca / Regi\u00F3n"@es .
 # 
 # https://datos.ign.es/def/btn100#ConduccionDeCombustible
 <https://datos.ign.es/def/btn100#ConduccionDeCombustible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -986,14 +995,14 @@ _:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Cordillera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/btn100#Cordillera> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Cordillera> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie de monta\u00F1as enlazadas entre s\u00ED. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Cordillera> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Cordillera"@es .
+<https://datos.ign.es/def/btn100#Cordillera> <http://www.w3.org/2000/01/rdf-schema#label> "Cordillera"@es .
 # 
 # https://datos.ign.es/def/btn100#Costa
 <https://datos.ign.es/def/btn100#Costa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Costa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Costa> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Costa> <http://www.w3.org/2000/01/rdf-schema#comment> "Orilla del mar, de un r\u00EDo, de un lago, etc., y tierra que est\u00E1 cerca de ella. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Costa> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Costa"@es .
+<https://datos.ign.es/def/btn100#Costa> <http://www.w3.org/2000/01/rdf-schema#label> "Costa"@es .
 # 
 # https://datos.ign.es/def/btn100#CotaMunicipal
 <https://datos.ign.es/def/btn100#CotaMunicipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1035,7 +1044,7 @@ _:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Delta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Delta> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Delta> <http://www.w3.org/2000/01/rdf-schema#comment> "Terreno comprendido entre los brazos de un r\u00EDo en su desembocadura. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Delta> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Delta"@es .
+<https://datos.ign.es/def/btn100#Delta> <http://www.w3.org/2000/01/rdf-schema#label> "Delta"@es .
 # 
 # https://datos.ign.es/def/btn100#DepositoDeAgua
 <https://datos.ign.es/def/btn100#DepositoDeAgua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1083,10 +1092,10 @@ _:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error19> .
 <https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Embalse> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#comment> "Dep\u00F3sito de agua construido artificialmente para almacenar las aguas de un r\u00EDo/arroyo, con fines de riego, abastecimiento de poblaciones, producci\u00F3n de energ\u00EDa el\u00E9ctrica, etc."@es .
 <https://datos.ign.es/def/btn100#Embalse> <http://www.w3.org/2000/01/rdf-schema#label> "Embalse"@es .
@@ -1095,10 +1104,10 @@ _:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error25> .
 <https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Enlace> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo que une dos v\u00EDas de nombre distinto y permite el acceso de una a otra."@es .
 <https://datos.ign.es/def/btn100#Enlace> <http://www.w3.org/2000/01/rdf-schema#label> "Enlace"@es .
@@ -1108,16 +1117,16 @@ _:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Ensenada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Ensenada> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Ensenada> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte de mar que entra en la tierra. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Ensenada> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Ensenada"@es .
+<https://datos.ign.es/def/btn100#Ensenada> <http://www.w3.org/2000/01/rdf-schema#label> "Ensenada"@es .
 # 
 # https://datos.ign.es/def/btn100#EntidadVirtual
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://purl.org/dc/elements/1.1/source> "Especificaciones del Producto de Datos BTN100 Versi\u00F3n 1.0"@es .
 <https://datos.ign.es/def/btn100#EntidadVirtual> <http://www.w3.org/2000/01/rdf-schema#comment> "Son aquellos elementos que no representan la geometr\u00EDa de los objetos del mundo real a escala sino que son simplemente una l\u00EDnea directriz necesaria para colocar sus r\u00F3tulos o etiquetas. La captura de estos elementos se realiza visualizando en r\u00E1ster las mencionadas series. Se digitaliza un elemento lineal a lo largo de la base del texto."@es .
@@ -1195,10 +1204,10 @@ _:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error24> .
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#comment> "V\u00E9rtices de la Red de Estaciones Permanentes de GPS, de la que se pueden obtener valores de observaci\u00F3n para un d\u00EDa concreto y una hora determinada."@es .
 <https://datos.ign.es/def/btn100#EstacionPermanenteGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Estaci\u00F3n Permanente GPS"@es .
@@ -1221,16 +1230,16 @@ _:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Estrecho> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Estrecho> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Estrecho> <http://www.w3.org/2000/01/rdf-schema#comment> "Paso angosto comprendido entre dos tierras y por el cual se comunica un mar con otro (RAE)"@es .
-<https://datos.ign.es/def/btn100#Estrecho> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Estrecho"@es .
+<https://datos.ign.es/def/btn100#Estrecho> <http://www.w3.org/2000/01/rdf-schema#label> "Estrecho"@es .
 # 
 # https://datos.ign.es/def/btn100#ExplotacionMinera
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error21> .
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#comment> "Terreno dedicado a la explotaci\u00F3n de minerales o piedra."@es .
 <https://datos.ign.es/def/btn100#ExplotacionMinera> <http://www.w3.org/2000/01/rdf-schema#label> "Explotaci\u00F3n minera"@es .
@@ -1239,10 +1248,10 @@ _:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error16> .
 <https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Faro> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#comment> "Torre alta en las costas, con luz en su parte superior, para que durante la noche sirva de se\u00F1al a los navegantes."@es .
 <https://datos.ign.es/def/btn100#Faro> <http://www.w3.org/2000/01/rdf-schema#label> "Faro"@es .
@@ -1251,19 +1260,19 @@ _:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error5> .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeVia> .
-_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeVia> .
-_:genid59 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid59 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeVia> .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeVia> .
+_:genid61 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://purl.org/dc/elements/1.1/source> "Diccionario de la Real Academia Espa\u00F1ola."@es .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#comment> "Camino con dos carriles de hierro paralelos, sobre los cuales ruedan los trenes."@es .
 <https://datos.ign.es/def/btn100#Ferrocarril> <http://www.w3.org/2000/01/rdf-schema#label> "Ferrocarril"@es .
@@ -1301,7 +1310,7 @@ _:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Golfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Golfo> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Golfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Gran porci\u00F3n de mar que se interna en la tierra entre dos cabos. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Golfo> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Golfo"@es .
+<https://datos.ign.es/def/btn100#Golfo> <http://www.w3.org/2000/01/rdf-schema#label> "Golfo"@es .
 # 
 # https://datos.ign.es/def/btn100#Helipuerto
 <https://datos.ign.es/def/btn100#Helipuerto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1321,10 +1330,10 @@ _:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error12> .
 <https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Humedal> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona de tierra cuya superficie se inunda de forma intermitente o permanente."@es .
 <https://datos.ign.es/def/btn100#Humedal> <http://www.w3.org/2000/01/rdf-schema#label> "Humedal"@es .
@@ -1333,10 +1342,10 @@ _:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error11> .
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C1rea o infraestructura destinadas al aterrizaje y despegue de aviones y otros aparatos de navegaci\u00F3n a\u00E9rea."@es .
 <https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria> <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura Aeroportuaria"@es .
@@ -1352,19 +1361,19 @@ _:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error9> .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeEstacion> .
-_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeEstacion> .
-_:genid64 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeEstacion> .
+_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeEstacion> .
+_:genid66 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://purl.org/dc/elements/1.1/source> <http://www.adif.es/es_ES/conoceradif/oferta_de_empleo_publico/doc/08_fc_ConceptosFerroviarios.pdf> .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://purl.org/dc/elements/1.1/source> "Administrador de Infraestructuras Ferroviarias (ADIF)."@es .
 <https://datos.ign.es/def/btn100#InstalacionFerroviaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Instalaciones necesarias para el funcionamiento del ferrocarril en todas sus facetas y que seg\u00FAn el nivel de prestaciones va a recibir una u otra denominaci\u00F3n"@es .
@@ -1402,10 +1411,10 @@ _:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error14> .
 <https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid67 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Itinerario> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo de v\u00EDa perteneciente al Camino de Santiago o catalogada como V\u00EDa verde."@es .
 <https://datos.ign.es/def/btn100#Itinerario> <http://www.w3.org/2000/01/rdf-schema#label> "Itinerario"@es .
@@ -1435,10 +1444,10 @@ _:genid65 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error23> .
 <https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid66 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Laguna> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#comment> "Dep\u00F3sito natural de agua, generalmente dulce."@es .
 <https://datos.ign.es/def/btn100#Laguna> <http://www.w3.org/2000/01/rdf-schema#label> "Laguna"@es .
@@ -1466,19 +1475,19 @@ _:genid66 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error20> .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid67 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoBIC> .
-_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoBIC> .
-_:genid69 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoBIC> .
+_:genid70 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoBIC> .
+_:genid71 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100." .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#comment> "Edificaci\u00F3n o Lugar de inter\u00E9s por el uso que se le da o su relaci\u00F3n con la cultura. Aqu\u00ED se incluyen los Bienes de Inter\u00E9s Cultural (BIC)" .
 <https://datos.ign.es/def/btn100#LugarDeInteres> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar de inter\u00E9s" .
@@ -1495,7 +1504,7 @@ _:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Mar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtual> .
 <https://datos.ign.es/def/btn100#Mar> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Mar> <http://www.w3.org/2000/01/rdf-schema#comment> "Masa de agua salada que cubre la mayor parte de la superficie de la Tierra, en este caso se refiere a cada una de las partes en que se subdivide (RAE)"@es .
-<https://datos.ign.es/def/btn100#Mar> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Mar"@es .
+<https://datos.ign.es/def/btn100#Mar> <http://www.w3.org/2000/01/rdf-schema#label> "Mar"@es .
 # 
 # https://datos.ign.es/def/btn100#Marisma
 <https://datos.ign.es/def/btn100#Marisma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1515,7 +1524,7 @@ _:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Montana> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/btn100#Montana> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Montana> <http://www.w3.org/2000/01/rdf-schema#comment> "Gran elevaci\u00F3n natural del terreno. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Montana> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Monta\u00F1a"@es .
+<https://datos.ign.es/def/btn100#Montana> <http://www.w3.org/2000/01/rdf-schema#label> "Monta\u00F1a"@es .
 # 
 # https://datos.ign.es/def/btn100#Muralla
 <https://datos.ign.es/def/btn100#Muralla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1543,7 +1552,7 @@ _:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Oceano> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtual> .
 <https://datos.ign.es/def/btn100#Oceano> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Oceano> <http://www.w3.org/2000/01/rdf-schema#comment> "Grande y dilatado mar que cubre la mayor parte de la superficie terrestre. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Oceano> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Oc\u00E9ano"@es .
+<https://datos.ign.es/def/btn100#Oceano> <http://www.w3.org/2000/01/rdf-schema#label> "Oc\u00E9ano"@es .
 # 
 # https://datos.ign.es/def/btn100#Oleoducto
 <https://datos.ign.es/def/btn100#Oleoducto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1564,7 +1573,7 @@ _:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Paraje> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/btn100#Paraje> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Paraje> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar, sitio (RAE) con inter\u00E9s."@es .
-<https://datos.ign.es/def/btn100#Paraje> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Paraje"@es .
+<https://datos.ign.es/def/btn100#Paraje> <http://www.w3.org/2000/01/rdf-schema#label> "Paraje"@es .
 # 
 # https://datos.ign.es/def/btn100#ParqueNacional
 <https://datos.ign.es/def/btn100#ParqueNacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1647,19 +1656,19 @@ _:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error6> .
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid70 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#unloCode> .
-_:genid71 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#unloCode> .
-_:genid72 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid72 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#unloCode> .
+_:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#unloCode> .
+_:genid74 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Puerto> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de instalaciones y aguas mar\u00EDtimas situadas en la ribera del mar o de las r\u00EDas, que permiten la realizaci\u00F3n de operaciones de tr\u00E1fico portuario."@es .
 <https://datos.ign.es/def/btn100#Puerto> <http://www.w3.org/2000/01/rdf-schema#label> "Puerto"@es .
@@ -1682,10 +1691,10 @@ _:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#comment> "Se define como puntos acotados a aquellos puntos con cota que poseen una ubicaci\u00F3n representativa del relieve y complementan la informaci\u00F3n facilitada por las curvas de nivel."@es .
 <https://datos.ign.es/def/btn100#PuntoAcotado> <http://www.w3.org/2000/01/rdf-schema#label> "Punto Acotado"@es .
@@ -1695,7 +1704,7 @@ _:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Rada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo> .
 <https://datos.ign.es/def/btn100#Rada> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Rada> <http://www.w3.org/2000/01/rdf-schema#comment> "Bah\u00EDa, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Rada> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Rada"@es .
+<https://datos.ign.es/def/btn100#Rada> <http://www.w3.org/2000/01/rdf-schema#label> "Rada"@es .
 # 
 # https://datos.ign.es/def/btn100#Rambla
 <https://datos.ign.es/def/btn100#Rambla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1707,10 +1716,10 @@ _:genid73 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error26> .
 <https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid76 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Ria> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrante del mar en la costa, que se forma por sumersi\u00F3n de la parte litoral de una cuenca fluvial de laderas m\u00E1s o menos abruptas."@es .
 <https://datos.ign.es/def/btn100#Ria> <http://www.w3.org/2000/01/rdf-schema#label> "R\u00EDa"@es .
@@ -1719,19 +1728,19 @@ _:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error15> .
 <https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeRio> .
-_:genid76 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeRio> .
-_:genid77 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid77 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid77 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeRio> .
+_:genid78 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://datos.ign.es/def/btn100#codigoDeRio> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#Rio> <http://purl.org/dc/elements/1.1/source> <http://www.ign.es/web/ign/portal/ane-datos-geograficos/-/datos-geograficos/setTabGlosarioGeografico> .
 <https://datos.ign.es/def/btn100#Rio> <http://purl.org/dc/elements/1.1/source> "Glosario geogr\u00E1fico del Instituto Geogr\u00E1fico Nacional."@es .
 <https://datos.ign.es/def/btn100#Rio> <http://www.w3.org/2000/01/rdf-schema#comment> "Corriente natural de agua que sigue un valle ancho, correspondiente a una cuenca amplia y con caudal considerable, aun en estiaje."@es .
@@ -1762,7 +1771,7 @@ _:genid77 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#Sierra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico> .
 <https://datos.ign.es/def/btn100#Sierra> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#Sierra> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de monta\u00F1as o Parte de una cordillera. (RAE)"@es .
-<https://datos.ign.es/def/btn100#Sierra> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad Virtual Sierra"@es .
+<https://datos.ign.es/def/btn100#Sierra> <http://www.w3.org/2000/01/rdf-schema#label> "Sierra"@es .
 # 
 # https://datos.ign.es/def/btn100#SitioHistorico
 <https://datos.ign.es/def/btn100#SitioHistorico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1810,14 +1819,14 @@ _:genid77 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid78 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
-_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#comment> "\u201CLa Uni\u00F3n Europea entiende como unidades administrativas aquellas \u00E1reas donde los Estados miembros tienen o ejercen sus derechos jurisdiccionales a efectos de administraci\u00F3n local, regional y nacional. Est\u00E1n separadas mediante l\u00EDmites administrativos y frecuentemente est\u00E1n organizadas jer\u00E1rquicamente, reflejando los distintos grados de responsabilidad implicados\u201D [INSPIRE ANEXO 1.Tema 4]. Definen las \u00E1reas de cada municipio o condominio, provincia, comunidad aut\u00F3noma y naci\u00F3n espa\u00F1ola."@es .
 <https://datos.ign.es/def/btn100#UnidadAdministrativa> <http://www.w3.org/2000/01/rdf-schema#label> "Unidad Administrativa"@es .
@@ -1833,10 +1842,10 @@ _:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error27> .
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#comment> "Punto materializado del terreno al que se le han calculado las coordenadas geod\u00E9sicas con exactitud. (Glosario cartogr\u00E1fico del Instituto Nacional Geogr\u00E1fico)."@es .
 <https://datos.ign.es/def/btn100#VerticeGeodesico> <http://www.w3.org/2000/01/rdf-schema#comment> "V\u00E9rtice geod\u00E9sico perteneciente a la Red de Primer Orden (NPRO) o a la Red de Orden Inferior (ROI) de Espa\u00F1a."@es .
@@ -1889,10 +1898,10 @@ _:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error17> .
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid83 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#comment> "Superficie delimitada, empleada para desarrollar una actividad espec\u00EDfica."@es .
 <https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico> <http://www.w3.org/2000/01/rdf-schema#label> "Zona de Uso Caracter\u00EDstico"@es .
@@ -1950,10 +1959,10 @@ _:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error8> .
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://datos.ign.es/def/geo_core#ObjetoGeografico> .
-<https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid84 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100"@es .
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#comment> "\u201C\u00C1reas establecidas o gestionadas mediante una legislaci\u00F3n -sea nacional, comunitaria o internacional- que persiga unos objetivos de conservaci\u00F3n espec\u00EDficos\u201D [INPIRE Anexo 1. Tema 9.). Se incluyen \u00E1reas que tienen alg\u00FAn tipo de protecci\u00F3n medioambiental como determinadas \u00E1reas que el MAGRAMA considera Espacios Naturales Protegidos (ENP) o las zonas catalogadas como lugar de Importancia Comunitaria (LIC) o Zonas de Especial Protecci\u00F3n para las Aves (ZEPA) por la Red Natura 2000."@es .
 <https://datos.ign.es/def/btn100#ZonaProtegida> <http://www.w3.org/2000/01/rdf-schema#label> "Zona Protegida"@es .
@@ -1981,31 +1990,31 @@ _:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 # 
 # https://datos.ign.es/def/geo_core#ObjetoGeografico
 # 
-_:genid83 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid84 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid85 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid86 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid87 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid89 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid88 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid90 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid91 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid95 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid96 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid96 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid97 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid98 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid100 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid103 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid104 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid105 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid106 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid103 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid104 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid105 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid107 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid108 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid109 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid111 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

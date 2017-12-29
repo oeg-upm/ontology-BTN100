@@ -707,9 +707,18 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
                                                                                                       owl:allValuesFrom xsd:string
                                                                                                     ] ,
                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.geonames.org/ontology#population> ;
+                                                                                                      owl:allValuesFrom xsd:int
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
                                                                                                       owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
                                                                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                                       owl:onDataRange xsd:string
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.geonames.org/ontology#population> ;
+                                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onDataRange xsd:int
                                                                                                     ] ;
                                                                                     rdfs:comment "Las edificaciones o viviendas de una entidad singular de población que no pueden ser incluidas en el concepto de núcleo de población se consideran pertenecientes al diseminado, entendiendo así por diseminado aquellas casas aisladas que no están recogidas como núcleo de población por el INE."@es ;
                                                                                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
@@ -741,12 +750,12 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna"""@es ;
                                                                                                          ] ,
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE> ;
-                                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                                            owl:onDataRange xsd:string
                                                                                                          ] ,
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty <http://www.geonames.org/ontology#population> ;
-                                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                                            owl:onDataRange xsd:integer
                                                                                                          ] ;
                                                                                          rdfs:comment """Se consideran núcleos de población (superficiales y puntuales) de BTN100 aquellas entidades que el INE considera núcleos de población en sus datos oficiales.
@@ -893,7 +902,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
        rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
        rdfs:comment "Entrada de mar en la costa, de extensión considerable, que puede servir de abrigo a las embarcaciones. (RAE)"@es ;
-       rdfs:label "Entidad Virtual Bahía"@es .
+       rdfs:label "Bahía"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Balneario
@@ -1107,7 +1116,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
                rdfs:subClassOf :EntidadVirtualAccidenteOrografico ;
                <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
                rdfs:comment "Delimitación que contiene conjunto de municipios oficial (comarca) o histórica (región)"@es ;
-               rdfs:label "Entidad Virtual Región/Comarca"@es .
+               rdfs:label "Comarca / Región"@es .
 
 
 ###  https://datos.ign.es/def/btn100#ConduccionDeCombustible
@@ -1131,7 +1140,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
             rdfs:subClassOf :EntidadVirtualAccidenteOrografico ;
             <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
             rdfs:comment "Serie de montañas enlazadas entre sí. (RAE)"@es ;
-            rdfs:label "Entidad Virtual Cordillera"@es .
+            rdfs:label "Cordillera"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Costa
@@ -1139,7 +1148,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
        rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
        rdfs:comment "Orilla del mar, de un río, de un lago, etc., y tierra que está cerca de ella. (RAE)"@es ;
-       rdfs:label "Entidad Virtual Costa"@es .
+       rdfs:label "Costa"@es .
 
 
 ###  https://datos.ign.es/def/btn100#CotaMunicipal
@@ -1187,7 +1196,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
        rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
        rdfs:comment "Terreno comprendido entre los brazos de un río en su desembocadura. (RAE)"@es ;
-       rdfs:label "Entidad Virtual Delta"@es .
+       rdfs:label "Delta"@es .
 
 
 ###  https://datos.ign.es/def/btn100#DepositoDeAgua
@@ -1271,7 +1280,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
           rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
           rdfs:comment "Parte de mar que entra en la tierra. (RAE)"@es ;
-          rdfs:label "Entidad Virtual Ensenada"@es .
+          rdfs:label "Ensenada"@es .
 
 
 ###  https://datos.ign.es/def/btn100#EntidadVirtual
@@ -1399,7 +1408,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
           rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
           <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
           rdfs:comment "Paso angosto comprendido entre dos tierras y por el cual se comunica un mar con otro (RAE)"@es ;
-          rdfs:label "Entidad Virtual Estrecho"@es .
+          rdfs:label "Estrecho"@es .
 
 
 ###  https://datos.ign.es/def/btn100#ExplotacionMinera
@@ -1487,7 +1496,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
        rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
        <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
        rdfs:comment "Gran porción de mar que se interna en la tierra entre dos cabos. (RAE)"@es ;
-       rdfs:label "Entidad Virtual Golfo"@es .
+       rdfs:label "Golfo"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Helipuerto
@@ -1702,7 +1711,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
      rdfs:subClassOf :EntidadVirtual ;
      <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
      rdfs:comment "Masa de agua salada que cubre la mayor parte de la superficie de la Tierra, en este caso se refiere a cada una de las partes en que se subdivide (RAE)"@es ;
-     rdfs:label "Entidad Virtual Mar"@es .
+     rdfs:label "Mar"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Marisma
@@ -1725,7 +1734,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
          rdfs:subClassOf :EntidadVirtualAccidenteOrografico ;
          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
          rdfs:comment "Gran elevación natural del terreno. (RAE)"@es ;
-         rdfs:label "Entidad Virtual Montaña"@es .
+         rdfs:label "Montaña"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Muralla
@@ -1757,7 +1766,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         rdfs:subClassOf :EntidadVirtual ;
         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
         rdfs:comment "Grande y dilatado mar que cubre la mayor parte de la superficie terrestre. (RAE)"@es ;
-        rdfs:label "Entidad Virtual Océano"@es .
+        rdfs:label "Océano"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Oleoducto
@@ -1781,7 +1790,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         rdfs:subClassOf :EntidadVirtualAccidenteOrografico ;
         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
         rdfs:comment "Lugar, sitio (RAE) con interés."@es ;
-        rdfs:label "Entidad Virtual Paraje"@es .
+        rdfs:label "Paraje"@es .
 
 
 ###  https://datos.ign.es/def/btn100#ParqueNacional
@@ -1928,7 +1937,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
       rdfs:subClassOf :EntidadVirtualAccidenteMaritimo ;
       <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
       rdfs:comment "Bahía, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)"@es ;
-      rdfs:label "Entidad Virtual Rada"@es .
+      rdfs:label "Rada"@es .
 
 
 ###  https://datos.ign.es/def/btn100#Rambla
@@ -2002,7 +2011,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         rdfs:subClassOf :EntidadVirtualAccidenteOrografico ;
         <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100"@es ;
         rdfs:comment "Conjunto de montañas o Parte de una cordillera. (RAE)"@es ;
-        rdfs:label "Entidad Virtual Sierra"@es .
+        rdfs:label "Sierra"@es .
 
 
 ###  https://datos.ign.es/def/btn100#SitioHistorico
@@ -2251,7 +2260,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> rdf:type owl:Class .
 
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2260,18 +2269,6 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -2281,25 +2278,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2320,10 +2299,40 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
