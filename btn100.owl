@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://datos.ign.es/def/"
-     xml:base="https://datos.ign.es/def/"
+<rdf:RDF xmlns="https://datos.ign.es/def/btn100#"
+     xml:base="https://datos.ign.es/def/btn100"
      xmlns:van="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:btn100="https://datos.ign.es/def/"
+     xmlns:btn100="https://datos.ign.es/def/btn100#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geo_core="https://datos.ign.es/def/geo_core#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://datos.ign.es/def/btn100">
         <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100_v0.2"/>
@@ -20,8 +21,8 @@
         <van:preferredNamespaceUri xml:lang="es">https://datos.ign.es/def/btn100#</van:preferredNamespaceUri>
         <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <owl:versionInfo xml:lang="es">0.2</owl:versionInfo>
-        <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:title>
         <dc:date xml:lang="es">2017-12-21</dc:date>
         <terms:contributor xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:contributor>
         <terms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
@@ -804,6 +805,12 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#population"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -814,6 +821,13 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna</rdfs:comment>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#population"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Las edificaciones o viviendas de una entidad singular de población que no pueden ser incluidas en el concepto de núcleo de población se consideran pertenecientes al diseminado, entendiendo así por diseminado aquellas casas aisladas que no están recogidas como núcleo de población por el INE.</rdfs:comment>
@@ -865,14 +879,14 @@ https://datos.ign.es/kos/transportes/tipo-tramo/no-interna</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.geonames.org/ontology#population"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1080,7 +1094,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Entrada de mar en la costa, de extensión considerable, que puede servir de abrigo a las embarcaciones. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Bahía</rdfs:label>
+        <rdfs:label xml:lang="es">Bahía</rdfs:label>
     </owl:Class>
     
 
@@ -1293,7 +1307,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#ZonaDeUsoCaracteristico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
         <rdfs:comment xml:lang="es">Lugar, generalmente cercado, destinado a enterrar los restos mortales o cadáveres de los difuntos.</rdfs:comment>
-        <rdfs:label xml:lang="es">Comentario</rdfs:label>
+        <rdfs:label xml:lang="es">Cementerio</rdfs:label>
     </owl:Class>
     
 
@@ -1391,7 +1405,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Delimitación que contiene conjunto de municipios oficial (comarca) o histórica (región)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Región/Comarca</rdfs:label>
+        <rdfs:label xml:lang="es">Comarca / Región</rdfs:label>
     </owl:Class>
     
 
@@ -1424,7 +1438,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Serie de montañas enlazadas entre sí. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Cordillera</rdfs:label>
+        <rdfs:label xml:lang="es">Cordillera</rdfs:label>
     </owl:Class>
     
 
@@ -1435,7 +1449,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Orilla del mar, de un río, de un lago, etc., y tierra que está cerca de ella. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Costa</rdfs:label>
+        <rdfs:label xml:lang="es">Costa</rdfs:label>
     </owl:Class>
     
 
@@ -1501,7 +1515,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Terreno comprendido entre los brazos de un río en su desembocadura. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Delta</rdfs:label>
+        <rdfs:label xml:lang="es">Delta</rdfs:label>
     </owl:Class>
     
 
@@ -1628,7 +1642,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Parte de mar que entra en la tierra. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Ensenada</rdfs:label>
+        <rdfs:label xml:lang="es">Ensenada</rdfs:label>
     </owl:Class>
     
 
@@ -1817,7 +1831,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Paso angosto comprendido entre dos tierras y por el cual se comunica un mar con otro (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Estrecho</rdfs:label>
+        <rdfs:label xml:lang="es">Estrecho</rdfs:label>
     </owl:Class>
     
 
@@ -1957,7 +1971,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Gran porción de mar que se interna en la tierra entre dos cabos. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Golfo</rdfs:label>
+        <rdfs:label xml:lang="es">Golfo</rdfs:label>
     </owl:Class>
     
 
@@ -2291,7 +2305,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtual"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Masa de agua salada que cubre la mayor parte de la superficie de la Tierra, en este caso se refiere a cada una de las partes en que se subdivide (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Mar</rdfs:label>
+        <rdfs:label xml:lang="es">Mar</rdfs:label>
     </owl:Class>
     
 
@@ -2323,7 +2337,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Gran elevación natural del terreno. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Montaña</rdfs:label>
+        <rdfs:label xml:lang="es">Montaña</rdfs:label>
     </owl:Class>
     
 
@@ -2367,7 +2381,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtual"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Grande y dilatado mar que cubre la mayor parte de la superficie terrestre. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Océano</rdfs:label>
+        <rdfs:label xml:lang="es">Océano</rdfs:label>
     </owl:Class>
     
 
@@ -2400,7 +2414,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Lugar, sitio (RAE) con interés.</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Paraje</rdfs:label>
+        <rdfs:label xml:lang="es">Paraje</rdfs:label>
     </owl:Class>
     
 
@@ -2615,7 +2629,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteMaritimo"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Bahía, ensenada, donde las naves pueden estar ancladas al abrigo de algunos vientos. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Rada</rdfs:label>
+        <rdfs:label xml:lang="es">Rada</rdfs:label>
     </owl:Class>
     
 
@@ -2730,7 +2744,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#EntidadVirtualAccidenteOrografico"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100</dc:source>
         <rdfs:comment xml:lang="es">Conjunto de montañas o Parte de una cordillera. (RAE)</rdfs:comment>
-        <rdfs:label xml:lang="es">Entidad Virtual Sierra</rdfs:label>
+        <rdfs:label xml:lang="es">Sierra</rdfs:label>
     </owl:Class>
     
 

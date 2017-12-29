@@ -9,10 +9,10 @@
 <https://datos.ign.es/def/geo_core> rdf:type owl:Ontology ;
                                      owl:versionIRI <https://datos.ign.es/def/geo_core> ;
                                      owl:imports <http://www.opengis.net/ont/geosparql> ;
+                                     <http://purl.org/dc/elements/1.1/contributor> "Pedro Vivas White (Instituto Geográfico Nacional)"@es ;
                                      <http://purl.org/dc/elements/1.1/date> "2017-12-21"@es ;
                                      <http://purl.org/dc/terms/contributor> "Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ;
-                                     <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
-                                                                        "Pedro Vivas White (Instituto Geográfico Nacional)"@es ;
+                                     <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ;
                                      <http://purl.org/dc/terms/description> "Ontología para la representación de Objetos Geográficos"@es ;
                                      <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                      <http://purl.org/dc/terms/publisher> "Instituto Geográfico Nacional"@es ;
@@ -75,7 +75,6 @@
          rdfs:range xsd:float ;
          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
          rdfs:comment "Coordenada X en metros (ETRS89)"@es ;
-         rdfs:isDefinedBy <https://datos.ign.es/def/geo_core> ;
          rdfs:label "xETRS89"@es .
 
 
@@ -84,7 +83,6 @@
          rdfs:range xsd:float ;
          <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
          rdfs:comment "Coordenada Y en metros (ETRS89)"@es ;
-         rdfs:isDefinedBy <https://datos.ign.es/def/geo_core> ;
          rdfs:label "yETRS89"@es .
 
 
@@ -109,9 +107,14 @@
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.org/dc/terms/replaces> ;
                                     owl:allValuesFrom rdfs:Literal
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/dc/terms/created> ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:date
                                   ] ;
                   rdfs:comment "Los objetos geográficos son fenómenos del mundo real asociados con una localización relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)"@es ;
-                  rdfs:isDefinedBy <https://datos.ign.es/def/geo_core> ;
+                  rdfs:isDefinedBy "https://datos.ign.es/def/geo_core"@es ;
                   rdfs:label "Objeto Geográfico"@es .
 
 

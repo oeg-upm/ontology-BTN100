@@ -1,0 +1,22 @@
+<h2 id="desc" class="list">Ontología de Objetos Geográficos: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown"></span>
+Como se mencionó anteriormente, la ontología de Objetos Geográficos se basa en la ontología <a href="http://www.opengis.net/ont/geosparql#" target="_blank">GeoSPARQL</a> y define la clase <a href="#ObjetoGeografico" target="_blank">Objeto Geográfico</a>, que es equivalente a la clase <i>Feature</i> de GeoSPARQL. A través de la clase Objeto Geográfico permite definir aquellos atributos que son comunes para los distintos tipos de objetos que son descritos en el Catálogo de Objetos Geográficos de la Base Topográfica Nacional a escala 1:100.000.<br><br>
+A continuación se presenta el diagrama de la ontología:<br><br>
+<center><img src="resources/images/ObjetosGeograficos.png">
+<figcaption>Figura 1. - Diagrama de la ontología de Objetos Geográficos</figcaption>
+</center><br><br>
+<h3>3.1 Ejemplo de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+<p>Con la finalidad de facilitar la comprensión del uso de esta ontología se ejemplificará la representación de una plaza. En primer lugar, como se puede observar en el código de ejemplo, se crea una instancia de la clase <a href="#ObjetoGeografico">Objeto Geográfico</a>, a continuación el nombre de la plaza, su código de identificación y la fecha en que se creó en el catálogo se representan a través de las propiedades de datos <code>dc:title</code>, <code>dc:identifier</code> y <code>dc:created </code> respectivamente. Finalmente, su geometría se representa mediante la propiedad <code>geosparql:hasGeometry</code>. </p> 
+<pre class="example highlight preprint">
+	https://datos.ign.es/recurso/objeto-geografico/8031 a geo_core:ObjetoGeografico ;
+	dc:title 		"Plaza España" ;
+	dc:identifier		"8031" ;
+	dc:created		"2013-03-07"^^xsd:date ;	
+	geosparql:hasGeometry	https://datos.ign.es/recurso/objeto-geografico/8031/geometry .</pre>
+
+<p> Para la representación de la geometría del objeto geográfico se crea una instancia de <code>sf:MultiPolygon</code>  que es una de las clases definidas dentro de la ontología GeoSPARQL. Adicionalmente se emplea la propiedad <code>geosparql:asWKT</code> para representar el tipo de codificación de la geometría; finalmente el tipo de dato del valor de la geometría se representa mediante la propiedad <code>geosparql:wktLiteral</code>.
+
+<pre class="example highlight preprint">
+	https://datos.ign.es/recurso/objeto-geografico/8031/geometry a sf:MultiPolygon ;
+        geosparql:asWKT  "MULTIPOLYGON (((-5.418825249998759 35.91208060445847, ..., 35.8904970644321)))"^^geosparql:wktLiteral .</pre>
+</p>

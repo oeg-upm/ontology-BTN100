@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Feature" "geo:Geometry" "geo:SpatialObject" "651a8feb:1607a50b336:-7ff9" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Feature" "geo:Geometry" "geo:SpatialObject" "-714c3499:160a2505f9e:-7ff8" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	"skos:definition" -> "skos:note" [ label = "rdfs:subPropertyOf" ];
 	"skos:relatedMatch" -> "skos:related" [ label = "rdfs:subPropertyOf" ];
 	"skos:relatedMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
@@ -47,11 +47,12 @@ node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Featu
 	"https://datos.ign.es/def/geo_core" -> "geo_core:" [ label = "vann:preferredNamespaceUri" ];
 	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
 	"NULL" -> "xsd:date" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "651a8feb:1607a50b336:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:date" [ label = "owl:onDataRange" ];
+	"NULL" -> "-714c3499:160a2505f9e:-7ff7" [ label = "owl:unionOf" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"NULL" -> "-714c3499:160a2505f9e:-7ff6" [ label = "rdf:rest" ];
 	"NULL" -> "dcterms:created" [ label = "owl:onProperty" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "651a8feb:1607a50b336:-7ff8" [ label = "owl:unionOf" ];
 	"NULL" -> "rdfs:Literal" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "dcterms:identifier" [ label = "owl:onProperty" ];
 	"NULL" -> "dcterms:replaces" [ label = "owl:onProperty" ];
@@ -104,7 +105,7 @@ node [shape = rectangle, color="orange"]; "geo_core:ObjetoGeografico" "geo:Featu
 	"geo:Geometry" -> "geo:wktLiteral" [ label = "geo:asWKT" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"geo:Geometry" -> "xsd:integer" [ label = "geo:coordinateDimension" ];
-	"skos:Collection" -> "651a8feb:1607a50b336:-7ff9" [ label = "skos:member" ];
+	"skos:Collection" -> "-714c3499:160a2505f9e:-7ff8" [ label = "skos:member" ];
 	"geo:SpatialObject" -> "geo:SpatialObject" [ label = "geo:sfIntersects" ];
 	"owl:Thing" -> "xsd:float" [ label = "geo_core:yETRS89" ];
 	"geo:SpatialObject" -> "geo:SpatialObject" [ label = "geo:rcc8ec" ];
