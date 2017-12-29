@@ -68,7 +68,6 @@
 <https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <https://datos.ign.es/def/geo_core#xETRS89> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada X en metros (ETRS89)"@es .
-<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
 <https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "xETRS89"@es .
 # 
 # https://datos.ign.es/def/geo_core#yETRS89
@@ -76,7 +75,6 @@
 <https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <https://datos.ign.es/def/geo_core#yETRS89> <http://purl.org/dc/elements/1.1/source> "Cat\u00E1logo de Objetos Geogr\u00E1ficos BTN100."@es .
 <https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada Y en metros (ETRS89)"@es .
-<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
 <https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "yETRS89"@es .
 # 
 # 
@@ -105,8 +103,13 @@ _:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/0
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/replaces> .
 _:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/created> .
+_:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#comment> "Los objetos geogr\u00E1ficos son fen\u00F3menos del mundo real asociados con una localizaci\u00F3n relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)"@es .
-<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://datos.ign.es/def/geo_core> .
+<https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://datos.ign.es/def/geo_core"@es .
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto Geogr\u00E1fico"@es .
 # 
 # 
