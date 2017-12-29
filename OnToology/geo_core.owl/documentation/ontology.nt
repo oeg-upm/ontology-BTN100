@@ -1,10 +1,7 @@
 <https://datos.ign.es/def/geo_core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://datos.ign.es/def/geo_core> <http://www.w3.org/2002/07/owl#versionIRI> <https://datos.ign.es/def/geo_core> .
 <https://datos.ign.es/def/geo_core> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
-<<<<<<< HEAD
 <https://datos.ign.es/def/geo_core> <http://purl.org/dc/elements/1.1/contributor> "Pedro Vivas White (Instituto Geogr\u00E1fico Nacional)"@es .
-=======
->>>>>>> refs/remotes/oeg-upm/master
 <https://datos.ign.es/def/geo_core> <http://purl.org/dc/elements/1.1/date> "2017-12-21"@es .
 <https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/contributor> "Oscar Corcho Garc\u00EDa (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
 <https://datos.ign.es/def/geo_core> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)"@es .
@@ -106,14 +103,11 @@ _:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/0
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/replaces> .
 _:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<<<<<<< HEAD
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/created> .
 _:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
-=======
->>>>>>> refs/remotes/oeg-upm/master
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#comment> "Los objetos geogr\u00E1ficos son fen\u00F3menos del mundo real asociados con una localizaci\u00F3n relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)"@es .
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://datos.ign.es/def/geo_core"@es .
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto Geogr\u00E1fico"@es .

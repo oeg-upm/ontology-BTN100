@@ -2260,11 +2260,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 <https://datos.ign.es/def/geo_core#ObjetoGeografico> rdf:type owl:Class .
 
 
-<<<<<<< HEAD
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
 ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2273,27 +2269,10 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-<<<<<<< HEAD
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-<<<<<<< HEAD
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2302,17 +2281,28 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-<<<<<<< HEAD
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
+ ] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2327,42 +2317,16 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-<<<<<<< HEAD
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-=======
->>>>>>> refs/remotes/oeg-upm/master
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-<<<<<<< HEAD
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-<<<<<<< HEAD
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-=======
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
->>>>>>> refs/remotes/oeg-upm/master
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2374,12 +2338,6 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-<<<<<<< HEAD
-=======
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
->>>>>>> refs/remotes/oeg-upm/master
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
