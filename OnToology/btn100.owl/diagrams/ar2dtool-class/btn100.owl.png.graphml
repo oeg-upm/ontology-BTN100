@@ -284,6 +284,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:FerrocarrilConvencional">
          <data key="d0">
             <y:ShapeNode>
@@ -291,12 +292,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:FerrocarrilConvencional</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fda">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fda</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first10" source="nid_NULL" target="nid_btn100:FerrocarrilConvencional">
+=======
+    <edge id="eid_rdf:rest10" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fda">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -307,19 +321,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff3">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff4">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff3</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff4</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest11" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff3">
+=======
+    <edge id="eid_rdf:rest11" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff4">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -399,6 +425,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:VerticeGeodesico">
          <data key="d0">
             <y:ShapeNode>
@@ -406,12 +433,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:VerticeGeodesico</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#VerticeGeodesico">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="480.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#VerticeGeodesico</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first15" source="nid_NULL" target="nid_btn100:VerticeGeodesico">
+=======
+    <edge id="eid_rdf:first15" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#VerticeGeodesico">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -422,19 +462,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fdd">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fea">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fdd</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fea</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest16" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fdd">
+=======
+    <edge id="eid_rdf:rest16" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fea">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -469,6 +521,7 @@
          <data key="d3" />
       </edge>
       <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE">
+<<<<<<< HEAD
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="800.0" x="0.0" y="0.0" />
@@ -492,6 +545,8 @@
          <data key="d3" />
       </edge>
       <node id="nid_-53de77ec:160a147fca8:-7fe8">
+=======
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
@@ -503,7 +558,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest19" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe8">
+=======
+    <edge id="eid_owl:onProperty18" source="nid_NULL" target="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -514,29 +573,42 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fda">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ffb">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fda</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ffb</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest20" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fda">
+=======
+    <edge id="eid_owl:unionOf19" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ffb">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:Puerto">
          <data key="d0">
             <y:ShapeNode>
@@ -544,12 +616,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:Puerto</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#Puerto">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="380.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#Puerto</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first21" source="nid_NULL" target="nid_btn100:Puerto">
+=======
+    <edge id="eid_rdf:first20" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#Puerto">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -560,6 +645,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_xsd:int">
          <data key="d0">
             <y:ShapeNode>
@@ -567,22 +653,7 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:int</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:allValuesFrom22" source="nid_NULL" target="nid_xsd:int">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:allValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
+=======
       <node id="nid_xsd:string">
          <data key="d0">
             <y:ShapeNode>
@@ -590,12 +661,17 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:string</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom23" source="nid_NULL" target="nid_xsd:string">
+<<<<<<< HEAD
+    <edge id="eid_owl:allValuesFrom22" source="nid_NULL" target="nid_xsd:int">
+=======
+    <edge id="eid_owl:allValuesFrom21" source="nid_NULL" target="nid_xsd:string">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -606,24 +682,81 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-53de77ec:160a147fca8:-7fed">
+<<<<<<< HEAD
+      <node id="nid_xsd:string">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:string</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe9">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fed</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe9</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest24" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fed">
+<<<<<<< HEAD
+    <edge id="eid_owl:allValuesFrom23" source="nid_NULL" target="nid_xsd:string">
+=======
+    <edge id="eid_rdf:rest22" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe9">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:allValuesFrom</y:EdgeLabel>
+=======
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+<<<<<<< HEAD
+      <node id="nid_-53de77ec:160a147fca8:-7fed">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fee">
+>>>>>>> refs/remotes/oeg-upm/master
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fed</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fee</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+<<<<<<< HEAD
+    <edge id="eid_rdf:rest24" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fed">
+=======
+    <edge id="eid_owl:unionOf23" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fee">
+>>>>>>> refs/remotes/oeg-upm/master
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -641,7 +774,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:onProperty25" source="nid_NULL" target="nid_btn100:codigoDeEstacion">
+=======
+    <edge id="eid_owl:onProperty24" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#codigoDeEstacion">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -652,19 +789,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe5">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ffa">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe5</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ffa</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest26" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe5">
+=======
+    <edge id="eid_rdf:rest25" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ffa">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -675,6 +824,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
     <edge id="eid_owl:onProperty27" source="nid_NULL" target="nid_btn100:unloCode">
          <data key="d2">
             <y:PolyLineEdge>
@@ -687,6 +837,9 @@
          <data key="d3" />
       </edge>
     <edge id="eid_owl:onProperty28" source="nid_NULL" target="nid_btn100:codigoDeRio">
+=======
+    <edge id="eid_owl:onProperty26" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#unloCode">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -697,11 +850,16 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
     <edge id="eid_owl:onDataRange29" source="nid_NULL" target="nid_xsd:integer">
+=======
+    <edge id="eid_owl:onProperty27" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#codigoDeRio">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onDataRange</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
@@ -721,29 +879,54 @@
          <data key="d1" />
       </node>
     <edge id="eid_rdf:first30" source="nid_NULL" target="nid_btn100:Carretera">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+    <edge id="eid_owl:onDataRange28" source="nid_NULL" target="nid_xsd:integer">
+>>>>>>> refs/remotes/oeg-upm/master
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onDataRange</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff5">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff9">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff5</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff9</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest31" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff5">
+=======
+    <edge id="eid_rdf:rest29" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff9">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -754,6 +937,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_http://www.geonames.org/ontology#population">
          <data key="d0">
             <y:ShapeNode>
@@ -790,16 +974,36 @@
          <data key="d1" />
       </node>
     <edge id="eid_rdf:rest33" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fd7">
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#Carretera">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="410.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#Carretera</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:first30" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#Carretera">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_terms:title">
          <data key="d0">
             <y:ShapeNode>
@@ -807,22 +1011,40 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">terms:title</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe3">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe3</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:onProperty34" source="nid_NULL" target="nid_terms:title">
+=======
+    <edge id="eid_rdf:rest31" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe3">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:Autopista">
          <data key="d0">
             <y:ShapeNode>
@@ -830,12 +1052,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:Autopista</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff1">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff1</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first35" source="nid_NULL" target="nid_btn100:Autopista">
+=======
+    <edge id="eid_owl:unionOf32" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff1">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -846,6 +1081,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:RioLineal">
          <data key="d0">
             <y:ShapeNode>
@@ -853,12 +1089,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:RioLineal</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff6">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff6</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first36" source="nid_NULL" target="nid_btn100:RioLineal">
+=======
+    <edge id="eid_rdf:rest33" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff6">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -881,7 +1130,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest37" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe0">
+=======
+    <edge id="eid_owl:onProperty34" source="nid_NULL" target="nid_http://www.geonames.org/ontology#population">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -892,6 +1145,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_rdf:nil">
          <data key="d0">
             <y:ShapeNode>
@@ -899,22 +1153,40 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">rdf:nil</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff7">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff7</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest38" source="nid_NULL" target="nid_rdf:nil">
+=======
+    <edge id="eid_owl:unionOf35" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff7">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fdb">
          <data key="d0">
             <y:ShapeNode>
@@ -922,35 +1194,64 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fdb</y:NodeLabel>
+=======
+      <node id="nid_terms:title">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">terms:title</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf39" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fdb">
+=======
+    <edge id="eid_owl:onProperty36" source="nid_NULL" target="nid_terms:title">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe4">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fdd">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe4</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fdd</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest40" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe4">
+=======
+    <edge id="eid_rdf:rest37" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fdd">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -973,7 +1274,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest41" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff0">
+=======
+    <edge id="eid_rdf:first38" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#Autopista">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -996,7 +1301,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf42" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fee">
+=======
+    <edge id="eid_rdf:first39" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#RioLineal">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1007,6 +1316,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:AccidenteMaritimoPuntual">
          <data key="d0">
             <y:ShapeNode>
@@ -1014,12 +1324,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:AccidenteMaritimoPuntual</y:NodeLabel>
+=======
+      <node id="nid_rdf:nil">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="70.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">rdf:nil</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first43" source="nid_NULL" target="nid_btn100:AccidenteMaritimoPuntual">
+=======
+    <edge id="eid_rdf:rest40" source="nid_NULL" target="nid_rdf:nil">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1030,19 +1353,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff4">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fed">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff4</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fed</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest44" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff4">
+=======
+    <edge id="eid_rdf:rest41" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fed">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1053,40 +1388,73 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fde">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe8">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fde</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe8</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf45" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fde">
+=======
+    <edge id="eid_rdf:rest42" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe8">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
     <edge id="eid_owl:onProperty46" source="nid_NULL" target="nid_btn100:codigoBIC">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe6">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe6</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf43" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe6">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:Ferrocarril">
          <data key="d0">
             <y:ShapeNode>
@@ -1094,12 +1462,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:Ferrocarril</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe1">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe1</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first47" source="nid_NULL" target="nid_btn100:Ferrocarril">
+=======
+    <edge id="eid_owl:unionOf44" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe1">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1110,19 +1491,54 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fea">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe5">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fea</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe5</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest48" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fea">
+=======
+    <edge id="eid_rdf:rest45" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe5">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-4979afed:1607a4efc4d:-7fde">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fde</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf46" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fde">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1167,19 +1583,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe1">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff5">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe1</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff5</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf51" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe1">
+=======
+    <edge id="eid_rdf:rest49" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff5">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1213,6 +1641,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ffb">
          <data key="d0">
             <y:ShapeNode>
@@ -1226,16 +1655,24 @@
          <data key="d1" />
       </node>
     <edge id="eid_owl:unionOf53" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ffb">
+=======
+    <edge id="eid_owl:onDataRange51" source="nid_NULL" target="nid_xsd:string">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onDataRange</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:Laguna">
          <data key="d0">
             <y:ShapeNode>
@@ -1243,12 +1680,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:Laguna</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#PuntoAcotado">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="440.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#PuntoAcotado</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first54" source="nid_NULL" target="nid_btn100:Laguna">
+=======
+    <edge id="eid_rdf:first52" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#PuntoAcotado">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1259,19 +1709,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe9">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fd7">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe9</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fd7</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest55" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe9">
+=======
+    <edge id="eid_rdf:rest53" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fd7">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1282,6 +1744,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:ConduccionDeCombustible">
          <data key="d0">
             <y:ShapeNode>
@@ -1289,12 +1752,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:ConduccionDeCombustible</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#Laguna">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="380.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#Laguna</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first56" source="nid_NULL" target="nid_btn100:ConduccionDeCombustible">
+=======
+    <edge id="eid_rdf:first54" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#Laguna">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1305,29 +1781,42 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ffa">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fd8">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ffa</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fd8</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest57" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ffa">
+=======
+    <edge id="eid_owl:unionOf55" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fd8">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:EstacionPermanenteGPS">
          <data key="d0">
             <y:ShapeNode>
@@ -1335,12 +1824,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:EstacionPermanenteGPS</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#ConduccionDeCombustible">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="550.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#ConduccionDeCombustible</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first58" source="nid_NULL" target="nid_btn100:EstacionPermanenteGPS">
+=======
+    <edge id="eid_rdf:first56" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#ConduccionDeCombustible">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1351,6 +1853,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:InfraestructuraAeroportuaria">
          <data key="d0">
             <y:ShapeNode>
@@ -1358,12 +1861,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:InfraestructuraAeroportuaria</y:NodeLabel>
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe0">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe0</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:first59" source="nid_NULL" target="nid_btn100:InfraestructuraAeroportuaria">
+=======
+    <edge id="eid_rdf:rest57" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe0">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1374,6 +1890,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:codigoDeVia">
          <data key="d0">
             <y:ShapeNode>
@@ -1381,22 +1898,40 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:codigoDeVia</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#EstacionPermanenteGPS">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="530.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#EstacionPermanenteGPS</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:onProperty60" source="nid_NULL" target="nid_btn100:codigoDeVia">
+=======
+    <edge id="eid_rdf:first58" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#EstacionPermanenteGPS">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fd8">
          <data key="d0">
             <y:ShapeNode>
@@ -1404,12 +1939,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fd8</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="600.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf61" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fd8">
+=======
+    <edge id="eid_rdf:first59" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1420,30 +1968,62 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
     <edge id="eid_owl:onDataRange62" source="nid_NULL" target="nid_xsd:int">
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#codigoDeVia">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="430.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#codigoDeVia</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty60" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#codigoDeVia">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onDataRange</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff9">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff3">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff9</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff3</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest63" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff9">
+=======
+    <edge id="eid_rdf:rest61" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff3">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1454,19 +2034,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe3">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fdb">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe3</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fdb</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest64" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe3">
+=======
+    <edge id="eid_owl:unionOf62" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fdb">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1477,6 +2069,7 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_btn100:Autovia">
          <data key="d0">
             <y:ShapeNode>
@@ -1484,35 +2077,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:Autovia</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:first65" source="nid_NULL" target="nid_btn100:Autovia">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-53de77ec:160a147fca8:-7fe6">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7feb">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe6</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7feb</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:unionOf66" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe6">
+<<<<<<< HEAD
+    <edge id="eid_rdf:first65" source="nid_NULL" target="nid_btn100:Autovia">
+=======
+    <edge id="eid_owl:unionOf63" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7feb">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1523,19 +2106,72 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-53de77ec:160a147fca8:-7ff6">
+<<<<<<< HEAD
+      <node id="nid_-53de77ec:160a147fca8:-7fe6">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff6</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe6</y:NodeLabel>
+=======
+      <node id="nid_https://datos.ign.es/def/btn100#Autovia">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="390.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/btn100#Autovia</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
+    <edge id="eid_owl:unionOf66" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7fe6">
+=======
+    <edge id="eid_rdf:first64" source="nid_NULL" target="nid_https://datos.ign.es/def/btn100#Autovia">
+>>>>>>> refs/remotes/oeg-upm/master
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+<<<<<<< HEAD
+      <node id="nid_-53de77ec:160a147fca8:-7ff6">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff0">
+>>>>>>> refs/remotes/oeg-upm/master
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff6</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff0</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+<<<<<<< HEAD
     <edge id="eid_rdf:rest67" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7ff6">
+=======
+    <edge id="eid_rdf:rest65" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7ff0">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1546,24 +2182,40 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7feb">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe4">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7feb</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe4</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:unionOf68" source="nid_NULL" target="nid_-53de77ec:160a147fca8:-7feb">
+=======
+    <edge id="eid_rdf:rest66" source="nid_NULL" target="nid_-4979afed:1607a4efc4d:-7fe4">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
+<<<<<<< HEAD
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+=======
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1625,6 +2277,7 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
       <node id="nid_https://datos.ign.es/def/geo_core">
          <data key="d0">
             <y:ShapeNode>
@@ -1632,12 +2285,25 @@
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://datos.ign.es/def/geo_core</y:NodeLabel>
+=======
+      <node id="nid_btn100:geo_core">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">btn100:geo_core</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_owl:imports73" source="nid_https://datos.ign.es/def/btn100" target="nid_https://datos.ign.es/def/geo_core">
+=======
+    <edge id="eid_owl:imports71" source="nid_btn100:btn100" target="nid_btn100:geo_core">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1660,7 +2326,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_terms:license74" source="nid_https://datos.ign.es/def/btn100" target="nid_https://creativecommons.org/licenses/by/4.0/">
+=======
+    <edge id="eid_terms:license72" source="nid_btn100:btn100" target="nid_https://creativecommons.org/licenses/by/4.0/">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1856,13 +2526,21 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fef">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fef">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fef</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fef</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -1880,7 +2558,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:regimen82" source="nid_-53de77ec:160a147fca8:-7fef" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#regimen80" source="nid_-4979afed:1607a4efc4d:-7fef" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1891,7 +2573,23 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fdc">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fdc">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fdc</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_xsd:int">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
@@ -1903,7 +2601,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:cota83" source="nid_-53de77ec:160a147fca8:-7fdc" target="nid_xsd:int">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#cota81" source="nid_-4979afed:1607a4efc4d:-7fdc" target="nid_xsd:int">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1914,19 +2616,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fec">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fec">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fec</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fec</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:rutaTEN-T84" source="nid_-53de77ec:160a147fca8:-7fec" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#rutaTEN-T82" source="nid_-4979afed:1607a4efc4d:-7fec" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1948,19 +2662,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff8">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff8">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff8</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff8</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:estadoDeUso86" source="nid_-53de77ec:160a147fca8:-7ff8" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#estadoDeUso84" source="nid_-4979afed:1607a4efc4d:-7ff8" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1971,19 +2697,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe7">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe7">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe7</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe7</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:situacionDeVia87" source="nid_-53de77ec:160a147fca8:-7fe7" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#situacionDeVia85" source="nid_-4979afed:1607a4efc4d:-7fe7" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2050,13 +2788,21 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fdf">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fdf">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fdf</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fdf</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -2074,7 +2820,11 @@
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:altitudOrtometrica92" source="nid_-53de77ec:160a147fca8:-7fdf" target="nid_xsd:float">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#altitudOrtometrica90" source="nid_-4979afed:1607a4efc4d:-7fdf" target="nid_xsd:float">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2107,19 +2857,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fe2">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fe2">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fe2</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fe2</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:tipoDeTrafico95" source="nid_-53de77ec:160a147fca8:-7fe2" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#tipoDeTrafico93" source="nid_-4979afed:1607a4efc4d:-7fe2" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2130,19 +2892,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ffc">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ffc">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ffc</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ffc</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:competencia96" source="nid_-53de77ec:160a147fca8:-7ffc" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#competencia94" source="nid_-4979afed:1607a4efc4d:-7ffc" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2265,19 +3039,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7ff2">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7ff2">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7ff2</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7ff2</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:productoFuente105" source="nid_-53de77ec:160a147fca8:-7ff2" target="nid_skos:Concept">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#productoFuente103" source="nid_-4979afed:1607a4efc4d:-7ff2" target="nid_skos:Concept">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2333,19 +3119,31 @@
          </data>
          <data key="d3" />
       </edge>
+<<<<<<< HEAD
       <node id="nid_-53de77ec:160a147fca8:-7fd9">
+=======
+      <node id="nid_-4979afed:1607a4efc4d:-7fd9">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
+<<<<<<< HEAD
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-53de77ec:160a147fca8:-7fd9</y:NodeLabel>
+=======
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-4979afed:1607a4efc4d:-7fd9</y:NodeLabel>
+>>>>>>> refs/remotes/oeg-upm/master
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
+<<<<<<< HEAD
     <edge id="eid_btn100:huso109" source="nid_-53de77ec:160a147fca8:-7fd9" target="nid_xsd:int">
+=======
+    <edge id="eid_https://datos.ign.es/def/btn100#huso107" source="nid_-4979afed:1607a4efc4d:-7fd9" target="nid_xsd:int">
+>>>>>>> refs/remotes/oeg-upm/master
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
