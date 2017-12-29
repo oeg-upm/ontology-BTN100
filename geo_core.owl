@@ -117,7 +117,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
         <rdfs:comment xml:lang="es">Coordenada X en metros (ETRS89)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core"/>
         <rdfs:label xml:lang="es">xETRS89</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -129,7 +128,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
         <rdfs:comment xml:lang="es">Coordenada Y en metros (ETRS89)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core"/>
         <rdfs:label xml:lang="es">yETRS89</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -175,8 +173,15 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/created"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Los objetos geográficos son fenómenos del mundo real asociados con una localización relativa a la Tierra respecto a los cuales se recolectan, mantienen y difunden datos. (ISO_TC_211_Starndards_ Guide_ Spanish.pdf)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core"/>
+        <rdfs:isDefinedBy xml:lang="es">https://datos.ign.es/def/geo_core</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Objeto Geográfico</rdfs:label>
     </owl:Class>
     
