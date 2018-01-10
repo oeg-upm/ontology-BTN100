@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/"
+     xml:base="https://datos.ign.es/kos/poblaciones-construcciones/estado-de-uso/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <skos:definition xml:lang="es">Tipología que especifica la administración oficial de la que es capital.</skos:definition>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:date xml:lang="es">2017-12-13</terms:date>
+        <terms:title xml:lang="es">Tipo de capital</terms:title>
+        <terms:description xml:lang="es">Tipología que especifica la administración oficial de la que es capital según el catálogo de la BTN100</terms:description>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma-no-de-provincia"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/municipio"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/no-capital"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/nacion"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/provincia"/>        
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Capital de una comunidad autónoma</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">comunidad autónoma</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma-no-de-provincia -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma-no-de-provincia">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Capital de la comunidad autónoma pero no de la provincia</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">comunidad autónoma no capital de provincia</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/municipio -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/municipio">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Capital de un municipio</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">municipio</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/nacion -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/nacion">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">capital de una nación</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">nación</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/no-capital -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/no-capital">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">No es capital de un municipio</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">no capital</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/provincia -->
+
+    <owl:NamedIndividual rdf:about="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/provincia">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Capital de una provincia</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital"/>
+        <skos:prefLabel xml:lang="es">provincia</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
