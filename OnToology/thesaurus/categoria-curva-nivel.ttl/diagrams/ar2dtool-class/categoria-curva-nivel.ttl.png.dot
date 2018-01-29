@@ -1,0 +1,15 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada" -> "https://datos.ign.es/kos/altimetria/categoria-curva-nivel" [ label = "skos:inScheme" ];
+
+}

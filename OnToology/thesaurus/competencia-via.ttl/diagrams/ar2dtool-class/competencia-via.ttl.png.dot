@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://datos.ign.es/kos/transportes/competencia-via/estatal" -> "https://datos.ign.es/kos/transportes/competencia-via" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/competencia-via/local" -> "https://datos.ign.es/kos/transportes/competencia-via" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/competencia-via" -> "https://datos.ign.es/kos/transportes/competencia-via/local" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/competencia-via" -> "https://datos.ign.es/kos/transportes/competencia-via/estatal" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/competencia-via" -> "https://datos.ign.es/kos/transportes/competencia-via/autonomica" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/competencia-via" -> "https://datos.ign.es/kos/transportes/competencia-via/provincial" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/competencia-via/autonomica" -> "https://datos.ign.es/kos/transportes/competencia-via" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/competencia-via/provincial" -> "https://datos.ign.es/kos/transportes/competencia-via" [ label = "skos:inScheme" ];
+
+}
