@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden" -> "https://datos.ign.es/kos/transportes/categoria-interes" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden" -> "https://datos.ign.es/kos/transportes/categoria-interes" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes/no-definido" -> "https://datos.ign.es/kos/transportes/categoria-interes" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes/primer-orden" -> "https://datos.ign.es/kos/transportes/categoria-interes" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes" -> "https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes" -> "https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes" -> "https://datos.ign.es/kos/transportes/categoria-interes/no-definido" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/categoria-interes" -> "https://datos.ign.es/kos/transportes/categoria-interes/primer-orden" [ label = "skos:hasTopConcept" ];
+
+}

@@ -1,0 +1,108 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://datos.ign.es/kos/hidrografia/categoria-de-rio
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (OEG - Universidad Polit\u00E9cnica de Madrid)"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://purl.org/dc/terms/date> "2017-12-13"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://purl.org/dc/terms/description> "Categorizaci\u00F3n de r\u00EDos seg\u00FAn el cat\u00E1logo de la BTN100"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://purl.org/dc/terms/title> "Categorizaci\u00F3n de r\u00EDos"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#definition> "Categorizaci\u00F3n de r\u00EDos"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> <http://www.w3.org/2004/02/skos/core#prefLabel> "categor\u00EDa de r\u00EDo"@es .
+# 
+# https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/2004/02/skos/core#definition> "R\u00EDo de menor inter\u00E9s."@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/2004/02/skos/core#inScheme> <https://datos.ign.es/kos/hidrografia/categoria-de-rio> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/2004/02/skos/core#notation> "rio-menor-interes" .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> <http://www.w3.org/2004/02/skos/core#prefLabel> "r\u00EDo de menor inter\u00E9s"@es .
+# 
+# https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/2004/02/skos/core#definition> "R\u00EDo de inter\u00E9s primario"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/2004/02/skos/core#inScheme> <https://datos.ign.es/kos/hidrografia/categoria-de-rio> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/2004/02/skos/core#notation> "rio-principal" .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> <http://www.w3.org/2004/02/skos/core#prefLabel> "r\u00EDo primario"@es .
+# 
+# https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/2004/02/skos/core#definition> "R\u00EDo de inter\u00E9s secundario"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/2004/02/skos/core#inScheme> <https://datos.ign.es/kos/hidrografia/categoria-de-rio> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/2004/02/skos/core#notation> "rio-secundario" .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> <http://www.w3.org/2004/02/skos/core#prefLabel> "r\u00EDo secundario"@es .
+# 
+# https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/2004/02/skos/core#definition> "R\u00EDo de inter\u00E9s terciario"@es .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/2004/02/skos/core#inScheme> <https://datos.ign.es/kos/hidrografia/categoria-de-rio> .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/2004/02/skos/core#notation> "rio-terciario" .
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> <http://www.w3.org/2004/02/skos/core#prefLabel> "r\u00EDo terciario"@es .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

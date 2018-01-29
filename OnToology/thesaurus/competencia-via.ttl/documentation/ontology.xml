@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://datos.ign.es/kos/transportes/competencia-via -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/transportes/competencia-via">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:date xml:lang="es">2017-12-13</terms:date>
+        <terms:description xml:lang="es">Atribuciones que corresponden a una entidad pública o a una autoridad judicial o administrativa.</terms:description>
+        <terms:title xml:lang="es">Tipología de competencia de la vía</terms:title>
+        <skos:definition xml:lang="es">Tipología de la competencia de la vía.</skos:definition>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/transportes/competencia-via/autonomica"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/transportes/competencia-via/estatal"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/transportes/competencia-via/local"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/transportes/competencia-via/provincial"/>
+        <skos:prefLabel xml:lang="es">competencia de la vía</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/transportes/competencia-via/autonomica -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/transportes/competencia-via/autonomica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">La competencia es de la administración de las CCAA.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/transportes/competencia-via"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competencia-autonomica</skos:notation>
+        <skos:prefLabel xml:lang="es">autonómica</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/transportes/competencia-via/estatal -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/transportes/competencia-via/estatal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">La competencia es del Estado.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/transportes/competencia-via"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competencia-estatal</skos:notation>
+        <skos:prefLabel xml:lang="es">estatal</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/transportes/competencia-via/local -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/transportes/competencia-via/local">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">La competencia es del Municipio.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/transportes/competencia-via"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competencia-local</skos:notation>
+        <skos:prefLabel xml:lang="es">local</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/transportes/competencia-via/provincial -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/transportes/competencia-via/provincial">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">La competencia es de la Diputación Provincial.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/transportes/competencia-via"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competencia-provincial</skos:notation>
+        <skos:prefLabel xml:lang="es">provincial</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

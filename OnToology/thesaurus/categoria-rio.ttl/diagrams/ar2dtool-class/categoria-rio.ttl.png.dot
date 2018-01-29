@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal" -> "https://datos.ign.es/kos/hidrografia/categoria-de-rio" [ label = "skos:inScheme" ];
+
+}

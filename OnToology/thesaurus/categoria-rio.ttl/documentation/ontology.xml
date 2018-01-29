@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:date xml:lang="es">2017-12-13</terms:date>
+        <terms:description xml:lang="es">Categorización de ríos según el catálogo de la BTN100</terms:description>
+        <terms:title xml:lang="es">Categorización de ríos</terms:title>
+        <skos:definition xml:lang="es">Categorización de ríos</skos:definition>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario"/>
+        <skos:prefLabel xml:lang="es">categoría de río</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Río de menor interés.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio-menor-interes</skos:notation>
+        <skos:prefLabel xml:lang="es">río de menor interés</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Río de interés primario</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio-principal</skos:notation>
+        <skos:prefLabel xml:lang="es">río primario</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Río de interés secundario</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio-secundario</skos:notation>
+        <skos:prefLabel xml:lang="es">río secundario</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Río de interés terciario</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/categoria-de-rio"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio-terciario</skos:notation>
+        <skos:prefLabel xml:lang="es">río terciario</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

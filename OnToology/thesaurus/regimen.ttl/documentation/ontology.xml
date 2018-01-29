@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/regimen -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/regimen">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:creator xml:lang="es">2017-12-13</terms:creator>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:date xml:lang="es">Tipología de regimen</terms:date>
+        <terms:description xml:lang="es">Tipología que define la estacionalidad de las aguas en cauce.</terms:description>
+        <skos:definition xml:lang="es">Estacionalidad de las aguas en cauce-</skos:definition>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/regimen/no-permanente"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/hidrografia/regimen/permanente"/>
+        <skos:prefLabel xml:lang="es">regimen</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/regimen/no-permanente -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/regimen/no-permanente">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Existencia de agua variable dependiendo de estacionalidad.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/regimen"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regimen-no-permanente</skos:notation>
+        <skos:prefLabel xml:lang="es">no permanente</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/hidrografia/regimen/permanente -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/hidrografia/regimen/permanente">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Discurre agua durante todo el año.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/hidrografia/regimen"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regimen-permanente</skos:notation>
+        <skos:prefLabel xml:lang="es">permanente</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

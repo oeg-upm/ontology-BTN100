@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://datos.ign.es/kos/transportes/estado-de-uso" -> "https://datos.ign.es/kos/transportes/estado-de-uso/abandonado" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/estado-de-uso" -> "https://datos.ign.es/kos/transportes/estado-de-uso/en-construccion" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/estado-de-uso" -> "https://datos.ign.es/kos/transportes/estado-de-uso/en-uso" [ label = "skos:hasTopConcept" ];
+	"https://datos.ign.es/kos/transportes/estado-de-uso/en-construccion" -> "https://datos.ign.es/kos/transportes/estado-de-uso" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/estado-de-uso/en-uso" -> "https://datos.ign.es/kos/transportes/estado-de-uso" [ label = "skos:inScheme" ];
+	"https://datos.ign.es/kos/transportes/estado-de-uso/abandonado" -> "https://datos.ign.es/kos/transportes/estado-de-uso" [ label = "skos:inScheme" ];
+
+}

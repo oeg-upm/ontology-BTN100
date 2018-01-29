@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:date xml:lang="es">2017-12-13</terms:date>
+        <terms:description xml:lang="es">Categorización asociada a cada tipología de Curva de Nivel según el catálogo de la BTN100</terms:description>
+        <terms:title xml:lang="es">Categorías de Curva de Nivel</terms:title>
+        <skos:definition xml:lang="es">Categorización asociada a cada tipología de Curva de Nivel según el catálogo de la BTN100</skos:definition>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada"/>
+        <skos:hasTopConcept rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra"/>
+        <skos:prefLabel xml:lang="es">Categoría de Curva de Nivel</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Curva que define una concavidad del terreno cada 20 m.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depresion-generica</skos:notation>
+        <skos:prefLabel xml:lang="es">Depresión Genérica</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="es">Curva que define una concavidad del terreno cada 100 m.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depresion-maestra</skos:notation>
+        <skos:prefLabel xml:lang="es">Depresión Maestra</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curva de nivel con altitud cada 20 m.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curva-nivel-generica</skos:notation>
+        <skos:prefLabel xml:lang="es">Genérica</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curva con altitud resultado de un algoritmo de cálculo y no de los datos del terreno.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curva-nivel-interpolada</skos:notation>
+        <skos:prefLabel xml:lang="es">Interpolada</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra -->
+
+
+    <NamedIndividual rdf:about="https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curva de nivel con altitud múltiplo de 100 m.</skos:definition>
+        <skos:inScheme rdf:resource="https://datos.ign.es/kos/altimetria/categoria-curva-nivel"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curva-nivel-maestra</skos:notation>
+        <skos:prefLabel xml:lang="es">Maestra</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
