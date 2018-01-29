@@ -1,9 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1501"
-	"https://datos.ign.es/kos/transportes/no-interna" -> "https://datos.ign.es/kos/transportes/tipo-tramo" [ label = "skos:inScheme" ];
-	"https://datos.ign.es/kos/transportes/interna" -> "https://datos.ign.es/kos/transportes/tipo-tramo" [ label = "skos:inScheme" ];
-	"https://datos.ign.es/kos/transportes/tipo-tramo" -> "https://datos.ign.es/kos/transportes/no-interna" [ label = "skos:hasTopConcept" ];
-	"https://datos.ign.es/kos/transportes/tipo-tramo" -> "https://datos.ign.es/kos/transportes/interna" [ label = "skos:hasTopConcept" ];
-
-}
