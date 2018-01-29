@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/competencia-via> a skos:ConceptScheme ;
+dc:title "Tipología de competencia de la vía"@es ;
+dc:date "2017-12-13"@es ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:description "Atribuciones que corresponden a una entidad pública o a una autoridad judicial o administrativa."@es ;
+skos:definition "Tipología de la competencia de la vía."@es ;
+skos:prefLabel "competencia de la vía"@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/competencia-via/autonomica> ;                                                        
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/competencia-via/local> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/competencia-via/provincial> ;                          
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/competencia-via/estatal> .
+
+<https://datos.ign.es/kos/transportes/competencia-via/autonomica> a skos:Concept ;
+            skos:definition "La competencia es de la administración de las CCAA."@es ;
+            skos:inScheme <https://datos.ign.es/kos/transportes/competencia-via> ;
+            skos:notation "competencia-autonomica";
+            skos:prefLabel "autonómica"@es .
+
+<https://datos.ign.es/kos/transportes/competencia-via/estatal> a skos:Concept ;
+         skos:definition "La competencia es del Estado."@es ;
+         skos:inScheme <https://datos.ign.es/kos/transportes/competencia-via> ;
+         skos:notation "competencia-estatal" ;
+         skos:prefLabel "estatal"@es .
+
+<https://datos.ign.es/kos/transportes/competencia-via/local> a skos:Concept ;
+       skos:definition "La competencia es del Municipio."@es ;
+       skos:inScheme <https://datos.ign.es/kos/transportes/competencia-via> ;
+       skos:notation "competencia-local" ;
+       skos:prefLabel "local"@es .
+
+<https://datos.ign.es/kos/transportes/competencia-via/provincial> a skos:Concept ;
+            skos:definition "La competencia es de la Diputación Provincial."@es ;
+            skos:inScheme <https://datos.ign.es/kos/transportes/competencia-via> ;
+            skos:notation "competencia-provincial" ;
+            skos:prefLabel "provincial"@es .

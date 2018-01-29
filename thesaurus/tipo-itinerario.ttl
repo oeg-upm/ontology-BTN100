@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .<
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/tipo-itinerario> rdf:type owl:Ontology ;
+                                                       owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                                       dc:title "Tipo de itinerio europeo"@es ;
+                                                       dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                       dc:date "2017-12-13"@es ;
+                                                       dc:description "Tipología del tramo de la vía que lo define como perteneciente o no a la Red de Carreteras Europeas."@es ;
+                                                       skos:definition "Tipología del tramo de la vía que lo define como perteneciente o no a la Red de Carreteras Europeas."@es ;
+                                                       skos:hasTopConcept <https://datos.ign.es/kos/transportes/tipo-itinerario/itinerario-europeo> ;
+                                                       skos:hasTopConcept <https://datos.ign.es/kos/transportes/tipo-itinerario/no-itinerario-europeo> ;
+                                                       skos:prefLabel "tipo de itinerario europeo"@es .
+
+<https://datos.ign.es/kos/transportes/tipo-itinerario/itinerario-europeo> a skos:Concept ;
+                    skos:definition "El tramo forma parte de la Red Europea de Transporte."@es ;
+                    skos:inScheme <https://datos.ign.es/kos/transportes/tipo-itinerario> ;
+                    skos:notation "itineario-europeo";
+                    skos:prefLabel "itinerario europeo"@es .
+
+
+<https://datos.ign.es/kos/transportes/tipo-itinerario/no-itinerario-europeo> a skos:Concept ;
+                       skos:definition "El tramo no forma parte de la Red Europea de Transporte."@es ;
+                       skos:inScheme <https://datos.ign.es/kos/transportes/tipo-itinerario> ;
+                       skos:notation "no-itineario-europeo";
+                       skos:prefLabel "no itinerario europeo"@es .
+

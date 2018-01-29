@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+
+<https://datos.ign.es/kos/transportes/ancho-de-via> a skos:ConceptScheme ;
+dc:description "Categorización asociada al ancho de la vía."@es ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:date "2017-12-13"@es ;
+skos:definition "Categorización asociada al ancho de la vía."@es ;
+skos:prefLabel "ancho de vía"@es ;
+dc:title "Categorías de ancho de vía"@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/ancho-de-via/desconocido> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/ancho-de-via/iberico> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/ancho-de-via/internacional> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/ancho-de-via/metrico> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/ancho-de-via/mixto> .
+
+<https://datos.ign.es/kos/transportes/ancho-de-via/desconocido> a skos:Concept ;
+skos:inScheme <https://datos.ign.es/kos/transportes/ancho-de-via> ;
+skos:definition "No se posee este dato de la vía."@es ;
+skos:notation "ancho-desconocido" ;
+skos:prefLabel "desconocido"@es .
+
+
+<https://datos.ign.es/kos/transportes/ancho-de-via/iberico> a skos:Concept ;
+skos:inScheme <https://datos.ign.es/kos/transportes/ancho-de-via> ;
+skos:definition "Ancho ibérico"@es ;
+skos:notation "ancho-iberico";
+skos:prefLabel "ibérico"@es .
+
+
+<https://datos.ign.es/kos/transportes/ancho-de-via/internacional> a skos:Concept ;
+skos:inScheme <https://datos.ign.es/kos/transportes/ancho-de-via> ;
+skos:definition "Ancho internacional"@es ;
+skos:notation "ancho-internacional" ;
+skos:prefLabel "internacional"@es .
+
+
+<https://datos.ign.es/kos/transportes/ancho-de-via/metrico> a skos:Concept ;
+skos:inScheme <https://datos.ign.es/kos/transportes/ancho-de-via> ;
+skos:definition "Ancho métrico o estrecho"@es ;
+skos:notation "ancho-metrico" ;
+skos:prefLabel "métrico"@es .
+
+
+<https://datos.ign.es/kos/transportes/ancho-de-via/mixto> a skos:Concept ;
+skos:inScheme <https://datos.ign.es/kos/transportes/ancho-de-via> ;
+skos:definition "Ancho mixto"@es ;
+skos:notation "ancho-mixto" ;
+skos:prefLabel "mixto"@es .

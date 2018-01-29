@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel> a skos:ConceptScheme ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:title "Categorías de Curva de Nivel"@es ;
+dc:date "2017-12-13"@es ;
+skos:prefLabel "Categoría de Curva de Nivel"@es ;
+dc:description "Categorización asociada a cada tipología de Curva de Nivel según el catálogo de la BTN100"@es ;
+skos:definition "Categorización asociada a cada tipología de Curva de Nivel según el catálogo de la BTN100"@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra> ;
+skos:hasTopConcept <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada> ;
+skos:hasTopConcept <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica> ;
+skos:hasTopConcept <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra> ;
+skos:hasTopConcept <https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica> .
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-generica> a skos:Concept ;
+skos:definition "Curva que define una concavidad del terreno cada 20 m."@es ;
+skos:inScheme <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> ;
+skos:notation "depresion-generica";
+skos:prefLabel "Depresión Genérica"@es .
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/depresion-maestra> a skos:Concept ;
+skos:definition "Curva que define una concavidad del terreno cada 100 m."@es ;
+skos:inScheme <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> ;
+skos:notation "depresion-maestra";
+skos:prefLabel "Depresión Maestra"@es .
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/generica> a skos:Concept ;
+skos:definition "Curva de nivel con altitud cada 20 m." ;
+skos:inScheme <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> ;
+skos:notation "curva-nivel-generica" ;                                                                                                                             
+skos:prefLabel "Genérica"@es .
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/interpolada> a skos:Concept ;
+skos:definition "Curva con altitud resultado de un algoritmo de cálculo y no de los datos del terreno." ;
+skos:inScheme <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> ;
+skos:notation "curva-nivel-interpolada";                                                         
+skos:prefLabel "Interpolada"@es .
+
+<https://datos.ign.es/kos/altimetria/categoria-curva-nivel/maestra> a skos:Concept ;
+skos:definition "Curva de nivel con altitud múltiplo de 100 m." ;
+skos:inScheme <https://datos.ign.es/kos/altimetria/categoria-curva-nivel> ;
+skos:notation "curva-nivel-maestra";                                                                    
+skos:prefLabel "Maestra"@es .

@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/categoria-interes> a skos:ConceptScheme ;
+dc:description "Categorización de vía según su importancia."@es ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:date "2017-12-13"@es ;
+dc:title "Categorías de la vía según su importancia."@es ;
+skos:definition "Categorización de vía según su importancia."@es ;
+skos:prefLabel "categoría de interés de la vía"@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/categoria-interes/primer-orden> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/categoria-interes/no-definido> .
+
+<https://datos.ign.es/kos/transportes/categoria-interes/no-definido> a skos:Concept ;
+             skos:definition "Vía sin catalogar."@es ;
+             skos:inScheme <https://datos.ign.es/kos/transportes/categoria-interes> ;
+             skos:notation "via-interes-no-definido" ;
+             skos:prefLabel "no definido"@es .
+
+
+<https://datos.ign.es/kos/transportes/categoria-interes/primer-orden> a skos:Concept ;
+              skos:definition "Vía de primer orden"@es ;
+              skos:inScheme <https://datos.ign.es/kos/transportes/categoria-interes> ;
+              skos:notation "via-primer-orden" ;
+              skos:prefLabel "primer orden"@es .
+
+
+<https://datos.ign.es/kos/transportes/categoria-interes/segundo-orden> a skos:Concept ;
+               skos:definition "Vía de segundo orden."@es ;
+               skos:inScheme <https://datos.ign.es/kos/transportes/categoria-interes> ;
+               skos:notation "via-segundo-orden" ;
+               skos:prefLabel "segundo orden"@es .
+
+
+<https://datos.ign.es/kos/transportes/categoria-interes/tercer-orden> a skos:Concept ;
+              skos:definition "Vía de tercer orden."@es ;
+              skos:inScheme <https://datos.ign.es/kos/transportes/categoria-interes> ;
+              skos:notation "via-tercer-orden" ;
+              skos:prefLabel "tercer orden"@es .

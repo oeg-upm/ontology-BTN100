@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/tipo-tramo> a skos:ConceptScheme ;
+                                                   skos:prefLabel "tipo de tramo de la vía"@es ;
+                                                   skos:definition "Tipología de tramo de vía que se desarrolla ya sea por el interior o por el exterior de núcleos o diseminados superficiales"@es ;
+                                                   dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                   dc:date "2017-12-13"@es ;
+                                                   dc:title "Tipo de tramo de vía"@es ;
+                                                   dc:description "Tipología de tramo de vía que se desarrolla ya sea por el interior o el exterior de núcleos o diseminados superficiales"@es ;
+                                                   skos:hasTopConcept <https://datos.ign.es/kos/transportes/interna> ;
+                                                   skos:hasTopConcept <https://datos.ign.es/kos/transportes/no-interna> .
+
+<https://datos.ign.es/kos/transportes/interna> a skos:Concept ;
+                                               skos:inScheme <https://datos.ign.es/kos/transportes/tipo-tramo> ;
+                                               skos:definition "El tramo discurre por el interior de poblaciones o zonas de uso."@es ;
+                                               skos:notation "tramo-via-interna";
+                                               skos:prefLabel "interna"@es .
+
+
+<https://datos.ign.es/kos/transportes/no-interna> a skos:Concept ;
+                                                  skos:inScheme <https://datos.ign.es/kos/transportes/tipo-tramo> ;
+                                                  skos:definition "El tramo no discurre por el interior de poblaciones o zonas de uso."@es ;
+                                                  skos:notation "tramo-via-no-interna";
+                                                  skos:prefLabel "no interna"@es .
