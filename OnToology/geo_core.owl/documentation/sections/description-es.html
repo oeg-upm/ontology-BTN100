@@ -8,15 +8,15 @@ A continuación se presenta el diagrama de la ontología:<br><br>
 <h3>3.1 Ejemplo de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
 <p>Con la finalidad de facilitar la comprensión del uso de esta ontología se ejemplificará la representación de una plaza. En primer lugar, como se puede observar en el código de ejemplo, se crea una instancia de la clase <a href="#ObjetoGeografico">Objeto Geográfico</a>, a continuación el nombre de la plaza, su código de identificación y la fecha en que se creó en el catálogo se representan a través de las propiedades de datos <code>dc:title</code>, <code>dc:identifier</code> y <code>dc:created </code> respectivamente. Finalmente, su geometría se representa mediante la propiedad <code>geosparql:hasGeometry</code>. </p> 
 <pre class="example highlight preprint">
-	https://datos.ign.es/recurso/objeto-geografico/8031 a geo_core:ObjetoGeografico ;
+	&lt;https://datos.ign.es/recurso/objeto-geografico/8031&gt; a geo_core:ObjetoGeografico ;
 	dc:title 		"Plaza España" ;
 	dc:identifier		"8031" ;
 	dc:created		"2013-03-07"^^xsd:date ;	
-	geosparql:hasGeometry	https://datos.ign.es/recurso/objeto-geografico/8031/geometry .</pre>
+	geosparql:hasGeometry	&lt;https://datos.ign.es/recurso/objeto-geografico/8031/geometry&gt; .</pre>
 
 <p> Para la representación de la geometría del objeto geográfico se crea una instancia de <code>sf:MultiPolygon</code>  que es una de las clases definidas dentro de la ontología GeoSPARQL. Adicionalmente se emplea la propiedad <code>geosparql:asWKT</code> para representar el tipo de codificación de la geometría; finalmente el tipo de dato del valor de la geometría se representa mediante la propiedad <code>geosparql:wktLiteral</code>.
 
 <pre class="example highlight preprint">
-	https://datos.ign.es/recurso/objeto-geografico/8031/geometry a sf:MultiPolygon ;
+	&lt;https://datos.ign.es/recurso/objeto-geografico/8031/geometry&gt; a sf:MultiPolygon ;
         geosparql:asWKT  "MULTIPOLYGON (((-5.418825249998759 35.91208060445847, ..., 35.8904970644321)))"^^geosparql:wktLiteral .</pre>
 </p>

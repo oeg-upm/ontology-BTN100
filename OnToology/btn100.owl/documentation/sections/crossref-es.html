@@ -1697,6 +1697,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="https://datos.ign.es/def/btn100#DiseminadoSuperficial">Diseminado Superficial</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tipoDeCapital" title="https://datos.ign.es/def/btn100#tipoDeCapital">tipo de capital</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="DiseminadoPuntual">
@@ -2865,6 +2870,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </h3>
       <p>
          <strong>IRI:</strong> https://datos.ign.es/def/btn100#IslaFluvial</p>
+         <div class="comment">
+         <span class="markdown">Porción de tierra rodeada de agua de rio.</span>
+      </div>
       <dl class="description">
          <dt>tiene superclases</dt>
          <dd>
@@ -2880,6 +2888,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </h3>
       <p>
          <strong>IRI:</strong> https://datos.ign.es/def/btn100#IslaMaritima</p>
+      <div class="comment">
+         <span class="markdown">Porción de tierra rodeada de agua del mar.</span>
+      </div>   
       <dl class="description">
          <dt>tiene superclases</dt>
          <dd>
@@ -3293,6 +3304,12 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
                title="https://datos.ign.es/def/btn100#NucleoPoblacionSuperficial">Núcleo de Población Superficial</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tipoDeCapital" title="https://datos.ign.es/def/btn100#tipoDeCapital">tipo de capital</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+
       </dl>
    </div>
    <div class="entity" id="NucleoPoblacionPuntual">
@@ -4586,8 +4603,7 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
          <a href="#electrificacion" title="https://datos.ign.es/def/btn100#electrificacion">electrificación</a>
       </li>
       <li>
-         <a href="#tipoDeCapital"
-            title="https://datos.ign.es/def/btn100#tipoDeCapital">tipo de capital</a>
+         <a href="#tipoDeCapital" title="https://datos.ign.es/def/btn100#tipoDeCapital">tipo de capital</a>
       </li>
       <li>
          <a href="#esComponenteDe" title="https://datos.ign.es/def/btn100#esComponenteDe">es componente de</a>
@@ -4965,7 +4981,7 @@ https://datos.ign.es/kos/transportes/electrificacion/no-electrificado</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="tipoDeCaptial">
+   <div class="entity" id="tipoDeCapital">
       <h3>tipo de capital<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
@@ -4985,11 +5001,11 @@ https://datos.ign.es/kos/transportes/electrificacion/no-electrificado</span>
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#NucleoPoblacion"
-                  title="https://datos.ign.es/def/btn100#NucleoPoblacion">Núcleo de Población</a>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion">Núcleo de Población</a>
                <sup class="type-c" title="clase">c</sup>
                <span class="logic">or</span> 
-               <a href="#Diseminado" title="https://datos.ign.es/def/btn100#Diseminado">Diseminado</a>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado" title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado">Diseminado</a>
                <sup class="type-c" title="clase">c</sup> 
             </dd>
             <dt>rango</dt>

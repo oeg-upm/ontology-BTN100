@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/calzada> a skos:ConceptScheme ;
+dc:description "Tipología que describe el número de calzadas y sentido de circulación del tramo de vía según el catálogo de la BTN100"@es ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:date "2017-12-13"@es ;
+dc:title "Tipo de calzada"@es ;
+skos:prefLabel "tipo de calzada"@es ;
+skos:definition "Tipología que describe el número de calzadas y sentido de circulación del tramo de vía."@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/calzada/sentido-unico> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/calzada/convencional> ;
+skos:hasTopConcept <https://datos.ign.es/kos/transportes/calzada/doble> .
+
+
+<https://datos.ign.es/kos/transportes/calzada/convencional> a skos:Concept ;
+skos:definition "Única calzada con doble sentido de circulación."@es ;
+skos:inScheme <https://datos.ign.es/kos/transportes/calzada> ;
+skos:notation "calzada-convencional" ;
+skos:prefLabel "convencional"@es .
+
+
+<https://datos.ign.es/kos/transportes/calzada/doble> a skos:Concept ;
+skos:definition "Dos calzadas separadas y paralelas, con sentidos distintos."@es ;
+skos:inScheme <https://datos.ign.es/kos/transportes/calzada> ;
+skos:notation "calzada-doble" ;
+skos:prefLabel "doble"@es .
+
+
+<https://datos.ign.es/kos/transportes/calzada/sentido-unico> a skos:Concept ;
+skos:definition "Calzada de sentido único no contigua a la del contrario."@es ;
+skos:inScheme <https://datos.ign.es/kos/transportes/calzada> ;
+skos:notation "calzada-sentido-unico" ;
+skos:prefLabel "sentido único"@es .

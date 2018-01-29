@@ -1,0 +1,31 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/hidrografia/regimen> a skos:ConceptScheme ;
+                                                dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                skos:definition "Estacionalidad de las aguas en cauce-"@es ;
+                                                skos:prefLabel "regimen"@es ;
+                                                dc:date "Tipología de regimen"@es ;
+                                                dc:description "Tipología que define la estacionalidad de las aguas en cauce."@es ;
+                                                dc:creator "2017-12-13"@es ;
+                                                skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/regimen/permanente>;                                                
+                                                skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/regimen/no-permanente> .
+                                                
+
+<https://datos.ign.es/kos/hidrografia/regimen/no-permanente> a skos:Concept ;
+               skos:definition "Existencia de agua variable dependiendo de estacionalidad."@es ;
+               skos:inScheme <https://datos.ign.es/kos/hidrografia/regimen> ;
+               skos:notation "regimen-no-permanente";
+               skos:prefLabel "no permanente"@es .
+
+
+<https://datos.ign.es/kos/hidrografia/regimen/permanente> a skos:Concept ;
+            skos:definition "Discurre agua durante todo el año."@es ;
+            skos:inScheme <https://datos.ign.es/kos/hidrografia/regimen> ;
+            skos:notation "regimen-permanente";
+            skos:prefLabel "permanente"@es .

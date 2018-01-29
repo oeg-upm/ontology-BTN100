@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/situacion-via> a skos:ConceptScheme ;                                                      
+                                                      dc:title "Situación de la vía"@es ;
+                                                      dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                      dc:date "2017-12-13"@es ;
+                                                      skos:definition "Tipología que define la disposición del tramo de la vía sobre la superficie."@es ;
+                                                      dc:description "Tipología que define la disposición del tramo de la vía sobre la superficie"@es ;
+                                                      skos:prefLabel "situación de la vía"@es ;
+                                                      skos:hasTopConcept <https://datos.ign.es/kos/transportes/situacion-via/superficial> ;
+                                                      skos:hasTopConcept <https://datos.ign.es/kos/transportes/situacion-via/elevada> ;
+                                                      skos:hasTopConcept <https://datos.ign.es/kos/transportes/situacion-via/subterranea> .
+
+<https://datos.ign.es/kos/transportes/situacion-via/elevada> a skos:Concept ;
+         skos:definition "Tramo elevado"@es ;
+         skos:inScheme <https://datos.ign.es/kos/transportes/situacion-via> ;
+         skos:notation "tramo-via-elevada";
+         skos:prefLabel "elevada"@es .
+
+
+<https://datos.ign.es/kos/transportes/situacion-via/subterranea> a skos:Concept ;
+             skos:definition "Tramo subterráneo"@es ;
+             skos:inScheme <https://datos.ign.es/kos/transportes/situacion-via> ;
+             skos:notation "tramo-via-subterranea";
+             skos:prefLabel "subterránea"@es .
+
+
+<https://datos.ign.es/kos/transportes/situacion-via/superficial> a skos:Concept ;
+             skos:definition "Tramo superficial"@es ;
+             skos:inScheme <https://datos.ign.es/kos/transportes/situacion-via> ;
+             skos:notation "tramo-via-superficial";
+             skos:prefLabel "superficial"@es .

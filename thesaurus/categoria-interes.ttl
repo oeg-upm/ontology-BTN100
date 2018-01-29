@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes> a skos:ConceptScheme ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:date "2017-12-13"@es ;
+skos:prefLabel "categoría de interés de entidad virtual accidente orográfico"@es ;
+dc:title "Categorías de Entidad Virtual Accidente Orográfico"@es ;
+dc:description "Categorización asociada a cada tipología de Entidad Virtual Accidente Orográfico según el catálogo de la BTN100"@es ;
+skos:definition "Categoría de interés asociada a cada tipología de Entidad Virtual Accidente Orográfico."@es .
+skos:hasTopConcept <https://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario> ;
+skos:hasTopConcept <https://datos.ign.es/kos/accidente-orografico/categoria-interes/no-definido> ,
+skos:hasTopConcept <https://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario> ;
+skos:hasTopConcept <https://datos.ign.es/kos/accidente-orografico/categoria-interes/menor> ;
+skos:hasTopConcept <https://datos.ign.es/kos/accidente-orografico/categoria-interes/principal> .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes/menor> a skos:Concept ;
+skos:definition "Lugar de menor interés."@es ;
+skos:notation "interes-menor" ;
+skos:inScheme <https://datos.ign.es/kos/accidente-orografico/categoria-interes> ;
+skos:prefLabel "menor"@es .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes/no-definido> a skos:Concept ;
+skos:definition "Interés no definido."@es ;
+skos:inScheme <https://datos.ign.es/kos/accidente-orografico/categoria-interes> ;
+skos:notation "interes-no-definido";
+skos:prefLabel "no definido"@es .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes/principal> a skos:Concept ;
+skos:definition "Lugar de interés principal."@es ;
+skos:inScheme <https://datos.ign.es/kos/accidente-orografico/categoria-interes> ;
+skos:notation "interes-principal";
+skos:prefLabel "principal"@es .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes/secundario> a skos:Concept ;
+skos:definition "Lugar de interés secundario."@es ;
+skos:inScheme <https://datos.ign.es/kos/accidente-orografico/categoria-interes> ;
+skos:notation "interes-secundario" ;                                                              
+skos:prefLabel "secundario"@es .
+
+<https://datos.ign.es/kos/accidente-orografico/categoria-interes/terciario> a skos:Concept ;
+skos:definition "Lugar de interés terciario."@es ;
+skos:inScheme <https://datos.ign.es/kos/accidente-orografico/categoria-interes> ;
+skos:notation "interes-terciario" ;                                                                            
+skos:prefLabel "terciario"@es .

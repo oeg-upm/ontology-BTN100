@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/red-de-suministro/tipo-de-componente> a skos:ConceptScheme ;
+                                                                 dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                                 dc:date "2017-12-13"@es ;                                                                
+                                                                 skos:prefLabel "tipo de componente"@es ;
+                                                                 dc:title "Tipo de componente de telecomunicaciones"@es ;
+                                                                 dc:description "Tipo de componente de telecomunicaciones según el catálogo de la BTN100."@es ;
+                                                                 skos:definition "Tipo de componente de telecomunicaciones"@es ;
+                                                                 skos:hasTopConcept :repetidor ;
+                                                                 skos:hasTopConcept :emisor .
+
+
+<https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/emisor> a skos:Concept ;
+        skos:definition "Dispositivo que transforma o codifica el mensaje en un fenómeno físico: la señal."@es ;
+        skos:inScheme <https://datos.ign.es/kos/red-de-suministro/tipo-de-componente> ;
+        skos:notation "emisor";
+        skos:prefLabel "emisor"@es .
+
+<https://datos.ign.es/kos/red-de-suministro/tipo-de-componente/repetidor>a skos:Concept ;
+           skos:definition "Dispositivo que decodifica la señal en un mensaje."@es ;
+           skos:inScheme <https://datos.ign.es/kos/red-de-suministro/tipo-de-componente> ;
+           skos:notation "repetidor";
+           skos:prefLabel "repetidor"@es .

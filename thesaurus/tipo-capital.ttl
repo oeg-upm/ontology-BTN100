@@ -1,0 +1,58 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> a skos:ConceptScheme ;
+                                                                    dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                                    dc:title "Tipo de capital"@es ;
+                                                                    dc:date "2017-12-13"@es ;
+                                                                    dc:description "Tipología que especifica la administración oficial de la que es capital según el catálogo de la BTN100"@es ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma> ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma-no-de-provincia> ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/municipio> ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/no-capital> ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/nacion> ;
+                                                                    skos:hasTopConcept <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/provincia> ;
+                                                                    skos:definition "Tipología que especifica la administración oficial de la que es capital."@es .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma> a skos:Concept ;
+                                                                                      skos:definition "Capital de una comunidad autónoma"@es ;
+                                                                                      skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                                      skos:notation "capital-comunidad-autonoma";
+                                                                                      skos:prefLabel "comunidad autónoma"@es .
+
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/comunidad-autonoma-no-de-provincia> a skos:Concept ;
+                                                                                                      skos:definition "Capital de la comunidad autónoma pero no de la provincia"@es ;
+                                                                                                      skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                                                      skos:notation "capital-comunidad-autonoma-no-de-provincia";
+                                                                                                      skos:prefLabel "comunidad autónoma no capital de 
+                                                                                                      provincia"@es .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/municipio> a skos:Concept ;
+                                                                             skos:definition "Capital de un municipio"@es ;
+                                                                             skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                             skos:notation "capital-municipio";
+                                                                             skos:prefLabel "municipio"@es .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/nacion> a skos:Concept ;
+                                                                          skos:definition "capital de una nación"@es ;
+                                                                          skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                          skos:notation "capital-nacion";
+                                                                          skos:prefLabel "nación"@es .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/no-capital> a skos:Concept ;
+                                                                              skos:definition "No es capital de un municipio"@es ;
+                                                                              skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                              skos:notation "no-capital";
+                                                                              skos:prefLabel "no capital"@es .
+
+<https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital/provincia> a skos:Concept ;
+                                                                             skos:definition "Capital de una provincia"@es ;
+                                                                             skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/tipo-capital> ;
+                                                                             skos:notation "capital-provincia";
+                                                                             skos:prefLabel "provincia"@es .

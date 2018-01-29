@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio> a skos:ConceptScheme ;
+dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+dc:date "2017-12-13"@es ;
+dc:title "Categorización de ríos"@es ;
+dc:description "Categorización de ríos según el catálogo de la BTN100"@es ;
+skos:prefLabel "categoría de río"@es ;
+skos:definition "Categorización de ríos"@es ;
+skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> ;
+skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> ;
+skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> ;
+skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> .
+
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes> a skos:Concept ;
+skos:definition "Río de menor interés."@es ;
+skos:inScheme <https://datos.ign.es/kos/hidrografia/categoria-de-rio> ;
+skos:notation "rio-menor-interes" ;
+skos:prefLabel "río de menor interés"@es .
+
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-principal> a skos:Concept ;
+skos:definition "Río de interés primario"@es ;
+skos:inScheme <https://datos.ign.es/kos/hidrografia/categoria-de-rio> ;
+skos:notation "rio-principal" ;
+skos:prefLabel "río primario"@es .
+
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-secundario> a skos:Concept ;
+skos:definition "Río de interés secundario"@es ;
+skos:inScheme <https://datos.ign.es/kos/hidrografia/categoria-de-rio> ;
+skos:notation "rio-secundario" ;
+skos:prefLabel "río secundario"@es .
+
+<https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-terciario> a skos:Concept ;
+skos:definition "Río de interés terciario"@es ;
+skos:inScheme <https://datos.ign.es/kos/hidrografia/categoria-de-rio> ;
+skos:notation "rio-terciario" ;
+skos:prefLabel "río terciario"@es .

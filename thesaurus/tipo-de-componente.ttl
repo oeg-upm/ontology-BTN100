@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/hidrografia/tipo-de-componente> a skos:ConceptScheme ;
+                                                           dc:description "Tipología de componente de eje de cauce o eje ficticio según el catálogo de la BTN100"@es ;                                                           
+                                                           dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                           dc:date "2017-12-13"@es ;
+                                                           dc:title "Tipología de componente de eje de cauce o eje ficticio."@es ;
+                                                           skos:definition "Tipología de componente de eje de cauce o eje ficticio."@es ;
+                                                           skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/tipo-de-componente/conexion> ;
+                                                           skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/tipo-de-componente/eje> ;
+                                                           skos:prefLabel "tipo de componente"@es .
+
+<https://datos.ign.es/kos/hidrografia/tipo-de-componente/conexion> a skos:Concept ;
+          skos:definition "Eje ficticio establecido para conexión en zonas hidrográficas superficiales."@es ;
+          skos:inScheme <https://datos.ign.es/kos/hidrografia/tipo-de-componente> ;
+          skos:notation "componente-de-conexion";
+          skos:prefLabel "conexión"@es .
+
+
+<https://datos.ign.es/kos/hidrografia/tipo-de-componente/eje> a skos:Concept ;
+     skos:definition "Eje del cauce del río."@es ;
+     skos:inScheme <https://datos.ign.es/kos/hidrografia/tipo-de-componente> ;
+     skos:notation "componente-de-eje";
+     skos:prefLabel "eje"@es .

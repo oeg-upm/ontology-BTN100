@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/transportes/tipo-de-trafico> a skos:ConceptScheme ;
+                                                        dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                        dc:date "2017-12-13"@es ;
+                                                        skos:prefLabel "tipo de tráfico"@es ;
+                                                        dc:title "Tipo de tráfico"@es ;
+                                                        dc:description "Tipo de tráfico según el catálogo de la BTN100."@es ;
+                                                        skos:hasTopConcept <https://datos.ign.es/kos/transportes/tipo-de-trafico/mixto> ;
+                                                        skos:hasTopConcept <https://datos.ign.es/kos/transportes/tipo-de-trafico/viajeros> ;                                                        
+                                                        skos:hasTopConcept <https://datos.ign.es/kos/transportes/tipo-de-trafico/mercancias> .
+
+<https://datos.ign.es/kos/transportes/tipo-de-trafico/mercancias> a skos:Concept ;
+            dc:description "Tráfico de mercancías."@es ;
+            skos:inScheme <https://datos.ign.es/kos/transportes/tipo-de-trafico> ;
+            skos:notation "trafico-mercancias";
+            skos:prefLabel "mercancías"@es .
+
+<https://datos.ign.es/kos/transportes/tipo-de-trafico/mixto> a skos:Concept ;
+       dc:description "Tráfico de mercancías y viajeros."@es ;
+       skos:inScheme <https://datos.ign.es/kos/transportes/tipo-de-trafico> ;
+       skos:notation "trafico-mixto";
+       skos:prefLabel "mixto"@es .
+
+<https://datos.ign.es/kos/transportes/tipo-de-trafico/viajeros> a skos:Concept ;
+          dc:description "Tráfico de viajeros."@es ;
+          skos:inScheme <https://datos.ign.es/kos/transportes/tipo-de-trafico> ;
+          skos:notation "trafico-viajeros";
+          skos:prefLabel "viajeros"@es .

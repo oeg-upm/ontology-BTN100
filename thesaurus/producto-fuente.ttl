@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/producto-fuente> a skos:ConceptScheme ;
+                                            dc:title "Tipo de producto de origen o fuente de información"@es ;
+                                            dc:description "Tipo de producto de origen o fuente de información según el catálogo de la BTN100."@es ;
+                                            dc:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                            dc:date "2017-12-13"@es .
+                                            skos:definition "Tipo de producto de origen o fuente de información."@es ;
+                                            skos:prefLabel "producto fuente"@es ;
+                                            skos:hasTopConcept <https://datos.ign.es/kos/producto-fuente/mp> ;
+                                            skos:hasTopConcept <https://datos.ign.es/kos/producto-fuente/mp-serie-c> ;
+                                            skos:hasTopConcept <https://datos.ign.es/kos/producto-fuente/serie-c> .
+                                            
+<https://datos.ign.es/kos/producto-fuente/mp> a skos:Concept ;
+                                              skos:definition "Mapa provincial del IGN."@es ;
+                                              skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/producto-fuente> ;
+                                              skos:notation "producto-mp";
+                                              skos:prefLabel "mp 200"@es .
+
+<https://datos.ign.es/kos/producto-fuente/mp-serie-c> a skos:Concept ;
+                                                      skos:definition "Mapa provincial del IGN y mapa serie C del CEGET"@es ;
+                                                      skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/producto-fuente> ;
+                                                      skos:notation "producto-mp-serie-c";
+                                                      skos:prefLabel "mp 200 y serie C"@es .
+
+<https://datos.ign.es/kos/producto-fuente/serie-c> a skos:Concept ;
+                                                   skos:definition "Mapa serie C del CEGET."@es ;
+                                                   skos:inScheme <https://datos.ign.es/kos/poblaciones-construcciones/producto-fuente> ;
+                                                   skos:notation "producto-serie-c";
+                                                   skos:prefLabel "serie C"@es .

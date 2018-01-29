@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+
+<https://datos.ign.es/kos/hidrografia/situacion-de-cauce> a skos:ConceptScheme ;                                                           
+                                                           terms:creator "Paola Espinoza Arias (OEG - Universidad Politécnica de Madrid)"@es ;
+                                                           terms:title "Tipos de cauce"@es ;
+                                                           terms:date "2017-12-13"@es ;                                                           
+                                                           terms:description "Tipología que define la disposición del cauce sobre la superficie según el catálogo de la BTN100"@es ;
+                                                           skos:definition "Disposición del tramo de vía sobre la superficie."@es ;
+                                                           skos:prefLabel "situación de cauce"@es ;
+                                                           skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/situacion-de-cauce/subterranea> ;
+                                                           skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/situacion-de-cauce/superficial> ;
+                                                           skos:hasTopConcept <https://datos.ign.es/kos/hidrografia/situacion-de-cauce/elevada> .
+
+<https://datos.ign.es/kos/hidrografia/situacion-de-cauce/elevada> a skos:Concept ;
+         skos:definition "Canal que discurre elevado."@es ;
+         skos:inScheme <https://datos.ign.es/kos/hidrografia/situacion-de-cauce> ;
+         skos:notation "cauce-elevado";
+         skos:prefLabel "elevada"@es .
+
+<https://datos.ign.es/kos/hidrografia/situacion-de-cauce/subterranea> a skos:Concept ;
+             skos:definition "Canal que discurre subterráneo o tapado."@es ;
+             skos:inScheme <https://datos.ign.es/kos/hidrografia/situacion-de-cauce> ;
+             skos:notation "cauce-subterrano";
+             skos:prefLabel "subterránea"@es .
+
+<https://datos.ign.es/kos/hidrografia/situacion-de-cauce/superficial> a skos:Concept ;
+             skos:definition "Canal que discurre en superficie."@es ;
+             skos:inScheme <https://datos.ign.es/kos/hidrografia/situacion-de-cauce> ;
+             skos:notation "cauce-superficial";
+             skos:prefLabel "superficial"@es .
