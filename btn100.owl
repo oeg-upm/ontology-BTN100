@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://datos.ign.es/def/btn100#"
      xml:base="https://datos.ign.es/def/btn100"
-     xmlns:van="http://purl.org/vocab/vann/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:btn100="https://datos.ign.es/def/btn100#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:van="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:geo_core="https://datos.ign.es/def/geo_core#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:btn100="https://datos.ign.es/def/btn100#"
+     xmlns:geo_core="https://datos.ign.es/def/geo_core#">
     <owl:Ontology rdf:about="https://datos.ign.es/def/btn100">
-        <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100_v0.2"/>
+        <owl:versionIRI rdf:resource="https://datos.ign.es/def/btn100_v0.3"/>
         <owl:imports rdf:resource="https://datos.ign.es/def/geo_core"/>
-        <terms:description xml:lang="es">Ontología para la representación del conjunto de datos geográficos de los datos de la Base Topográfica Nacional a escala 1:100.000 (BTN100).</terms:description>
-        <van:preferredNamespacePrefix xml:lang="es">btn100</van:preferredNamespacePrefix>
-        <terms:publisher xml:lang="es">Instituto Geográfico Nacional</terms:publisher>
-        <van:preferredNamespaceUri xml:lang="es">https://datos.ign.es/def/btn100#</van:preferredNamespaceUri>
-        <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
-        <owl:versionInfo xml:lang="es">0.2</owl:versionInfo>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:title>
         <dc:date xml:lang="es">2017-12-21</dc:date>
-        <terms:contributor xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:contributor>
         <terms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:contributor>
+        <terms:contributor xml:lang="es">Pedro Vivas White (Instituto Geográfico Nacional)</terms:contributor>
+        <terms:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:description xml:lang="es">Ontología para la representación del conjunto de datos geográficos de los datos de la Base Topográfica Nacional a escala 1:100.000 (BTN100).</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher xml:lang="es">Instituto Geográfico Nacional</terms:publisher>
+        <terms:title xml:lang="es">Ontología para la representación de los datos de la Base Topográfica Nacional BTN100</terms:title>
+        <van:preferredNamespacePrefix xml:lang="es">btn100</van:preferredNamespacePrefix>
+        <van:preferredNamespaceUri xml:lang="es">https://datos.ign.es/def/btn100#</van:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="es">0.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -196,11 +196,11 @@ https://datos.ign.es/kos/hidrografia/categoria-de-rio/rio-de-menor-interes</rdfs
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
-        <rdfs:comment xml:lang="es">Competencia de la vía. Se define en el esquema de conceptos https://datos.ign.es/kos/transportes/competencia  y puede tomar alguno de los siguientes valores: 
-https://datos.ign.es/kos/transportes/competencia/estatal
-https://datos.ign.es/kos/transportes/competencia/autonomica
-https://datos.ign.es/kos/transportes/competencia/provincial
-https://datos.ign.es/kos/transportes/competencia/local</rdfs:comment>
+        <rdfs:comment xml:lang="es">Competencia de la vía. Se define en el esquema de conceptos https://datos.ign.es/kos/transportes/competencia-via  y puede tomar alguno de los siguientes valores: 
+https://datos.ign.es/kos/transportes/competencia-via/estatal
+https://datos.ign.es/kos/transportes/competencia-via/autonomica
+https://datos.ign.es/kos/transportes/competencia-via/provincial
+https://datos.ign.es/kos/transportes/competencia-via/local</rdfs:comment>
         <rdfs:label xml:lang="es">competencia</rdfs:label>
     </owl:ObjectProperty>
     
@@ -956,13 +956,13 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
     
 
 
-    <!-- https://datos.ign.es/def/btn100#Aerodronomo -->
+    <!-- https://datos.ign.es/def/btn100#Aerodromo -->
 
-    <owl:Class rdf:about="https://datos.ign.es/def/btn100#Aerodronomo">
+    <owl:Class rdf:about="https://datos.ign.es/def/btn100#Aerodromo">
         <rdfs:subClassOf rdf:resource="https://datos.ign.es/def/btn100#InfraestructuraAeroportuaria"/>
         <dc:source xml:lang="es">Diccionario de la Real Academia Española.</dc:source>
         <rdfs:comment xml:lang="es">Terreno llano provisto de pistas y demás instalaciones necesarias para el despegue y aterrizaje de aviones, generalmente de carácter militar y más reducido que el aeropuerto.</rdfs:comment>
-        <rdfs:label xml:lang="es">Aeródronomo</rdfs:label>
+        <rdfs:label xml:lang="es">Aeródromo</rdfs:label>
     </owl:Class>
     
 
@@ -3110,5 +3110,5 @@ Según INE: Se considera Núcleo de población a un conjunto de al menos diez ed
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
